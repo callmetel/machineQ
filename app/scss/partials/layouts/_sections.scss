@@ -109,22 +109,22 @@ section#section-1{
 		    }
 		}
 	}
-	p#home-down{
-		width:44vw;
+	#home-down{
 		margin:0 auto;
-		margin-top: -20px;
+		margin-top: -20px!important;
 		@include media($sm-mobile){
 			width: 100%;
 		}
 		@include media($v-ipad-max-screen){
-			width: 50vw;
+			width:350px;
 			margin: 0 auto;
-			margin-top:-30px;
+			margin-top:-30px!important;
 			margin-bottom: 20px;
 		}
 		@include media($v-iphone-6-plus){
-			width: 90vw;
+			width:200px;
 			margin: 0 auto;
+			margin-top:-10px!important;
 			margin-bottom: 20px;
 		}
 	}

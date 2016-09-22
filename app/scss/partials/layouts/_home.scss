@@ -16,15 +16,14 @@ header{
 			@include transition(all .5s ease-in-out);
 		}
 		&#comcast-logo{
-			// background-image: url('../images/global-comcast.svg');
-			// background-size: contain;
-			// background-repeat: no-repeat;
+			background-image: url('../images/a-comcast-company.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
 			text-decoration: none;
 			top:7.785vh;
 			right: 2.769vw;
-			// width:143.771px;
-			// max-width: 143.771px;
-			height:23.767px;
+			width:200px;
+			height:8px;
 			@include transition(all .5s ease-in-out);
 
 			@include media($mobile){
