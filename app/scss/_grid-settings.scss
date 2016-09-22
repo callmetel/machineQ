@@ -47,6 +47,8 @@ $xl-height: new-breakpoint(min-width 800px min-height 901px);
 $small-desktop-ratio: new-breakpoint(min-width 1100px max-height 700px);
 $narrow-desktop: new-breakpoint(max-width 768px max-height 700px);
 
+$sm-desktop-height: new-breakpoint(max-height 600px);
+
 $filter-desktop-bp: new-breakpoint(max-width 1200px);
 // // Neat Breakpoints
 // $medium-screen: em(640);

@@ -180,7 +180,8 @@ body {
 .ie10 .ie10 .filter {
   vertical-align: top; }
 .ie10 .ie10 #comcast-logo {
-  z-index: 9989 !important; }
+  z-index: 9989 !important;
+  letter-spacing: 2.5px !important; }
 .ie10 .ie10 .molecule {
   position: absolute;
   left: 10px;
@@ -385,7 +386,8 @@ body {
 .ie10 .filter {
   vertical-align: top; }
 .ie10 #comcast-logo {
-  z-index: 9989 !important; }
+  z-index: 9989 !important;
+  letter-spacing: 2.5px !important; }
 .ie10 .molecule {
   position: absolute;
   left: 10px;
@@ -590,7 +592,8 @@ body {
 .ie10 .filter {
   vertical-align: top; }
 .ie10 #comcast-logo {
-  z-index: 9989 !important; }
+  z-index: 9989 !important;
+  letter-spacing: 2.5px !important; }
 .ie10 .molecule {
   position: absolute;
   left: 10px;
@@ -630,11 +633,8 @@ body {
     .ie10 div.molecule-text {
       font: normal normal normal 8.4px/9.85px "gotham_mediumregular", Helvetica, Arial, sans-serif !important; } }
 
-.small-desktop-ratio #map-title {
-  margin-left: 20% !important; }
 .small-desktop-ratio #map {
-  width: 55% !important;
-  max-width: 500px; }
+  width: 70% !important; }
 .small-desktop-ratio ul#menu {
   padding: 30vh 0 0 0 !important; }
 .small-desktop-ratio div#other-links {
@@ -856,7 +856,7 @@ div.molecule-text {
 #comcast-logo {
   color: white;
   font: normal normal normal 9px/12px "gotham_mediumregular" !important;
-  letter-spacing: 4.5px; }
+  letter-spacing: 4.5px !important; }
   @media screen and (min-width: 2001px) {
     #comcast-logo {
       font: normal normal normal 9.9px/13.2px "gotham_mediumregular" !important; } }
@@ -2457,21 +2457,26 @@ section#section-2 {
   @media screen and (max-width: 992px) {
     section#section-2 div.info h1.title {
       width: 100%; } }
-  @media screen and (min-width: 1100px) {
-    section#section-2 div.info p.description {
-      width: 38.5vw; } }
-  @media screen and (max-width: 992px) {
-    section#section-2 div.info p.description {
-      width: 80vw; } }
-  @media screen and (max-device-width: 1024px) and (orientation: landscape) {
-    section#section-2 div.info p.description {
-      width: 60%; } }
-  @media screen and (max-device-width: 1080px) and (orientation: portrait) {
-    section#section-2 div.info p.description {
-      width: 60vw; } }
-  @media screen and (max-device-width: 736px) and (orientation: portrait) {
-    section#section-2 div.info p.description {
-      width: 80vw; } }
+  section#section-2 div.info p.description {
+    width: 38.5vw; }
+    @media screen and (min-width: 1100px) {
+      section#section-2 div.info p.description {
+        width: 38.5vw; } }
+    @media screen and (max-width: 768px) {
+      section#section-2 div.info p.description {
+        width: 60vw; } }
+    @media screen and (max-width: 480px) {
+      section#section-2 div.info p.description {
+        width: 80vw; } }
+    @media screen and (max-device-width: 1024px) and (orientation: landscape) {
+      section#section-2 div.info p.description {
+        width: 60%; } }
+    @media screen and (max-device-width: 1080px) and (orientation: portrait) {
+      section#section-2 div.info p.description {
+        width: 60vw; } }
+    @media screen and (max-device-width: 736px) and (orientation: portrait) {
+      section#section-2 div.info p.description {
+        width: 80vw; } }
 
 /*** ==================================================================
 	Section 3: Lower power, bigger reach  (product intro)
@@ -2499,11 +2504,15 @@ section#section-3 {
     section#section-3 div.info h1.title {
       width: 100%; } }
   section#section-3 div.info p.description {
-    margin-bottom: 2.75vh; }
+    margin-bottom: 2.75vh;
+    width: 38.5vw; }
     @media screen and (min-width: 1100px) {
       section#section-3 div.info p.description {
         width: 38.5vw; } }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
+      section#section-3 div.info p.description {
+        width: 60vw; } }
+    @media screen and (max-width: 480px) {
       section#section-3 div.info p.description {
         width: 80vw; } }
     @media screen and (max-device-width: 1024px) and (orientation: landscape) {
@@ -2743,7 +2752,8 @@ section#section-6 {
         width: 100%; } }
   section#section-6 div.info p.description {
     width: 38.5vw;
-    margin-bottom: 2.75vh; }
+    margin-bottom: 2.75vh;
+    zoom: 1; }
     @media screen and (max-width: 992px) {
       section#section-6 div.info p.description {
         width: 70vw; } }
@@ -2897,7 +2907,7 @@ section#section-7 {
         width: 40vw;
         margin-top: 0; } }
   section#section-7 div.info #map-title {
-    margin-left: 25%;
+    margin-left: 21%;
     margin-bottom: 15px;
     opacity: 0; }
     @media screen and (max-device-width: 1024px) and (orientation: landscape) {
@@ -2905,7 +2915,11 @@ section#section-7 {
         margin-left: 20%; } }
     @media screen and (max-width: 1024px) {
       section#section-7 div.info #map-title {
-        margin-left: 15%; } }
+        margin-left: 11%; } }
+    @media screen and (max-width: 768px) {
+      section#section-7 div.info #map-title {
+        margin-left: 0;
+        margin-bottom: 10px; } }
     @media screen and (max-device-width: 736px) and (orientation: landscape) {
       section#section-7 div.info #map-title {
         margin-left: 0; } }

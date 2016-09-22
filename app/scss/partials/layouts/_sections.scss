@@ -164,10 +164,14 @@ section#section-2{
 			}
 		}
 		p.description{
+			width:38.5vw;
 			@include media($desktop){
 				width:38.5vw;
 			}
-			@include media($mobile){
+			@include media($sm-mobile){
+				width:60vw;
+			}
+			@include media($xs-mobile){
 				width:80vw;
 			}
 			@include media($h-ipad-max-screen){
@@ -218,10 +222,14 @@ section#section-3{
 		}
 		p.description{
 			margin-bottom: 2.75vh;
+			width:38.5vw;
 			@include media($desktop){
 				width:38.5vw;
 			}
-			@include media($mobile){
+			@include media($sm-mobile){
+				width:60vw;
+			}
+			@include media($xs-mobile){
 				width:80vw;
 			}
 			@include media($h-ipad-max-screen){
@@ -528,7 +536,7 @@ section#section-6{
 		}
 		p.description{
 			width:38.5vw;
-			margin-bottom: 2.75vh;
+			margin-bottom: 2.75vh;zoom: 1;
 
 			@include media($mobile){
 				width:70vw;
@@ -713,15 +721,19 @@ section#section-7{
 		}
 
 		#map-title {
-		    margin-left: 25%;
+		    margin-left: 21%;
 		    margin-bottom: 15px;
 		    opacity:0;
-
+			
 		    @include media($h-ipad-max-screen){
 		    	margin-left:20%;
 		    }
 		    @include media($lg-mobile){
-		    	margin-left:15%;
+		    	margin-left:11%;
+		    }
+		    @include media($sm-mobile){
+		    	margin-left:0;
+		    	margin-bottom:10px;
 		    }
 		    @include media($h-iphone){
 		    	margin-left:0;

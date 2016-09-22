@@ -223,7 +223,7 @@ div.molecule-text{
 #comcast-logo{
 	color: white;
 	font:$comcast-p!important;
-	letter-spacing: 4.5px;
+	letter-spacing: 4.5px!important;
 	
 	@include media($xl-desktop){
 		font:$lg-comcast-p!important;
