@@ -1,0 +1,115 @@
+// Font face imports
+
+@font-face {
+    font-family: 'gotham_boldregular';
+    src: url('../fonts/gotham-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gotham-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'gotham_lightregular';
+    src: url('../fonts/gotham-light-webfont.woff2') format('woff2'),
+         url('../fonts/gotham-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'gotham_mediumregular';
+    src: url('../fonts/gotham-medium-webfont.woff2') format('woff2'),
+         url('../fonts/gotham-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'gotham_blackregular';
+    src: url('../fonts/gotham-black-webfont.woff2') format('woff2'),
+         url('../fonts/gotham-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Declare Gotham font families
+
+$gothamL: 'gotham_lightregular';
+$gothamM: 'gotham_mediumregular';
+$gothamBo: 'gotham_boldregular';
+$gothamBl: 'gotham_blackregular';
+
+// Font styles
+
+$heading: normal normal normal 4.5rem/4.375rem $gothamM, Helvetica, Arial, sans-serif; // for macbook 11"-13"
+$xl-heading: normal normal normal 8.1rem/7.875rem $gothamM, Helvetica, Arial, sans-serif; // for xl destops //multiply by 1.8
+$mp-heading: normal normal normal 4.95rem/4.8125rem $gothamM, Helvetica, Arial, sans-serif; // for macbook 15" //multiply by 1.1
+$lg-heading: normal normal normal 3.1625rem/3.07188rem $gothamM, Helvetica, Arial, sans-serif; //for horizontal ipads //multiply by .725
+$md-heading: normal normal normal 2.6625rem/2.67188rem $gothamM, Helvetica, Arial, sans-serif; //for horizontal ipads //multiply by .725
+$sm-heading: normal normal normal 1.9625rem/1.7188rem $gothamM, Helvetica, Arial, sans-serif; //for horizontal ipads //multiply by .725
+
+$paragraph: normal normal normal 1rem/1.125rem $gothamL; // for macbook 11"-13"
+$xl-paragraph: normal normal normal 1.8rem/2.025rem $gothamL; // for xl destops //multiply by 1.8
+$mp-paragraph: normal normal normal 1.1rem/1.2375rem $gothamL; // for macbook 15" //multiply by 1.1
+$lg-paragraph: normal normal normal 0.725rem/0.815625rem $gothamL; //for horizontal ipads //multiply by .725
+$md-paragraph: normal normal normal 0.385rem/0.55625rem $gothamL; //for horizontal ipads //multiply by .725
+$sm-paragraph: normal normal normal 0.325rem/0.715625rem $gothamL; //for horizontal ipads //multiply by .725
+$xs-paragraph: normal normal normal 8px/10px $gothamL; //for horizontal ipads //multiply by .725
+
+$paragraphB: normal normal normal 1rem/1.125rem $gothamM; // for macbook 11"-13"
+$xl-paragraphB: normal normal normal 1.8rem/2.025rem $gothamM; // for xl destops //multiply by 1.8
+$mp-paragraphB: normal normal normal 1.1rem/1.2375rem $gothamM; // for macbook 15" //multiply by 1.1
+$lg-paragraphB: normal normal normal 0.725rem/0.815625rem $gothamM; //for horizontal ipads //multiply by .725
+$md-paragraphB: normal normal normal 0.525rem/0.615625rem $gothamM; //for horizontal ipads //multiply by .725
+$sm-paragraphB: normal normal normal 0.325rem/0.715625rem $gothamM; //for horizontal ipads //multiply by .725
+$xs-paragraphB: normal normal normal 8px/10px $gothamM; //for horizontal ipads //multiply by .725
+
+$label: normal normal normal 1rem/1.125rem $gothamBo; // for macbook 11"-13"
+$xl-label: normal normal normal 1.8rem/2.025rem $gothamBo; // for xl destops //multiply by 1.8
+$mp-label: normal normal normal 1.1rem/1.2375rem $gothamBo; // for macbook 15" //multiply by 1.1
+$lg-label: normal normal normal 0.725rem/0.815625rem $gothamBo; //for horizontal ipads //multiply by .725
+
+$formlabel: normal normal normal 1rem/1.125rem $gothamL; // for macbook 11"-13"
+$xl-formlabel: normal normal normal 1.8rem/2.025rem $gothamL; // for xl destops //multiply by 1.8
+$mp-formlabel: normal normal normal 1.1rem/1.2375rem $gothamL; // for macbook 15" //multiply by 1.1
+$lg-formlabel: normal normal normal 0.725rem/0.815625rem $gothamL; //for horizontal ipads //multiply by .725
+
+$day: normal normal normal 2.375rem/2.85rem $gothamL; // for macbook 11"-13"
+$xl-day: normal normal normal 4.275rem/5.13rem $gothamL; // for xl destops //multiply by 1.8
+$mp-day: normal normal normal 2.6125rem/3.135rem $gothamL; // for macbook 15" //multiply by 1.1
+$lg-day: normal normal normal 1.72188rem/2.06625rem $gothamL; //for horizontal ipads //multiply by .725
+
+$subtitle: normal normal normal 1.375rem/1.65rem $gothamM; // for macbook 11"-13"
+$xl-subtitle: normal normal normal 2.475rem/2.97rem $gothamM; // for xl destops //multiply by 1.8
+$mp-subtitle: normal normal normal 1.5125rem/1.815rem $gothamM; // for macbook 15" //multiply by 1.1
+$lg-subtitle: normal normal normal 0.996875rem/1.19625rem $gothamM; //for horizontal ipads //multiply by .725
+
+$link: normal normal normal 1.125rem/1.375rem $gothamBo; // for macbook 11"-13"
+$xl-link: normal normal normal 2.025rem/2.475rem $gothamBo; // for xl destops //multiply by 1.8
+$mp-link: normal normal normal 1.2375rem/1.5125rem $gothamBo; // for macbook 15" //multiply by 1.1
+$lg-link: normal normal normal 0.815625rem/0.996875rem $gothamBo; //for horizontal ipads //multiply by .725
+$md-link: normal normal normal 0.725rem/0.815625rem $gothamBo; //for horizontal ipads //multiply by .725
+
+$lg-sup: normal normal normal 11px/0rem $gothamL; // for macbook 15" //multiply by 1.1
+$sup: normal normal normal 9px/0rem $gothamL; // for macbook 15" //multiply by 1.1
+$md-sup: normal normal normal 7px/0rem $gothamL; //for horizontal ipads //multiply by .725
+$sm-sup: normal normal normal 5px/0rem $gothamL; //for horizontal ipads //multiply by .725
+$xs-sup: normal normal normal 3px/0rem $gothamL; //for horizontal ipads //multiply by .725
+
+$lg-comcast-p: normal normal normal 9.9px/13.2px $gothamM; // for macbook 15" //multiply by 1.1
+$comcast-p: normal normal normal 9px/12px $gothamM; // for macbook 15" //multiply by 1.1
+$md-comcast-p: normal normal normal 7.5px/9.5px $gothamM; //for horizontal ipads //multiply by .725
+$sm-comcast-p: normal normal normal 5px/0rem $gothamM; //for horizontal ipads //multiply by .725
+$xs-comcast-p: normal normal normal 3px/0rem $gothamM; //for horizontal ipads //multiply by .725
+
+$lg-comcast: normal normal normal 15px/13.2px $gothamM; // for macbook 15" //multiply by 1.1
+$comcast: normal normal normal 14px/12px $gothamM; // for macbook 15" //multiply by 1.1
+$md-comcast: normal normal normal 9.5px/9.5px $gothamM; //for horizontal ipads //multiply by .725
+$sm-comcast: normal normal normal 5px/0rem $gothamM; //for horizontal ipads //multiply by .725
+$xs-comcast: normal normal normal 3px/0rem $gothamM; //for horizontal ipads //multiply by .725
+
+
+

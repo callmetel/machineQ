@@ -1,0 +1,124 @@
+@import "fonts";
+// @import "typography";
+@import "ie10";
+
+.small-desktop-ratio{
+
+	// p.bold, a, #section-7 .cta p{
+	// 	font:$lg-paragraphB!important;
+	// }
+	// h1{
+	// 	font:$lg-heading!important;
+	// }
+	// h2{
+	// 	font:$lg-label!important;
+	// }
+	// p{
+	// 	font:$lg-paragraph!important;
+	// }
+	// sup{
+	// 	font: $md-sup!important;
+	// }
+	// div.molecule-text{
+	// 	font:$md-paragraphB!important;
+	// }
+	// #comcast-logo{
+	// 	font:$md-comcast-p!important;
+	// }
+	// p#home-down{
+	// 	font:$md-comcast!important;
+	// }
+	// #copyright-links{
+	// 	@include position(fixed, null 3% 4% null !important);
+	// 	font:$lg-paragraph!important;
+	// 	a{
+	// 		font:$md-paragraphB!important;
+	// 	}
+	// }
+	// div.news-article .left{
+	// 	width:90%!important;
+	// }
+	// div.news-article .right{
+	// 	width:3%!important;
+	// }
+	// .events-text{
+	// 	width:100%!important;
+	// }
+
+	// section#section-2{
+
+	// 	div.info{
+	// 		h1.title{
+	// 			width:60%!important;
+	// 		}
+	// 		p.description{
+	// 			width:60%!important;
+	// 		}
+	// 	}
+		
+	// }
+	// section#section-3{
+
+	// 	div.info{
+	// 		p.description{
+	// 			width:60%!important;
+	// 		}
+	// 	}
+		
+	// }
+
+	#map-title {
+	    margin-left:20%!important;
+	}
+
+	#map{
+		width: 55%!important;
+		max-width: 500px;
+	}
+
+	ul#menu {
+	    padding: 30vh 0 0 0!important;
+
+	    // li{
+     //        font:$lg-link!important;
+	    // }
+	}
+	div#other-links{
+       position: static!important;
+    }
+ //    .case-container img{
+	// 	width: 45px!important;
+	// }
+ //    .molecule {
+	// 	position:absolute;
+	// 	left: 10px;
+	//     top: -49px!important;
+ //    	width: 66px!important;
+	// 	opacity: 0;
+		
+	// }
+
+	// .molecule-text-1.molecule-text {
+	// 	top: -46px!important;
+ //    	left: 50px!important;
+	    
+	// }
+
+	// .molecule-text-2.molecule-text {
+	// 	top: -21px!important;
+ //    	left: 85px!important;
+	    
+	// }
+
+	// .molecule-text-3.molecule-text {
+	// 	top: 52px!important;
+ //    	left: 85px!important;
+	    
+	// }
+
+	// .molecule-text-4.molecule-text {
+	// 	top: 78px!important;
+ //    	left: 50px!important;
+	    
+	// }
+}

@@ -1,0 +1,278 @@
+@import "fonts";
+
+.ie10{
+	$heading: normal normal normal 72px/70px $gothamM, Helvetica, Arial, sans-serif!important; // for macbook 11"-13"
+	$xl-heading: normal normal normal 129.6px/126px $gothamM, Helvetica, Arial, sans-serif!important; // for xl destops //multiply by 1.8
+	$mp-heading: normal normal normal 79.2px/77px $gothamM, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$lg-heading: normal normal normal 50.6px/49.1501px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$md-heading: normal normal normal 42.6px/42.7501px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$sm-heading: normal normal normal 31.4px/27.5008px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+
+	$paragraph: normal normal normal 16px/18px $gothamL, Helvetica, Arial, sans-serif!important; // for macbook 11"-13"
+	$xl-paragraph: normal normal normal 28.8px/32.4px $gothamL, Helvetica, Arial, sans-serif!important; // for xl destops //multiply by 1.8
+	$mp-paragraph: normal normal normal 17.6px/19.8px $gothamL, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$lg-paragraph: normal normal normal 11.6px/13.05px $gothamL, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$md-paragraph: normal normal normal 6.16px/8.9px $gothamL, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$sm-paragraph: normal normal normal 5.2px/11.45px $gothamL, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$xs-paragraph: normal normal normal 8px/10px $gothamL; //for horizontal ipads //multiply by .725
+
+	$paragraphB: normal normal normal 16px/18px $gothamM, Helvetica, Arial, sans-serif!important; // for macbook 11"-13"
+	$xl-paragraphB: normal normal normal 28.8px/32.4px $gothamM, Helvetica, Arial, sans-serif!important; // for xl destops //multiply by 1.8
+	$mp-paragraphB: normal normal normal 17.6px/19.8px $gothamM, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$lg-paragraphB: normal normal normal 11.6px/13.05px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$md-paragraphB: normal normal normal 8.4px/9.85px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$sm-paragraphB: normal normal normal 5.2px/11.45px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$xs-paragraphB: normal normal normal 8px/10px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+
+	$label: normal normal normal 16px/18px $gothamBo; // for macbook 11"-13"
+	$xl-label: normal normal normal 28.8px/32.4px $gothamBo; // for xl destops //multiply by 1.8
+	$mp-label: normal normal normal 17.6px/19.8px $gothamBo; // for macbook 15" //multiply by 1.1
+	$lg-label: normal normal normal 11.6px/13.05px $gothamBo; //for horizontal ipads //multiply by .725
+
+	$formlabel: normal normal normal 16px/18px $gothamL, Helvetica, Arial, sans-serif!important; // for macbook 11"-13"
+	$xl-formlabel: normal normal normal 28.8px/32.4px $gothamL, Helvetica, Arial, sans-serif!important; // for xl destops //multiply by 1.8
+	$mp-formlabel: normal normal normal 17.6px/19.8px $gothamL, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$lg-formlabel: normal normal normal 11.6px/13.05px $gothamL, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+
+	$day: normal normal normal 38px/45.6px $gothamL, Helvetica, Arial, sans-serif!important; // for macbook 11"-13"
+	$xl-day: normal normal normal 68.4px/82.08px $gothamL, Helvetica, Arial, sans-serif!important; // for xl destops //multiply by 1.8
+	$mp-day: normal normal normal 41.8px/50.16px $gothamL, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$lg-day: normal normal normal 27.5501px/33.06px $gothamL, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+
+	$subtitle: normal normal normal 22px/26.4px $gothamM, Helvetica, Arial, sans-serif!important; // for macbook 11"-13"
+	$xl-subtitle: normal normal normal 39.6px/47.52px $gothamM, Helvetica, Arial, sans-serif!important; // for xl destops //multiply by 1.8
+	$mp-subtitle: normal normal normal 24.2px/29.04px $gothamM, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$lg-subtitle: normal normal normal 15.95px/19.14px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+
+	$link: normal normal normal 18px/22px $gothamBo, Helvetica, Arial, sans-serif!important; // for macbook 11"-13"
+	$xl-link: normal normal normal 32.4px/39.6px $gothamBo, Helvetica, Arial, sans-serif!important; // for xl destops //multiply by 1.8
+	$mp-link: normal normal normal 19.8px/24.2px $gothamBo, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$lg-link: normal normal normal 13.05px/15.95px $gothamBo, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$md-link: normal normal normal 11.6px/13.05px $gothamBo, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+
+	$lg-sup: normal normal normal 11px/0px $gothamL, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$sup: normal normal normal 9px/0px $gothamL, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$md-sup: normal normal normal 7px/0px $gothamL, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$sm-sup: normal normal normal 5px/0px $gothamL, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$xs-sup: normal normal normal 3px/0px $gothamL, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+
+	$lg-comcast-p: normal normal normal 9.9px/13.2px $gothamM, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$comcast-p: normal normal normal 9px/12px $gothamM, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$md-comcast-p: normal normal normal 7.5px/9.5px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$sm-comcast-p: normal normal normal 5px/0px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$xs-comcast-p: normal normal normal 3px/0px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+
+	$lg-comcast: normal normal normal 15px/13.2px $gothamM, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$comcast: normal normal normal 14px/12px $gothamM, Helvetica, Arial, sans-serif!important; // for macbook 15" //multiply by 1.1
+	$md-comcast: normal normal normal 7.5px/9.5px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$sm-comcast: normal normal normal 5px/0px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+	$xs-comcast: normal normal normal 3px/0px $gothamM, Helvetica, Arial, sans-serif!important; //for horizontal ipads //multiply by .725
+
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	a,
+	div{
+		letter-spacing: 0!important;
+		font-style: normal;
+		margin: 0;
+	}
+
+	h1{
+		font: $heading;
+		
+		@include media($xl-desktop){
+			font:$xl-heading;
+		}
+		@include media($macbook-pro-13){
+			font:$heading;
+		}
+		@include media($mobile){
+			font:$lg-heading;
+		}
+		@include media($v-ipad-max-screen){
+			font:$heading;
+		}
+		@include media($sm-height){
+			font:$lg-heading;
+		}
+		@include media($h-iphone){
+			font:$sm-heading;
+		}
+		@include media($h-iphone-5){
+			font:$sm-heading;
+		}
+		@include media($v-iphone-6-plus){
+			font:$md-heading;
+		}
+		@include media($v-iphone-5){
+			font:$sm-heading;
+		}
+		&.title{
+			color: $orange;
+		}
+	}
+
+	h2{
+		font:$mp-label;
+		letter-spacing: 0;
+		
+		@include media($xl-desktop){
+			font:$xl-label;
+		}
+		@include media($macbook-pro-13){
+			font:$label;
+		}
+		@include media($mobile){
+			font:$lg-label;
+		}
+		
+	}
+
+	p{
+		font:$mp-paragraph;
+		letter-spacing: 0;
+		
+		@include media($xl-desktop){
+			font:$xl-paragraph;
+		}
+		@include media($macbook-pro-13){
+			font:$paragraph;
+		}
+		@include media($mobile){
+			font:$lg-paragraph;
+		}
+		@include media($v-ipad-max-screen){
+			font:$paragraph;
+		}
+		@include media($v-iphone-6-plus){
+			font:$lg-paragraph;
+		}
+		@include media($h-iphone){
+			font:$md-paragraph;
+		}
+		@include media($h-iphone-5){
+			font:$sm-paragraph;
+		}
+
+
+		&.bold{
+			font:$mp-paragraphB;
+			letter-spacing: 0;
+			
+			@include media($xl-desktop){
+				font:$xl-paragraphB;
+			}
+			@include media($macbook-pro-13){
+				font:$paragraphB;
+			}
+			@include media($small-desktop-ratio){
+				font:$lg-paragraphB;
+			}
+			@include media($h-ipad-max-screen){
+				font:$lg-paragraphB;
+			}
+			@include media($v-ipad-max-screen){
+				font:$paragraphB;
+			}
+			@include media($v-iphone-6-plus){
+				font:$lg-paragraphB;
+			}
+			@include media($v-iphone-5){
+
+			}
+			@include media($h-iphone){
+				font:$md-paragraphB;
+			}
+		}
+	}
+
+	a{
+		font-weight: bold;
+		text-decoration: none;
+		color:$orange;
+		font:$mp-paragraphB;
+		letter-spacing: 0;
+
+		@include media($xl-desktop){
+			font:$xl-paragraphB;
+		}
+		@include media($macbook-pro-13){
+			font:$paragraphB;
+		}
+		@include media($h-ipad-max-screen){
+			font:$lg-paragraphB;
+		}
+		@include media($v-iphone-6-plus){
+
+		}
+		@include media($v-iphone-5){
+
+		}
+	}
+	a img{
+		border:none;
+	    outline:none;
+	}
+	#case-icon-container{
+		img{
+			height:100%;
+		}
+		
+	}
+	.filter{
+		vertical-align: top;
+	}
+	#comcast-logo{
+		z-index:9989!important;
+	}
+	.molecule {
+		position:absolute;
+		left: 10px;
+	    top: -101px;
+	    width: 123px;
+		opacity: 0;
+
+		img{
+			width:100%;
+		}
+
+		@include media($xl-desktop){
+			top: -135px;
+		    left: 15px;
+		    width: 164px;
+		}
+		@include media($mobile){
+			width: 20%;
+		    top: -166%;
+		    left: 2%;
+		}
+		@include media($v-ipad-max-screen){
+			left: 10px;
+		    top: -101px;
+		    width: 123px;
+		}
+		@include media($v-iphone-6-plus){
+			left: 10px;
+		    top: -101px;
+		    width: 123px;
+			margin-bottom:15px;
+		}
+		@include media($h-iphone){
+			width: 45px;
+		}
+		
+	}
+	div.molecule-text{
+		font:$lg-paragraphB;
+		letter-spacing: 0;
+
+		@include media($mobile){
+			font:$md-paragraphB;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270.62" height="270.62" viewBox="0 0 270.62 270.62">
+  <title>parking</title>
+  <rect width="270.62" height="270.62"/>
+  <text transform="translate(50.57 182.22)" font-size="16" fill="#595959" font-family="Gotham Bold">P<tspan x="9.82" y="0">A</tspan><tspan x="22.43" y="0">R</tspan><tspan x="34.11" y="0">K</tspan><tspan x="45.81" y="0">I</tspan><tspan x="51.23" y="0">N</tspan><tspan x="63.94" y="0">G </tspan><tspan x="81.28" y="0">M</tspan><tspan x="95.31" y="0">E</tspan><tspan x="106.11" y="0">T</tspan><tspan x="116.37" y="0">E</tspan><tspan x="127.29" y="0">R</tspan><tspan x="138.93" y="0">I</tspan><tspan x="144.35" y="0">N</tspan><tspan x="157.05" y="0">G</tspan></text>
+  <path d="M148.35,139.62c0-.86.3-5.71,0.66-6.49l8.49-18.22a8.38,8.38,0,0,0,.66-3V101.23c0-.86-0.39-1.57-0.88-1.57h-0.88a21.92,21.92,0,0,0-43.44,0h-0.88c-0.49,0-.88.7-0.88,1.57v10.69a8.38,8.38,0,0,0,.66,3l8.49,18.22c0.37,0.78.66,5.63,0.66,6.49h27.32Zm-8.55-40a4.9,4.9,0,0,0-.27-1.6l4.58-5.49-0.78-.9-6.17,3.63a5,5,0,0,0-5.57.61,4.92,4.92,0,0,0-1.74,3.75h-12a17.08,17.08,0,0,1,33.66,0H139.8ZM124,117.88v-9.52a1.77,1.77,0,0,1,3.53,0v9.52A1.77,1.77,0,0,1,124,117.88Z" fill="none" stroke="#0db14b" stroke-miterlimit="10"/>
+</svg>

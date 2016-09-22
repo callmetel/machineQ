@@ -1,0 +1,47 @@
+//Colors
+//
+$lightorange: rgba(255,75,0,.28);
+$orange: #ff4b00;
+$white: #ffffff;
+$gray: #666666;
+$black: #000000;
+$blue: #009ade;
+$yellow: #fdb813;
+$green: #0db14b;
+$pink: #c9234a;
+$purple: #5f6db3;
+
+
+body{
+	margin:0;
+	width:100vw;
+	height:100vh!important;
+	overflow: hidden;
+	background: $black;
+    @include media($mobile){
+        height:100%!important;
+    }
+    @include media($h-ipad-max-screen){
+        height:100%!important;
+    }
+    @include media($h-iphone){
+        height:100%!important;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.ie10 {
+  @import "ie10";
+}

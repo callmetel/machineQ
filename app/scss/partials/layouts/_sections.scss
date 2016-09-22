@@ -1,0 +1,999 @@
+@import "../mixins/keyframes";
+@import "../mixins/animations";
+/*** =========================================================
+	Section 1: Landing Page  (mq logo + scroll down cta)
+============================================================== ***/
+
+section#section-1{
+	
+
+	margin:0 auto;
+	text-align: center;
+	padding-top: 35.25vh!important;
+	position: relative;
+
+	@include media($h-iphone){
+		padding-top: 20.25vh!important;
+	}
+
+	@include media($v-iphone-6-plus){
+		padding-top: 30.25vh!important;
+	}
+	
+	img{
+
+		text-align: center;
+		    margin: 0 auto;
+		    display: block;
+	  
+	}
+	#main-peacock-logo{
+		width: 4%;
+    	margin-bottom: 13px;
+    	min-width:60px;
+	}
+	#main-comcast-logo{
+		width:93px;
+		@include position(absolute, 8.125vh 0 null 0);
+		margin: -13px auto 0 auto;
+	}
+	#home-logo-container{
+		img{
+			text-align: center;
+		    margin: 0 auto;
+		    display: block;
+
+		    &#machineQ-logo{
+		    	width: 420px;
+				height: auto;
+		    	@include media($xl-desktop){
+					width: 550px;
+					height: auto;
+		    	}
+		    	@include media($macbook-pro-13){
+
+		    	}
+		    	@include media($mobile){
+					width: 400px;
+					height: auto;
+					margin-left:auto;
+		    	}
+		    	@include media($sm-mobile){
+					width: 300px;
+					height: auto;
+					margin-left:auto;
+		    	}
+		    	@include media($v-ipad-max-screen){
+					min-width:70vw;
+					max-width:70vw;
+					margin-left:auto;
+		    	}
+		    	@include media($h-iphone){
+					min-width:35vw;
+					margin-left:auto;
+					margin-top: 25px;
+		    	}
+		    	@include media($v-iphone-6-plus){
+					width:60vw;
+					max-width:60vw;
+					min-width:60vw;
+					margin-left:auto;
+		    	}
+		    }
+		    &#comcast-home-logo{
+		    	width: 7.875vw;
+		    	margin-top:-30px;
+		    	@include media($mobile){
+					width:21vw;
+					max-width:21vw;
+					margin-top:-20px;
+		    	}
+		    	@include media($v-ipad-max-screen){
+		    		width: 21vw;
+					max-width: 90vw;
+					margin-left: auto;
+					margin-top: -20px;
+		    	}
+		    	@include media($h-iphone){
+					width: 15vw;
+					max-width: 15vw;
+					margin-left: auto;
+					margin-top: -20px;
+		    	}
+		    	@include media($v-iphone-6-plus){
+		    		width: 31.5vw;
+					max-width: 90vw;
+					margin-left: auto;
+					margin-top: -20px;
+		    	}
+		    }
+		}
+	}
+	p#home-down{
+		width:44vw;
+		margin:0 auto;
+		margin-top: -20px;
+		@include media($sm-mobile){
+			width: 100%;
+		}
+		@include media($v-ipad-max-screen){
+			width: 50vw;
+			margin: 0 auto;
+			margin-top:-30px;
+			margin-bottom: 20px;
+		}
+		@include media($v-iphone-6-plus){
+			width: 90vw;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+	}
+
+}
+
+/*** =========================================================
+	Section 2: iQ for machines (introduction)
+============================================================== ***/
+
+section#section-2{
+
+	margin:0 auto;
+	padding-top: 30.3vh!important;
+	position: relative;
+
+	@include media($v-iphone-6-plus){
+		padding-top: 15.25vh!important;
+	}
+	@include media($h-iphone){
+		padding-top: 22.25vh!important;
+	}
+	@include media($h-iphone-5){
+		padding-top: 14.25vh!important;
+	}
+	
+	div.info{
+		h1.title{
+			@include media($desktop){
+				width:38.5vw;
+			}
+			@include media($h-ipad-max-screen){
+				width:60%;
+			}
+			@include media($mobile){
+				width:100%;
+			}
+		}
+		p.description{
+			@include media($desktop){
+				width:38.5vw;
+			}
+			@include media($mobile){
+				width:80vw;
+			}
+			@include media($h-ipad-max-screen){
+				width:60%;
+			}
+			@include media($v-ipad-max-screen){
+				width:60vw;
+			}
+			@include media($v-iphone-6-plus){
+				width:80vw;
+			}
+		}
+	}
+	
+}
+
+/*** ==================================================================
+	Section 3: Lower power, bigger reach  (product intro)
+======================================================================= ***/
+
+section#section-3{
+
+	margin:0 auto;
+	padding-top: 30.3vh!important;
+	position: relative;
+
+	@include media($v-iphone-6-plus){
+		padding-top: 15.25vh!important;
+	}
+	@include media($h-iphone){
+		padding-top: 22.25vh!important;
+	}
+	@include media($h-iphone-5){
+		padding-top: 14.25vh!important;
+	}
+
+	div.info{
+		h1.title{
+			@include media($desktop){
+				width:54.67vw;
+			}
+			@include media($mobile){
+				width:95%;
+			}
+			@include media($v-iphone-6-plus){
+				width:100%;
+			}
+		}
+		p.description{
+			margin-bottom: 2.75vh;
+			@include media($desktop){
+				width:38.5vw;
+			}
+			@include media($mobile){
+				width:80vw;
+			}
+			@include media($h-ipad-max-screen){
+				width:60%;
+			}
+			@include media($v-ipad-max-screen){
+				width:100%;
+			}
+			@include media($v-iphone-6-plus){
+				width:80vw;
+			}
+		}
+	}
+	
+}
+
+/*** =========================================================
+		Section 4: Fit for your Workflow
+==============================================================  ***/
+
+section#section-4{
+
+	margin:0 auto;
+	padding-top: 20.3vh!important;
+	position: relative;
+	
+	@include media($v-iphone-6-plus){
+		padding-top: 15.25vh!important;
+	}
+	@include media($h-iphone){
+		padding-top: 18.25vh!important;
+	}
+	@include media($h-iphone-5){
+		padding-top: 14.25vh!important;
+	}
+
+	div.info{
+		h1.title{
+			width:43.08vw;
+			@include media($mobile){
+				width:100%;
+			}
+		}
+		p.description{
+			width:36.5vw;
+			margin-bottom: 2.75vh;
+			@include media($mobile){
+				width:80vw;
+			}
+			@include media($v-ipad-max-screen){
+				width:60vw;
+			}
+			@include media($v-iphone-6-plus){
+				width:80vw;
+			}
+		}
+
+		div#network-app-container{
+			width: 100vw;
+			margin-top: 9.875vh;
+
+			@include media($mobile){
+				width:100vw;
+				margin-top: 4.875vh;
+			}
+
+			#network, #application, #sensor{
+
+				@include media($mobile){
+					display: block;
+					margin-bottom: 15px;
+				}
+				@include media($v-iphone-6-plus){
+					margin-bottom: 10px;
+				}
+				@include media($h-iphone){
+					display:inline-block;
+				}
+
+				img{
+					vertical-align: middle;
+
+					@include media($mobile){
+						width:70px;
+					}
+
+					@include media($v-iphone-6-plus){
+						width:60px;
+					}
+					@include media($h-iphone){
+						width: 50px;
+					}
+					@include media($h-iphone-5){
+						width: 35px;
+					}
+				}
+				p{
+					padding-left: 10px;
+					vertical-align: middle;
+				}
+			}
+
+			#application, #sensor{
+				margin-left: 7.67vw;
+
+				@include media($mobile){
+					margin-left: 0;
+					display: block;
+					margin-top: 10px;
+				}
+				@include media($h-iphone){
+					display: inline-block;
+					margin-left: 30px;
+				}
+			}
+		}
+	}
+	
+}
+
+/*** =========================================================
+		Section 5: Our platform in action
+==============================================================  ***/
+
+section#section-5{
+
+	margin:0 auto;
+	padding-top: 20.3vh!important;
+	position: relative;
+
+	@include media($v-iphone-6-plus){
+		padding-top: 15.25vh!important;
+	}
+	@include media($h-iphone){
+		padding-top: 22.25vh!important;
+	}
+	@include media($h-iphone-5){
+		padding-top: 14.25vh!important;
+	}
+	
+	div.info{
+		
+		h1.title{
+			width:100%;
+			@include media($xl-desktop){
+				width:49.57vw;
+			}
+
+			@include media($mobile){
+				width:100%;
+			}
+		}
+		p.description{
+			width:38.5vw;
+			margin-bottom: 2.75vh;
+
+			@include media($mobile){
+				width:90vw;
+			}
+			@include media($v-ipad-max-screen){
+				width:60vw;
+			}
+			@include media($v-iphone-6-plus){
+				width:90vw;
+			}
+		}
+
+		div#case-icon-container{
+			width: 100vw;
+			margin-top: 9.875vh;
+
+			@include media($mobile){
+				width:100%;
+				margin-top: 4.875vh;
+			}
+
+			.platform-icon{
+				padding-right: 4%;
+				vertical-align: middle;
+				position: relative;
+
+				@include media($lg-mobile){
+					padding-right: 3%;
+				}
+				@include media($mobile){
+					display: inline-block;
+					width: 49%;
+					padding-right: 0;
+					margin-bottom: 20px;
+				}
+				@include media($sm-mobile){
+					display: block;
+					width: 100%;
+					margin-left: 0;
+					margin-bottom: 20px;
+				}
+				@include media($narrow-desktop){
+					display: inline-block;
+					width: 49%;
+					padding-right: 0;
+					margin-bottom: 20px;
+				}
+				@include media($v-ipad-max-screen){
+					display: inline-block;
+					width: 47%;
+			        padding-right: 2%;
+				}
+				@include media($v-iphone-6-plus){
+					display: block;
+					width: 100%;
+					padding-right: 0;
+					margin-bottom: 10px;
+			        vertical-align: top!important;
+				}
+				@include media($h-iphone){
+					display: inline-block;
+			        width: auto;
+			        padding-right: 2%;
+				}
+
+				.case-container img{
+
+					vertical-align: middle;
+					width: 60px;
+
+					@include media($xl-desktop){
+						width:80px;
+					}
+					@include media($mobile){
+						width: 55px;
+					}
+					@include media($narrow-desktop){
+						width: 40px;
+					}
+					@include media($v-ipad-max-screen){
+						width:60px;
+					}
+					@include media($v-iphone-6-plus){
+						width:60px;
+					}
+					@include media($h-iphone){
+						width: 45px;
+					}
+				}
+				p{
+					padding-left: 10px;
+					vertical-align: middle;
+					width: auto;
+					cursor: pointer;
+
+					@include media($v-iphone-6-plus){
+						font: normal normal normal 0.925rem/1.11563rem "gotham_mediumregular";
+					}
+				}
+
+			}
+
+			#em-container.platform-icon{
+				margin-left: 0!important;
+			}
+
+		}
+		#use-case-down{
+			margin-bottom: 1.125%;
+			@include media($h-iphone){
+				height: auto!important;
+			}
+			@include media($h-iphone-5){
+				margin-bottom: 0;
+			}
+		}
+	}
+	
+}
+/*** =========================================================
+		Section 6: Our platform in action (filter section)
+==============================================================  ***/
+
+section#section-6{
+
+	margin:0 auto;
+	padding-top: 10.43vh!important;
+	position: relative;
+
+	@include media($mobile){
+		padding-top: 0!important;
+	}
+	@include media($h-iphone-5){
+		padding-top: 10.43vh!important;
+	}
+	
+	div.info{
+
+		@include media($mobile){
+			padding-top: 10.43vh!important;
+		}
+	
+		h1.title{
+			width:49.67vw;
+
+			@include media($mobile){
+				width:100%;
+			}
+		}
+		p.description{
+			width:38.5vw;
+			margin-bottom: 2.75vh;
+
+			@include media($mobile){
+				width:70vw;
+			}
+			@include media($v-ipad-max-screen){
+				width:60vw;
+			}
+			@include media($v-iphone-6-plus){
+				width:70vw;
+			}
+		}
+
+	}
+	
+}
+
+/*** =========================================================
+		Section 7: Raise your machineQ
+==============================================================  ***/
+
+section#section-7{
+
+	margin:0 auto;
+	padding-top: 20.3vh!important;
+	position: relative;
+	
+	@include media($mobile){
+		padding-top: 15.25vh!important;
+	}
+	@include media($h-iphone){
+		padding-top: 18.25vh!important;
+	}
+	@include media($h-iphone-5){
+		padding-top: 14.25vh!important;
+	}
+	div.info{
+		h1.title{
+			width:43.08vw;
+			@include media($mobile){
+				width: 100%;
+			}
+		}
+		p.description{
+			width:36.5vw;
+			margin-bottom: 2.75vh;
+			@include media($mobile){
+				width:80vw;
+			}
+			@include media($v-ipad-max-screen){
+				width:60vw;
+			}
+			@include media($v-iphone-6-plus){
+				width:80vw;
+			}
+			@include media($h-iphone){
+				width: 40vw;
+			}
+
+		}
+		div.inline{
+			vertical-align: top;
+		}
+		div.left{
+			width: 43vw;
+			
+			@include media($v-ipad-max-screen){
+				width:100%;
+			}
+			@include media($sm-mobile){
+				width:100%;
+			}
+			@include media($h-iphone){
+				width: 50vw;
+				margin-right: 2vw;
+			}
+			
+			@include media ($xs-mobile){
+				width:100%;
+			}
+
+			p:first-of-type{
+				margin-bottom: 10px;
+
+				@include media($v-ipad-max-screen){
+					margin-bottom: 5px;
+				}
+				@include media($sm-mobile){
+					margin-bottom: 5px;
+				}
+				@include media($h-iphone){
+					margin-bottom: 5px;
+				}
+			}
+			p.email-link{
+				margin-top: 10px;
+				@include media($v-ipad-max-screen){
+					margin-top: 5px;
+				}
+				@include media($sm-mobile){
+					margin-top: 5px;
+				}
+				@include media($h-iphone){
+					margin-top: 5px;
+				}
+			}
+			.contact-link{
+				b{
+					vertical-align: middle;
+					font-weight:normal!important;
+				}
+			}
+			#contact-arrow{
+				width:30px;
+				vertical-align: middle;
+				margin-right: 10px;
+				@include media($sm-mobile){
+					width: 25px;
+				}
+				@include media($v-iphone-6-plus){
+					width: 25px;
+				}
+				@include media($v-iphone-5){
+					width: 20px;
+				}
+				@include media($h-iphone){
+					width: 20px;
+				}
+			}
+			h2.subtitle{
+				font: $subtitle;
+				color: $orange;
+				margin-top: 5.5vh;
+				margin-bottom: 10px;
+
+				@include media($xl-desktop){
+					font:$xl-subtitle;
+				}
+				@include media($macbook-pro-13){
+					font:$mp-subtitle;
+				}
+				@include media($sm-mobile){
+					margin-top: 50px;
+					margin-bottom: 5px;
+				}
+				@include media($v-ipad-max-screen){
+					margin-top: 50px;
+					margin-bottom: 5px;
+				}
+				@include media($v-iphone-6){
+					margin-top: 40px;
+					margin-bottom: 5px;
+				}
+				@include media($mobile){
+					font:$lg-subtitle;
+				}
+				@include media($h-iphone){
+					margin-top: 30px;
+					margin-bottom: 5px;
+				}
+			}
+
+			#events-link{
+				text-decoration: underline!important;
+			}
+		}
+		div.right{
+			width:50vw;
+			@include media($sm-mobile){
+				width:90vw;
+				overflow: hidden;
+				margin-top:10px;
+			}
+			@include media($xs-mobile){
+				width:90vw;
+				overflow: hidden;
+				margin-top:10px;
+			}
+			@include media($h-iphone){
+				width: 40vw;
+				margin-top: 0;
+			}
+		}
+
+		#map-title {
+		    margin-left: 25%;
+		    margin-bottom: 15px;
+		    opacity:0;
+
+		    @include media($h-ipad-max-screen){
+		    	margin-left:20%;
+		    }
+		    @include media($lg-mobile){
+		    	margin-left:15%;
+		    }
+		    @include media($h-iphone){
+		    	margin-left:0;
+		    }
+		    @include media($xs-mobile){
+		    	margin-left:0;
+		    	margin-bottom:10px;
+		    }
+		}
+
+		#map{
+			padding-top: 0;
+		    width: 80%;
+		    margin-left: 20%;
+
+			@include media($lg-mobile){
+				margin-top: 0;
+		        margin-left: 10%;
+		        width: 80%;
+			}
+			@include media ($sm-mobile){
+				margin-top: 0;
+				margin-left: 0;
+        		width: 55%
+			}
+			@include media ($xs-mobile){
+				margin-top: 0;
+				margin-left: 0;
+        		width: 55%
+			}
+			@include media ($v-iphone-6-plus){
+				margin-top: 0;
+        		width: 55%
+			}
+			@include media ($h-iphone){
+				margin-top: 0;
+        		width: 90%;
+			}
+
+		}
+
+		.up-arrow{
+			img{
+				@include transform(180deg);
+			}
+		}
+
+		.bold {
+		    margin-bottom: 15px
+		}
+
+	}
+	.up-arrow img{
+		@include transform(rotate(180deg));
+
+	}
+	.bold{
+		margin-bottom: 15px;
+	}
+}
+
+ 
+.case-container {
+	// position:absolute;
+	// left:0px;
+	// top:80px;
+	// width:400px;
+	// height:100px;
+	// border:#000000 1px solid;
+}
+
+#bc-container .molecule img{
+	opacity:0!important;
+	visibilty: hidden!important;
+}
+.platform-icon.scaleActive{
+	.molecule{
+		@include animation(scaleActive .85s ease-in-out);
+    	@include animation-fill-mode(forwards);
+	}
+	
+}
+.platform-icon.scaleInactive{
+	.molecule {
+		@include animation(scaleInactive .85s ease-in-out);
+    	@include animation-fill-mode(forwards);
+	}
+}
+.icon-trigger{
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index:100;
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+
+}
+.molecule {
+	position:absolute;
+	left: 10px;
+    top: -101px;
+    width: 123px;
+	opacity: 0;
+
+	img{
+		width:100%;
+	}
+
+	@include media($xl-desktop){
+		top: -135px;
+	    left: 15px;
+	    width: 164px;
+	}
+	@include media($mobile){
+		width: 111px;
+	    left: 10px;
+	    top: -91px;
+	}
+	@include media($narrow-desktop){
+		width: 80px;
+		left: 8px;
+		top: -66px;
+	}
+	@include media($v-ipad-max-screen){
+		left: 10px;
+	    top: -101px;
+	    width: 123px;
+	}
+	@include media($h-iphone){
+		width: 66px;
+		left: 10px;
+		top: -49px;
+	}
+	@include media($v-iphone-6-plus){
+		left: 10px;
+	    top: -101px;
+	    width: 123px;
+		margin-bottom:15px;
+	}
+	
+}
+
+.molecule-text{
+	position: absolute;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.molecule-text-1.molecule-text {
+	top: -96px;
+    left: 60px;
+	
+	@include media($xl-desktop){
+		top: -50px;
+		left: 50px;
+	}
+	@include media($mobile){
+		top: -88px;
+    	left: 60px;
+	}
+	@include media($h-iphone){
+		top: -50px;
+		left: 50px;
+	}
+	@include media($narrow-desktop){
+		top: -70px;
+		left: 45px;
+	}
+	@include media($v-ipad-max-screen){
+		top: -91px;
+    	left: 60px;
+	}
+	@include media($v-iphone-6-plus){
+		top: -91px;
+    	left: 60px;
+	}
+    
+}
+
+.molecule-text-2.molecule-text {
+	top: -57px;
+    left: 144px;
+	
+	@include media($xl-desktop){
+		top: -74px;
+    	left: 190px;
+	}
+	@include media($mobile){
+		top: -48px;
+    	left: 135px;
+	}
+	@include media($narrow-desktop){
+		top: -35px;
+		left: 100px;
+	}
+	@include media($h-iphone){
+		top: -26px;
+		left: 85px;
+	}
+	@include media($v-ipad-max-screen){
+		top: -53px;
+    	left: 144px;
+	}
+	@include media($v-iphone-6-plus){
+		top: -53px;
+    	left: 144px;
+	}
+    
+}
+
+.molecule-text-3.molecule-text {
+	top: 89px;
+    left: 144px;
+	
+	@include media($xl-desktop){
+		top: 124px;
+    	left: 190px;
+	}
+	@include media($mobile){
+		top: 84px;
+    	left: 135px;
+	}
+	@include media($narrow-desktop){
+		top: 54px;
+    	left: 100px;
+	}
+	@include media($h-iphone){
+		top: 44px;
+		left: 85px;
+	}
+	@include media($v-ipad-max-screen){
+		top: 96px;
+    	left: 144px;
+	}
+	@include media($v-iphone-6-plus){
+		top: 96px;
+    	left: 144px;
+	}
+    
+}
+
+.molecule-text-4.molecule-text {
+	top: 133px;
+    left: 60px;
+	
+	@include media($xl-desktop){
+		top: 178px;
+    	left: 80px;
+	}
+	@include media($mobile){
+		top: 121px;
+    	left: 60px;
+	}
+	@include media($narrow-desktop){
+		top: 83px;
+    	left: 45px;
+	}
+	@include media($h-iphone){
+		top: 78px;
+		left: 50px;
+	}
+	@include media($v-ipad-max-screen){
+		top: 135px;
+    	left: 60px;
+	}
+	@include media($v-iphone-6-plus){
+		top: 135px;
+    	left: 60px;
+	}
+    
+}
+
+

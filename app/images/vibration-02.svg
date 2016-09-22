@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270.62" height="270.62" viewBox="0 0 270.62 270.62">
+  <title>vibration</title>
+  <g>
+    <rect width="270.62" height="270.62"/>
+    <text transform="translate(88.33 182.23)" font-size="16" fill="#595959" font-family="Gotham" font-weight="700">V<tspan x="11.92" y="0">I</tspan><tspan x="17.34" y="0">B</tspan><tspan x="29.07" y="0">R</tspan><tspan x="40.99" y="0" letter-spacing="-1">A</tspan><tspan x="52.27" y="0">T</tspan><tspan x="62.46" y="0">I</tspan><tspan x="67.84" y="0">O</tspan><tspan x="81.49" y="0">N</tspan></text>
+    <polyline points="98.92 114.52 104.89 114.51 106.75 111.56 110.02 120.05 112.64 109.14 116.78 121.39 119.33 102.2 122.03 128.07 126.42 101.45 131.99 131.98 135.66 113.48" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="170.46 114.86 164.88 114.86 163.03 117.8 159.75 109.34 157.13 120.22 153 108 150.44 127.14 147.74 101.33 143.34 130.1 137.78 97.44 134.11 115.89" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

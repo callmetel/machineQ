@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270.62" height="270.62" viewBox="0 0 270.62 270.62">
+  <title>weight</title>
+  <g>
+    <rect width="270.62" height="270.62"/>
+    <text transform="translate(100.65 182.23)" font-size="16" fill="#fff" font-family="Gotham" font-weight="700">W<tspan x="17.89" y="0">E</tspan><tspan x="28.77" y="0">I</tspan><tspan x="34.16" y="0">G</tspan><tspan x="46.9" y="0">H</tspan><tspan x="58.94" y="0">T</tspan></text>
+    <path d="M155.54,85.3H117.16m19,0V128" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <path d="M141.56,85.85a5.38,5.38,0,1,1-5.38-5.38,5.38,5.38,0,0,1,5.38,5.38"/>
+    <circle cx="136.18" cy="85.85" r="5.38" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <rect x="123.04" y="129.2" width="25.96" height="6.87" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <path d="M145.8,112.53h19.56l-1.8,2.11c-4.59,5.37-11.8,5.25-16.27-.27Zm1.53-.49,8.57-23.56L163.83,112m-57.06.49h19.56l-1.81,2.11c-4.59,5.37-11.8,5.25-16.27-.27Zm1.53-.49,8.57-23.56L124.8,112" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+.fadein {
+    opacity: 0;
+    @include animation(fadein .7s ease-out);
+    @include animation-fill-mode(forwards);
+}
+
+.fadein-1 {
+    opacity: 0;
+    @include animation(fadein-one .7s ease-out);
+    @include animation-fill-mode(forwards);
+}
+
+.fadein-2 {
+    opacity: 0;
+    @include animation(fadein-two .7s ease-out);
+    @include animation-fill-mode(forwards);
+}
+
+.fadein-3 {
+    opacity: 0;
+    @include animation(fadein-three .7s ease-out);
+    @include animation-fill-mode(forwards);
+}
+
+.fadein-4 {
+    opacity: 0;
+    @include animation(fadein-four .7s ease-out);
+    @include animation-fill-mode(forwards);
+}
+
+.fadein-5 {
+    opacity: 0;
+    @include animation(fadein-five .7s ease-out);
+    @include animation-fill-mode(forwards);
+}
+
+.scaleBox {
+    width: 40vw!important;
+    display: block!important;
+    margin: 0 auto;
+    z-index: 999999!important;
+    @include position(fixed, 0 0 null 0);
+
+    @include animation(scaleUp 1s ease-out);
+    @include animation-fill-mode(forwards);
+
+    @include media($sm-mobile){
+        width:  50vw !important;
+    }
+    @include media($h-ipad-max-screen){
+        width: 40%!important;
+    }
+    @include media($h-iphone){
+        width: 40%!important;
+    }
+    @include media($v-ipad-max-screen){
+        width: 60%!important;
+    }
+    @include media($v-iphone-6-plus){
+        width: 80%!important;
+    }
+    @include media($xs-mobile){
+        width: 80%!important;
+    }
+}
+
+.unscaleBox {
+    @include animation(scaleDown 1s ease-out);
+}

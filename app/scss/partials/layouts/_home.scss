@@ -1,0 +1,107 @@
+header{
+	.global{
+		@include position(fixed, 0 null null null);
+		z-index: 10000;
+		display: block;
+		@include transition(all .5s ease-in-out);
+
+		&#mQ-logo{
+			background-image: url('../images/global-mQ.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			width:43.52px;
+			left: 7.123vw;
+			top:7.125vh;
+			text-decoration: none;
+			@include transition(all .5s ease-in-out);
+		}
+		&#comcast-logo{
+			// background-image: url('../images/global-comcast.svg');
+			// background-size: contain;
+			// background-repeat: no-repeat;
+			text-decoration: none;
+			top:7.785vh;
+			right: 2.769vw;
+			// width:143.771px;
+			// max-width: 143.771px;
+			height:23.767px;
+			@include transition(all .5s ease-in-out);
+
+			@include media($mobile){
+				display: none;
+			}
+		}
+	}
+
+
+}
+
+div#main{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	div.container{
+		width: 100%;
+		height:100%;
+		margin: 0;
+
+		section.section{
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+			margin:0;
+			padding:0;
+			padding-left:2.769vw;
+			padding-right:2.769vw;
+			@include position(fixed, 0 0 0 0);
+			
+			div.info{
+				h1.title{
+					margin-bottom: 1.75vh; 
+				}
+			}
+
+			@include media($h-iphone){
+				height:100%!important;
+				
+			}
+		}
+	}
+
+}
+
+div.global-bg{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	div.bg{
+		@include position(fixed, 0 0 0 0);
+		z-index: -1;
+		width:100%;
+		height: 100%;
+		background-size: cover;	
+		background-repeat: no-repeat;
+		background-position:50%;
+		display: inherit;
+		background-image: url('../images/bg.gif');
+
+		@include media($bg-mobile){
+			background-position:50% 0;
+		}
+
+		&.is-normal{
+			opacity:.5;
+			@include transition(opacity .5s ease-in-out);
+		}
+		&.is-dark{
+			opacity:.15;
+			@include transition(opacity .5s ease-in-out);
+		}
+	}
+}
+
+.text {
+    z-index: 1000!important
+}

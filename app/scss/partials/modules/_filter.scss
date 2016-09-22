@@ -1,0 +1,683 @@
+.close-filter-button{
+  display: none;
+  @include media($mobile){
+
+    @include position(absolute, 40px 4.167vw null null);
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    i{
+     position:relative;
+      z-index: 10001;
+      display: block;
+      width: 20px;
+      height: 20px;
+      overflow: hidden;
+
+      &::before, &::after {
+        content: '';
+        @include position(absolute, 50% 0 null null);
+        height: .5px;
+        width: 100%;
+        margin-top: -1px;
+        background: #fff;
+      }
+      &::before {
+        @include transform(rotate(45deg));
+      }
+      &::after {
+        @include transform(rotate(-45deg));
+      }  
+    }
+  }
+  @include media($h-iphone){
+    top:20px;
+  }
+}
+
+.filter-button{
+
+  display: none;
+
+  @include media($mobile){
+    display: block;
+    position: absolute;
+    top:8.125vh!important;
+    margin-top:-13px;
+    right:4.167vw;
+    font:$paragraph;
+    font-size:1.4rem;
+    line-height:1.5375rem;
+    color: white;
+  }
+  @include media($v-ipad-max-screen){
+    top:6.5vh!important;
+    margin-top:0;
+  }
+  @include media($v-iphone-6-plus){
+    top:38px!important;
+    margin-top:0;
+  }
+  @include media($h-iphone){
+    top: 20px !important;
+    margin-top:0;
+    @include transform(scale(.75));
+  }
+  @include media($h-iphone-5){
+    top: 15px !important;
+    margin-top:0;
+    @include transform(scale(.75));
+  }
+
+}
+
+#filter-lightbox{
+
+  display:none;
+
+  @include media($mobile){
+    display: block;
+    background: rgba(0,0,0,.9);
+    position: fixed;
+    z-index: 9990;
+    margin: 0;
+    width: 103vw;
+    height: 100%;
+    cursor: pointer;
+    margin: 0 auto;
+    list-style: none;
+    @include transition(all .5s ease-in-out);
+    position: fixed;
+    padding: 15vh 0 0 0;
+    margin-left:-5vw;
+    top:0;
+  }
+}
+
+.filter-is-inactive{
+    @include media($mobile){
+      z-index: -1000!important;
+      opacity:0!important;
+      @include transition(all .5s ease-in-out);  
+    }
+}
+
+.filter-bg-inactive{
+    @include media($mobile){
+      z-index: -1000!important;
+      background:transparent!important;
+      @include transition(all .5s ease-in-out);  
+    }
+}
+
+.table-cell{
+  display: table-cell!important;
+}
+
+.cd-main-content {
+  position: relative;
+  min-height: 100vh;
+  margin-top: 35px;
+  
+  @include media($mobile){
+    margin-top:20px;
+  }
+  @include media($h-iphone-5){
+    margin-top:-25px;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &.is-fixed{
+    .cd-tab-filter-wrapper {
+      width: 100%;
+      float: left;
+      margin: 0;
+      @include transition(all .5s ease-in-out);  
+    }
+    .cd-gallery {
+      padding-top: 76px;
+
+      @include media($h-ipad-max-screen){
+        padding-top: 90px;
+      }
+    }
+    .cd-filter {
+      position: fixed;
+      height: 100vh;
+      overflow: hidden;
+      @include transition(all .5s ease-in-out);  
+
+      form {
+        height: 100vh;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      &.filter-is-visible {
+        /* reduce width when filter is visible */
+        width: 80%;
+      }
+    }
+    .cd-filter-trigger {
+      position: fixed;
+    }
+
+  }
+  
+  .cd-tab-filter-wrapper {
+    z-index: 1;
+    padding-bottom: 2.375vh;
+
+    @include media($mobile){
+      position: fixed;
+      z-index: 9990;
+      width: 100vw;
+      height: 100vh;
+      cursor: pointer;
+      margin: 0 auto;
+      list-style: none;
+      padding: 15vh 0 0 0;
+    }
+    @include media($h-iphone){
+      padding: 10vh 0 0 0;
+    }
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .cd-tab-filter {
+      /* tabbed navigation style on medium devices */
+      width: 100%;
+      cursor: auto;
+
+      @include media($filter-desktop-bp){
+          width: 100%;
+      }
+      @include media($mobile){
+        width:100%;
+      }
+
+      &:after {
+        /* hide the arrow */
+        display: none;
+      }
+
+      ul {
+        background: transparent;
+        position: static;
+        box-shadow: none;
+        text-align: left;
+
+        li {
+          display: inline-block;
+          margin-bottom: 10px;
+          width: 16.6666667%; /* Fallback */
+          width: -webkit-calc(100% / 7);
+          width: calc(100% / 7);
+          
+          @include media($xl-desktop){
+            width: 16.6666667%; /* Fallback */
+            width: -webkit-calc(100% / 7);
+            width: calc(100% / 7);
+          }
+          @include media($mobile){
+            width: 90vw;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+            text-align: center;
+          }
+          @include media($h-iphone){
+            margin-bottom: 15px;
+          }
+           @include media($h-iphone-5){
+            margin-bottom: 10px;
+          }
+
+          &.placeholder {
+            display: none !important;
+          }
+
+          a {
+            display: inline-block;
+            width: 80%;
+            text-align: center;
+            color: white;
+            vertical-align: top;
+            position:relative;
+            margin-left:28px;
+            
+            @include media($xl-desktop){
+              width: 75%;
+            }
+            @include media($mobile){
+              width: 80vw;
+              display: block;
+              font:$paragraphB;
+              text-align: left;
+              padding-left: 5%;
+            }
+            @include media($v-ipad-max-screen){
+              font:$xl-paragraphB;
+            }
+            @include media($v-iphone-6-plus){
+              width: 80vw;
+              display: block;
+              font:$paragraphB;
+            }
+            @include media($h-iphone){
+              font:$paragraphB;
+              text-align: left;
+            }
+
+            &:before{
+              content: '';
+              display: block;
+              vertical-align: top;
+              width: 40px;
+              height: 4px;
+              background: #fff;
+              margin: 0 auto 10px;
+              text-align: center;
+
+              @include media($xl-desktop){
+                margin-top:5px;
+              }
+              @include media($mobile){
+                width: 4px;
+                height: 18px;
+                margin-left: -28px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+                margin-bottom: 0;
+              }
+              @include media($v-ipad-max-screen){
+                width: 4px;
+                height: 20px;
+                display: inline-block;
+                vertical-align: top;
+                @include margin(6px 15px 0 -28px);
+              }
+              @include media($v-iphone-6-plus){
+                width: 4px;
+                height: 18px;
+                display: inline-block;
+                vertical-align: top;
+                @include margin(2px 15px 0 -28px);
+              }
+              @include media($h-iphone){
+                width: 4px;
+                height: 18px;
+                display: inline-block;
+                vertical-align: top;
+                @include margin(3px 15px 0 -28px);
+              }
+            }
+          }
+
+          &#filter-0{
+            a{
+              &.selected {
+               &:before{
+                  background: $orange;
+                }
+              }
+            }
+          }
+          &#filter-1{
+            a{
+              &.selected {
+               &:before{
+                  background: $yellow;
+                }
+              }
+            }
+          }
+          &#filter-2{
+            a{
+              &.selected {
+               &:before{
+                  background: $purple;
+                }
+              }
+            }
+          }
+          &#filter-3{
+            a{
+              &.selected {
+               &:before{
+                  background: $blue;
+                }
+              }
+            }
+          }
+          &#filter-4{
+            a{
+              &.selected {
+               &:before{
+                  background: $green;
+                }
+              }
+            }
+          }
+          &#filter-5{
+            a{
+              &.selected {
+               &:before{
+                  background: $pink;
+                }
+              }
+            }
+          }
+
+        }
+      }
+      
+    }
+  }
+
+  #weight rect.line{
+    fill: none!important;
+  }
+
+  .cd-gallery {
+    padding: 0;
+    width: 100%;
+    height:60vh;
+    
+    @include media($mobile){
+      padding-top: 0px;
+      height:70vh;
+    }
+    
+    ul {
+    text-align: left;
+    width:100%;
+    height:100%;
+    table-layout: fixed;
+    display: inherit;
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+        table-layout: fixed;
+      }
+      li {
+        display: none;
+        cursor: pointer;
+        width: 16.6666667%; /* Fallback */
+        width: -webkit-calc(100% / 7);
+        width: calc(100% / 7);
+        margin-bottom: -5px;
+        background: black;
+        
+        @include media($xl-desktop){
+          width: 16.6666667%; /* Fallback */
+          width: -webkit-calc(100% / 7);
+          width: calc(100% / 7);
+        }
+        @include media($macbook-pro-13){
+          width: 16.6666667%; /* Fallback */
+          width: -webkit-calc(100% / 7);
+          width: calc(100% / 7);
+        }
+        @include media($md-mobile){
+          width: 16.6666667%; /* Fallback */
+          width: -webkit-calc(100% / 5);
+          width: calc(100% / 5);
+        }
+        @include media($v-ipad-max-screen){
+          width: 16.6666667%; /* Fallback */
+          width: -webkit-calc(100% / 5);
+          width: calc(100% / 5);
+        }
+        @include media($lg-height){
+          width: 16.6666667%; /* Fallback */
+          width: -webkit-calc(100% / 7);
+          width: calc(100% / 7);
+        }
+        @include media($md-height) {
+          width: 16.6666667%; /* Fallback */
+          width: -webkit-calc(100% / 8)!important;
+          width: calc(100% / 8)!important;
+        }
+        @include media($sm-height) {
+          width: -webkit-calc(100% / 12)!important;
+          width: calc(100% / 12)!important;
+        }
+        @include media($v-ipad-max-screen){
+          width: -webkit-calc(100% / 5)!important;
+          width: calc(100% / 5)!important;
+        }
+        @include media($v-iphone-6-plus){
+          width: -webkit-calc(100% / 4)!important;
+          width: calc(100% / 4)!important;
+        }
+        @include media($h-iphone){
+          width: -webkit-calc(100% / 7)!important;
+          width: calc(100% / 7)!important;
+        }
+        @include media($h-iphone-5){
+          width: -webkit-calc(100% / 9)!important;
+          width: calc(100% / 9)!important;
+        }
+        
+        &.gap {
+          /* used in combination with text-align: justify to align gallery elements */
+          opacity: 0;
+          height: 0;
+          display: inline-block;
+        }
+
+        svg {
+          display: block;
+          width: auto;
+          height:100%;
+          cursor: pointer;
+         
+
+          @include transition (all .5s ease-in-out);
+          rect{
+            cursor: pointer;
+            @include transition (all .5s ease-in-out);
+          }
+          text{
+            cursor: pointer;
+            fill: #595959;
+          }
+
+          &.is-hovering{
+            text{
+              fill:$white!important;
+              @include transition (all .5s ease-in-out);
+            }
+            .line{
+             stroke:$white!important;
+              @include transition (all .5s ease-in-out); 
+            }
+          }
+        }
+
+        &.option-1{
+          position:relative;
+  
+          svg {
+            &:before{
+              content: "";
+              display: table;
+              clear: both;
+              width: 100%;
+              height:100%;
+              border: 1px solid green;
+              cursor: pointer;
+              @include position(absolute, 0 0 0 0);
+              z-index: 2;
+            }
+            &.is-hovering{
+               rect{
+                fill:$yellow!important;
+                @include transition (all .5s ease-in-out);
+              }
+            }
+          }
+        }
+
+        &.option-2{
+          svg {
+            &.is-hovering{
+              polygon, rect{
+                fill:$purple!important;
+                @include transition (all .5s ease-in-out);
+              }
+            }
+          }
+        }
+
+        &.option-3{
+          svg {
+            &.is-hovering{
+              rect{
+                fill:$blue!important;
+                @include transition (all .5s ease-in-out);
+              }
+            }
+          }
+        }
+
+        &.option-4{
+          svg {
+            &.is-hovering{
+              rect{
+                fill:$green!important;
+                @include transition (all .5s ease-in-out);
+              }
+            }
+          }
+        }
+
+        &.option-5{
+          svg {
+            &.is-hovering{
+              rect{
+                fill:$pink!important;
+                @include transition (all .5s ease-in-out);
+              }
+            }
+          }
+        }
+      }
+    }
+    .cd-fail-message {
+      display: none;
+      text-align: center;
+    }
+
+  }
+
+}
+
+.cd-gallery.filter-is-visible {
+  /* reduce width when filter is visible */
+  width: 80%;
+}
+
+
+li.option-1.selected{
+  
+  svg .line{
+    stroke: $yellow!important;
+  }
+  svg text{
+    fill: $white!important;
+  }
+  
+}
+
+li.option-2.selected{
+  
+  svg .line{
+    stroke: $purple!important;
+  }
+  svg text{
+    fill: $white!important;
+  }
+
+}
+
+li.option-3.selected{
+  
+  svg .line{
+    stroke: $blue!important;
+  }
+  svg text{
+    fill: $white!important;
+  }
+  svg{
+    &#flow{
+      polygon{
+        fill: $blue!important;
+      }
+      
+    }
+  }
+
+}
+
+li.option-4.selected{
+  
+  svg .line{
+    stroke: $green!important;
+  }
+  svg text{
+    fill: $white!important;
+  }
+  
+}
+
+li.option-5.selected{
+  
+  svg .line{
+    stroke: $pink!important;
+  }
+  svg text{
+    fill: $white!important;
+  }
+  
+}
+
+.columns3grid{
+  width: 16.6666667%; /* Fallback */
+  width: -webkit-calc(100% / 3)!important;
+  width: calc(100% / 3)!important;
+}
+
+
+
+.columns4grid{
+  width: 16.6666667%; /* Fallback */
+  width: -webkit-calc(100% / 4)!important;
+  width: calc(100% / 4)!important;
+}
+.columns5grid{
+  width: 16.6666667%; /* Fallback */
+  width: -webkit-calc(100% / 5)!important;
+  width: calc(100% / 5)!important;
+}
+.columns7grid{
+  width: 16.6666667%; /* Fallback */
+  width: -webkit-calc(100% / 7)!important;
+  width: calc(100% / 7)!important;
+}
+
+

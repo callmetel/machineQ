@@ -1,0 +1,299 @@
+@import "fonts";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+div{
+	color: white;
+	letter-spacing: -.1rem;
+	font-style: normal;
+	margin: 0;
+}
+
+h1{
+	font:$mp-heading;
+	
+	@include media($xl-desktop){
+		font:$xl-heading;
+	}
+	@include media($macbook-pro-13){
+		font:$heading;
+	}
+	@include media($sm-height){
+		font:$lg-heading;
+	}
+	@include media($md-mobile){
+		font:$lg-heading;
+	}
+	@include media($h-ipad-max-screen){
+		font:$lg-heading;
+	}
+	@include media($h-iphone){
+		font:$sm-heading;
+	}
+	@include media($h-iphone-5){
+		font:$sm-heading;
+	}
+	@include media($v-ipad-max-screen){
+		font:$heading;
+	}
+	@include media($v-iphone-6-plus){
+		font:$md-heading;
+	}
+	@include media($v-iphone-5){
+		font:$sm-heading;
+	}
+	&.title{
+		color: $orange;
+	}
+}
+
+h2{
+	font:$mp-label;
+	letter-spacing: 0;
+	
+	@include media($xl-desktop){
+		font:$xl-label;
+	}
+	@include media($macbook-pro-13){
+		font:$label;
+	}
+	@include media($mobile){
+		font:$lg-label;
+	}
+	
+}
+
+p{
+	font:$mp-paragraph;
+	letter-spacing: 0;
+	
+	@include media($xl-desktop){
+		font:$xl-paragraph;
+	}
+	@include media($macbook-pro-13){
+		font:$paragraph;
+	}
+	@include media($mobile){
+		font:$lg-paragraph;
+	}
+	@include media($v-ipad-max-screen){
+		font:$paragraph;
+	}
+	@include media($h-ipad-max-screen){
+		font:$lg-paragraph;
+	}
+	@include media($v-iphone-6-plus){
+		font:$lg-paragraph;
+	}
+	@include media($h-iphone){
+		font:$md-paragraph;
+	}
+	@include media($h-iphone-5){
+		font:$sm-paragraph;
+	}
+
+
+	&.bold{
+		font:$mp-paragraphB;
+		letter-spacing: 0;
+		
+		@include media($xl-desktop){
+			font:$xl-paragraphB;
+		}
+		@include media($macbook-pro-13){
+			font:$paragraphB;
+		}
+		@include media($mobile){
+			font:$lg-paragraphB;
+		}
+		@include media($h-ipad-max-screen){
+			font:$lg-paragraphB;
+		}
+		@include media($v-ipad-max-screen){
+			font:$paragraphB;
+		}
+		@include media($v-iphone-6-plus){
+			font:$lg-paragraphB;
+		}
+		@include media($v-iphone-5){
+
+		}
+		@include media($h-iphone){
+			font:$md-paragraphB;
+		}
+	}
+}
+
+a{
+	text-decoration: none;
+	color:$orange;
+	font:$mp-paragraphB;
+	letter-spacing: 0;
+	
+	@include media($xl-desktop){
+		font:$xl-paragraphB;
+	}
+	@include media($macbook-pro-13){
+		font:$paragraphB;
+	}
+	@include media($h-ipad-max-screen){
+		font:$lg-paragraphB;
+	}
+	@include media($v-ipad-max-screen){
+		font:$paragraphB;
+	}
+	@include media($v-iphone-6-plus){
+		font:$lg-paragraphB;
+	}
+	@include media($v-iphone-5){
+
+	}
+	@include media($h-iphone){
+		font:$md-paragraphB;
+	}
+}
+
+span{
+	color:$orange;
+}
+sup.reg{
+	font: $lg-sup!important;
+
+}
+sup{
+	font: $md-sup;
+
+	@include media($mobile){
+		font: $md-sup;
+	}
+	@include media($v-iphone-5){
+		font: $sm-sup;
+	}
+	@include media($h-ipad-max-screen){
+		font: $md-sup;
+	}
+	@include media($h-iphone){
+		font: $xs-sup;
+	}
+	@include media($h-iphone-5){
+		font: $xs-sup;
+	}
+}
+
+ul#menu sup{
+	font-size:11px!important;
+	font-weight: bold!important;
+}
+
+div.molecule-text{
+	font:$lg-paragraphB;
+	letter-spacing: 0;
+	
+	@include media($xl-desktop){
+		font:$paragraphB;
+	}
+	@include media($macbook-pro-13){
+		font:$lg-paragraphB;
+	}
+	@include media($mobile){
+		font:$sm-paragraphB;
+	}
+	@include media($v-ipad-max-screen){
+		font:$sm-paragraphB;
+	}
+	@include media($h-ipad-max-screen){
+		font:$xs-paragraphB;
+	}
+	@include media($v-iphone-6-plus){
+		font:$lg-paragraphB;
+	}
+	@include media($h-iphone){
+		font:$xs-paragraphB;
+	}
+	@include media($h-iphone-5){
+		font:$xs-paragraphB;
+	}
+}
+
+#comcast-logo{
+	color: white;
+	font:$comcast-p!important;
+	letter-spacing: 4.5px;
+	
+	@include media($xl-desktop){
+		font:$lg-comcast-p!important;
+	}
+	@include media($macbook-pro-13){
+		font:$comcast-p!important;
+	}
+	@include media($mobile){
+		font:$md-comcast-p!important;
+	}
+	@include media($v-ipad-max-screen){
+		font:$md-comcast-p!important;
+	}
+	@include media($h-ipad-max-screen){
+		font:$md-comcast-p!important;
+	}
+	@include media($v-iphone-6-plus){
+		font:$md-comcast-p!important;
+	}
+	@include media($h-iphone){
+		font:$md-comcast-p!important;
+	}
+	@include media($h-iphone-5){
+		font:$md-comcast-p!important;
+	}
+
+}
+
+p#home-down{
+	color: white;
+	font:$comcast!important;
+	letter-spacing: 4.5px;
+	
+	@include media($xl-desktop){
+		font:$lg-comcast!important;
+	}
+	@include media($macbook-pro-13){
+		font:$comcast!important;
+	}
+	@include media($mobile){
+		font:$comcast!important;
+	}
+	@include media($v-ipad-max-screen){
+		font:$comcast!important;
+	}
+	@include media($h-ipad-max-screen){
+		font:$comcast!important;
+	}
+	@include media($v-iphone-6-plus){
+		font:$md-comcast!important;
+	}
+	@include media($h-iphone){
+		font:$md-comcast!important;
+	}
+	@include media($h-iphone-5){
+		font:$md-comcast!important;
+	}
+
+}
+
+//For iphone 4 & 4s screens
+
+@media only screen and (max-device-width:320px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio:2) {
+    p {
+        font: normal normal normal .385rem/.71563rem gotham_lightregular
+    }
+    .section sup {
+        font: normal normal normal 5px/0 gotham_lightregular!important
+    }
+    #menu sup {
+        font: normal normal normal 11px/0 gotham_mediumregular!important
+    }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270.62" height="270.62" viewBox="0 0 270.62 270.62">
+  <title>luminosity</title>
+  <g>
+    <rect width="270.62" height="270.62"/>
+    <text transform="translate(83.22 181.73)" font-size="16" fill="#595959" font-family="Gotham" font-weight="700">L<tspan x="9.71" y="0">U</tspan><tspan x="22" y="0">M</tspan><tspan x="35.97" y="0">I</tspan><tspan x="41.39" y="0">N</tspan><tspan x="54.1" y="0">O</tspan><tspan x="67.57" y="0">S</tspan><tspan x="77.84" y="0">I</tspan><tspan x="83.01" y="0">T</tspan><tspan x="93.82" y="0">Y</tspan></text>
+    <path d="M148.37,105.88a14.52,14.52,0,0,0-14.9-14.47,14.68,14.68,0,0,0-14.21,14.5,15.66,15.66,0,0,0,2.1,7.51c3.59,5.3,3.94,7.62,5.34,11.94a6.32,6.32,0,0,0,6,4.37h2.17a6.32,6.32,0,0,0,6-4.37c1.39-4.32,2.18-7.27,5.34-11.94A15.66,15.66,0,0,0,148.37,105.88Z" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <path d="M134.76,96.45s-10.41.75-10.41,10.41" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <path d="M137.85,137.3h-8.09a2.16,2.16,0,0,1,0-4.3h8.09A2.16,2.16,0,0,1,137.85,137.3Z" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <path d="M117.34,95.19l-7-7m4.3,21h-9.84m45.27-13.93,7-7m-4.3,21h9.84M134.14,86.82V76.89" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+  </g>
+</svg>

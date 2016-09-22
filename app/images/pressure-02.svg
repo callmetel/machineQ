@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270.62" height="270.62" viewBox="0 0 270.62 270.62">
+  <title>pressure</title>
+  <g>
+    <rect width="270.62" height="270.62"/>
+    <text transform="translate(90.72 182.23)" font-size="16" fill="#595959" font-family="Gotham" font-weight="700">P<tspan x="10.72" y="0">R</tspan><tspan x="22.42" y="0">E</tspan><tspan x="33.23" y="0">S</tspan><tspan x="43.47" y="0">S</tspan><tspan x="53.74" y="0">U</tspan><tspan x="66.03" y="0">R</tspan><tspan x="77.73" y="0">E</tspan></text>
+    <path d="M143.88,107.08l-6.68,12.54m-7.44,2.66a5.44,5.44,0,1,1,2.21,7.43A5.5,5.5,0,0,1,129.76,122.29Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <line x1="135.75" y1="93.85" x2="135.75" y2="101.88" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <line x1="106.07" y1="123.8" x2="114.03" y2="123.8" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <line x1="116.03" y1="102.88" x2="121.08" y2="107.99" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <line x1="157.48" y1="123.8" x2="165.43" y2="123.8" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <line x1="156.76" y1="102.88" x2="152" y2="107.68" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <path d="M165.43,124.27c0-16.8-13.29-30.42-29.68-30.42s-29.68,13.62-29.68,30.42" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+  </g>
+</svg>
