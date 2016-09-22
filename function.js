@@ -8,9 +8,11 @@ jQuery(document).ready(function($) {
       $('html').removeClass('ie10');
     } else if (version >= 12) {
       $('html').addClass('ie10');
+      $('#map').replaceWith( "<img id='map' src='app/images/dotted-map.svg'>" );
     } else {
       // alert('You are using IE 10');
       $('html').addClass('ie10');
+      $('#map').replaceWith( "<img id='map' src='app/images/dotted-map.svg'>" );
     };
 
     // add details to debug result
@@ -2033,4 +2035,7 @@ $('.news-article').hover(function() {
 //         }
 //     }
 // };
+// 
+// 
+//=========ZOOM FIX
 });

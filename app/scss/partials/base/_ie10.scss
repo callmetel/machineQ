@@ -81,6 +81,30 @@
 		font-style: normal;
 		margin: 0;
 	}
+	// #map-title{
+	// 	@include media($sm-mobile){
+	// 		margin-left: 200px!important;
+	// 	} 
+	// }
+	// #map{
+	// 	@include transform(scale(2.2));
+	// 	margin-top: 15%;
+
+	// 	@include media($mobile){
+	// 		@include transform(scale(1.8));
+	// 		margin-top: 16%!important;
+	// 	}
+	// 	@include media($sm-mobile){
+	// 		@include transform(scale(1));
+	// 		margin-left: 140px!important;
+	// 		margin-top: 10px!important;
+	// 	}
+	// }
+	// #map-container{
+	// 	@include media($sm-mobile){
+	// 		margin-left: -200px;
+	// 	}
+	// }
 
 	h1{
 		font: $heading;

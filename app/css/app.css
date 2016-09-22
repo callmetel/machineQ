@@ -633,8 +633,6 @@ body {
     .ie10 div.molecule-text {
       font: normal normal normal 8.4px/9.85px "gotham_mediumregular", Helvetica, Arial, sans-serif !important; } }
 
-.small-desktop-ratio #map {
-  width: 70% !important; }
 .small-desktop-ratio ul#menu {
   padding: 30vh 0 0 0 !important; }
 .small-desktop-ratio div#other-links {
