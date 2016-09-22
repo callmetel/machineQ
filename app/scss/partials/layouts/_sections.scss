@@ -112,8 +112,12 @@ section#section-1{
 	#home-down{
 		margin:0 auto;
 		margin-top: -20px!important;
+		
+		@include media($xl-desktop){
+			width:400px;
+		}
 		@include media($sm-mobile){
-			width: 100%;
+			width:200px;
 		}
 		@include media($v-ipad-max-screen){
 			width:350px;
@@ -889,8 +893,8 @@ section#section-7{
     left: 60px;
 	
 	@include media($xl-desktop){
-		top: -50px;
-		left: 50px;
+		top: -130px;
+    	left: 80px;
 	}
 	@include media($mobile){
 		top: -88px;

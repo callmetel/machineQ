@@ -633,6 +633,8 @@ body {
     .ie10 div.molecule-text {
       font: normal normal normal 8.4px/9.85px "gotham_mediumregular", Helvetica, Arial, sans-serif !important; } }
 
+.small-desktop-ratio #map {
+  width: 70% !important; }
 .small-desktop-ratio ul#menu {
   padding: 30vh 0 0 0 !important; }
 .small-desktop-ratio div#other-links {
@@ -854,7 +856,7 @@ div.molecule-text {
 #comcast-logo {
   color: white;
   font: normal normal normal 9px/12px "gotham_mediumregular" !important;
-  letter-spacing: 4.5px !important; }
+  letter-spacing: 4.5px; }
   @media screen and (min-width: 2001px) {
     #comcast-logo {
       font: normal normal normal 9.9px/13.2px "gotham_mediumregular" !important; } }
@@ -2418,9 +2420,12 @@ section#section-1 {
   section#section-1 #home-down {
     margin: 0 auto;
     margin-top: -20px !important; }
+    @media screen and (min-width: 2001px) {
+      section#section-1 #home-down {
+        width: 400px; } }
     @media screen and (max-width: 768px) {
       section#section-1 #home-down {
-        width: 100%; } }
+        width: 200px; } }
     @media screen and (max-device-width: 1080px) and (orientation: portrait) {
       section#section-1 #home-down {
         width: 350px;
@@ -3053,8 +3058,8 @@ section#section-7 {
   left: 60px; }
   @media screen and (min-width: 2001px) {
     .molecule-text-1.molecule-text {
-      top: -50px;
-      left: 50px; } }
+      top: -130px;
+      left: 80px; } }
   @media screen and (max-width: 992px) {
     .molecule-text-1.molecule-text {
       top: -88px;
