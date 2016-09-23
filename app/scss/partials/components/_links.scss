@@ -27,16 +27,16 @@
 
 .cta.ios-fix{
 	 @include media($h-ipad-max-screen){
-	   @include position(fixed, auto 0 16vh 0); 
+	   @include position(fixed, auto 0 14vh 0); 
 	}
 	@include media($h-iphone){
 	    @include position(fixed, auto 0 5vh 0);
 	}
 	@include media($h-iphone-5){
-		@include position(fixed, auto 0 16vh 0);
+		@include position(fixed, auto 0 5vh 0);
 	}
     @include media($v-iphone-6-plus){
-	    @include position(fixed, auto 0 16vh 0);
+	    @include position(fixed, auto 0 14vh 0);
 	}
 }
 
@@ -70,7 +70,7 @@
 	@include media($h-iphone){
 		&.ios-fix{
 			right:3%!important;
-			bottom:90px!important;
+			bottom:10px!important;
 		}
 	}
 	@include media($v-ipad-screen){
@@ -160,9 +160,7 @@
 			height: 25px!important;
 		}
 		@include media($h-iphone-5){
-			font-size: .525rem!important;
-			margin-bottom: 0!important;
-			height: auto!important;
+			display: none;
 		}
 	}
 	}

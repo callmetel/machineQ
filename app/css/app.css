@@ -744,7 +744,7 @@ p {
       font: normal normal normal 0.725rem/0.81563rem "gotham_lightregular"; } }
   @media screen and (max-device-width: 736px) and (orientation: landscape) {
     p {
-      font: normal normal normal 0.385rem/0.55625rem "gotham_lightregular"; } }
+      font: normal normal normal 0.425rem/0.59625rem "gotham_lightregular"; } }
   @media screen and (max-device-width: 320px) and (orientation: landscape) {
     p {
       font: normal normal normal 0.325rem/0.71563rem "gotham_lightregular"; } }
@@ -771,7 +771,7 @@ p {
         font: normal normal normal 0.725rem/0.81563rem "gotham_mediumregular"; } }
     @media screen and (max-device-width: 736px) and (orientation: landscape) {
       p.bold {
-        font: normal normal normal 0.525rem/0.61563rem "gotham_mediumregular"; } }
+        font: normal normal normal 0.585rem/0.67563rem "gotham_mediumregular"; } }
 
 a {
   text-decoration: none;
@@ -795,13 +795,16 @@ a {
       font: normal normal normal 0.725rem/0.81563rem "gotham_mediumregular"; } }
   @media screen and (max-device-width: 736px) and (orientation: landscape) {
     a {
-      font: normal normal normal 0.525rem/0.61563rem "gotham_mediumregular"; } }
+      font: normal normal normal 0.585rem/0.67563rem "gotham_mediumregular"; } }
 
 span {
   color: #ff4b00; }
 
-sup.reg {
+.reg {
   font: normal normal normal 11px/0rem "gotham_lightregular" !important; }
+  @media screen and (max-width: 992px) {
+    .reg {
+      font: normal normal normal 5px/0rem "gotham_lightregular" !important; } }
 
 sup {
   font: normal normal normal 7px/0rem "gotham_lightregular"; }
@@ -959,7 +962,7 @@ p#home-down {
     position: fixed;
     top: auto;
     right: 0;
-    bottom: 16vh;
+    bottom: 14vh;
     left: 0; } }
 @media screen and (max-device-width: 736px) and (orientation: landscape) {
   .cta.ios-fix {
@@ -973,14 +976,14 @@ p#home-down {
     position: fixed;
     top: auto;
     right: 0;
-    bottom: 16vh;
+    bottom: 5vh;
     left: 0; } }
 @media screen and (max-device-width: 736px) and (orientation: portrait) {
   .cta.ios-fix {
     position: fixed;
     top: auto;
     right: 0;
-    bottom: 16vh;
+    bottom: 14vh;
     left: 0; } }
 
 #copyright-links {
@@ -998,7 +1001,7 @@ p#home-down {
       font: normal normal normal 0.725rem/0.81563rem "gotham_lightregular"; } }
   @media screen and (max-width: 992px) {
     #copyright-links {
-      font: normal normal normal 0.385rem/0.55625rem "gotham_lightregular";
+      font: normal normal normal 0.425rem/0.59625rem "gotham_lightregular";
       bottom: 10px;
       right: 10px; }
       #copyright-links.ios-fix {
@@ -1014,7 +1017,7 @@ p#home-down {
   @media screen and (max-device-width: 736px) and (orientation: landscape) {
     #copyright-links.ios-fix {
       right: 3% !important;
-      bottom: 90px !important; } }
+      bottom: 10px !important; } }
   @media screen and (max-device-width: 980px) and (orientation: portrait) {
     #copyright-links {
       position: fixed;
@@ -1024,7 +1027,7 @@ p#home-down {
         bottom: 10% !important; } }
   @media screen and (max-device-width: 736px) and (orientation: portrait) {
     #copyright-links {
-      font: normal normal normal 0.385rem/0.55625rem "gotham_lightregular";
+      font: normal normal normal 0.425rem/0.59625rem "gotham_lightregular";
       position: fixed;
       right: 3%;
       bottom: 40px; }
@@ -1050,7 +1053,7 @@ p#home-down {
         font: normal normal normal 0.325rem/0.71563rem "gotham_mediumregular"; } }
     @media screen and (max-width: 992px) {
       #copyright-links a {
-        font: normal normal normal 0.525rem/0.61563rem "gotham_mediumregular"; } }
+        font: normal normal normal 0.585rem/0.67563rem "gotham_mediumregular"; } }
     @media screen and (max-device-width: 736px) and (orientation: portrait) {
       #copyright-links a {
         font: normal normal normal 0.325rem/0.71563rem "gotham_mediumregular"; } }
@@ -1093,9 +1096,7 @@ p#home-down {
       height: 25px !important; } }
   @media screen and (max-device-width: 320px) and (orientation: landscape) {
     #section-7 .cta p {
-      font-size: 0.525rem !important;
-      margin-bottom: 0 !important;
-      height: auto !important; } }
+      display: none; } }
 
 section#contact {
   position: fixed;
@@ -1534,7 +1535,7 @@ section#contact {
                 font: normal normal normal 0.725rem/0.81563rem "gotham_lightregular"; } }
             @media screen and (max-width: 992px) {
               #events div.left div#articles-container div.news-article div.article-container .article-text .article-hint {
-                font: normal normal normal 0.385rem/0.55625rem "gotham_lightregular"; } }
+                font: normal normal normal 0.425rem/0.59625rem "gotham_lightregular"; } }
           #events div.left div#articles-container div.news-article div.article-container .article-text a.arrow-container {
             opacity: 0;
             cursor: pointer; }
@@ -2385,6 +2386,11 @@ section#section-1 {
           min-width: 35vw;
           margin-left: auto;
           margin-top: 25px; } }
+      @media screen and (max-device-width: 320px) and (orientation: landscape) {
+        section#section-1 #home-logo-container img#machineQ-logo {
+          width: 200px;
+          margin-left: auto;
+          margin-top: 25px; } }
       @media screen and (max-device-width: 736px) and (orientation: portrait) {
         section#section-1 #home-logo-container img#machineQ-logo {
           width: 60vw;
@@ -2426,6 +2432,13 @@ section#section-1 {
     @media screen and (max-width: 768px) {
       section#section-1 #home-down {
         width: 200px; } }
+    @media screen and (max-device-width: 736px) and (orientation: landscape) {
+      section#section-1 #home-down {
+        width: 200px; } }
+    @media screen and (max-device-width: 320px) and (orientation: landscape) {
+      section#section-1 #home-down {
+        width: 150px;
+        margin-top: -15px !important; } }
     @media screen and (max-device-width: 1080px) and (orientation: portrait) {
       section#section-1 #home-down {
         width: 350px;
@@ -2451,7 +2464,7 @@ section#section-2 {
       padding-top: 15.25vh !important; } }
   @media screen and (max-device-width: 736px) and (orientation: landscape) {
     section#section-2 {
-      padding-top: 22.25vh !important; } }
+      padding-top: 18.25vh !important; } }
   @media screen and (max-device-width: 320px) and (orientation: landscape) {
     section#section-2 {
       padding-top: 14.25vh !important; } }
@@ -2497,7 +2510,7 @@ section#section-3 {
       padding-top: 15.25vh !important; } }
   @media screen and (max-device-width: 736px) and (orientation: landscape) {
     section#section-3 {
-      padding-top: 22.25vh !important; } }
+      padding-top: 18.25vh !important; } }
   @media screen and (max-device-width: 320px) and (orientation: landscape) {
     section#section-3 {
       padding-top: 14.25vh !important; } }
@@ -2559,6 +2572,9 @@ section#section-4 {
     @media screen and (max-width: 992px) {
       section#section-4 div.info p.description {
         width: 80vw; } }
+    @media screen and (max-device-width: 736px) and (orientation: landscape) {
+      section#section-4 div.info p.description {
+        width: 70%; } }
     @media screen and (max-device-width: 1080px) and (orientation: portrait) {
       section#section-4 div.info p.description {
         width: 60vw; } }
@@ -2623,7 +2639,7 @@ section#section-5 {
       padding-top: 15.25vh !important; } }
   @media screen and (max-device-width: 736px) and (orientation: landscape) {
     section#section-5 {
-      padding-top: 22.25vh !important; } }
+      padding-top: 18.25vh !important; } }
   @media screen and (max-device-width: 320px) and (orientation: landscape) {
     section#section-5 {
       padding-top: 14.25vh !important; } }
@@ -2641,6 +2657,9 @@ section#section-5 {
     @media screen and (max-width: 992px) {
       section#section-5 div.info p.description {
         width: 90vw; } }
+    @media screen and (max-device-width: 736px) and (orientation: landscape) {
+      section#section-5 div.info p.description {
+        width: 70%; } }
     @media screen and (max-device-width: 1080px) and (orientation: portrait) {
       section#section-5 div.info p.description {
         width: 60vw; } }
@@ -2717,6 +2736,12 @@ section#section-5 {
         @media screen and (max-device-width: 736px) and (orientation: landscape) {
           section#section-5 div.info div#case-icon-container .platform-icon .case-container img {
             width: 45px; } }
+        @media screen and (max-device-width: 320px) and (orientation: landscape) {
+          section#section-5 div.info div#case-icon-container .platform-icon .case-container img {
+            width: 25px; } }
+        @media screen and (max-device-width: 320px) and (orientation: portrait) {
+          section#section-5 div.info div#case-icon-container .platform-icon .case-container img {
+            width: 40px; } }
       section#section-5 div.info div#case-icon-container .platform-icon p {
         padding-left: 10px;
         vertical-align: middle;
@@ -2824,6 +2849,12 @@ section#section-7 {
     @media screen and (max-width: 480px) {
       section#section-7 div.info div.left {
         width: 100%; } }
+    @media screen and (max-device-width: 736px) and (orientation: landscape) {
+      section#section-7 div.info div.left p {
+        font: normal normal normal 0.725rem/0.81563rem "gotham_lightregular"; } }
+    @media screen and (max-device-width: 736px) and (orientation: landscape) {
+      section#section-7 div.info div.left a {
+        font: normal normal normal 0.725rem/0.81563rem "gotham_mediumregular"; } }
     section#section-7 div.info div.left p:first-of-type {
       margin-bottom: 10px; }
       @media screen and (max-device-width: 1080px) and (orientation: portrait) {
@@ -2961,6 +2992,10 @@ section#section-7 {
       section#section-7 div.info #map {
         margin-top: 0;
         width: 90%; } }
+    @media screen and (max-device-width: 320px) and (orientation: landscape) {
+      section#section-7 div.info #map {
+        margin-top: 0;
+        width: 80%; } }
   section#section-7 div.info .up-arrow img {
     -webkit-transform: 180deg;
     -moz-transform: 180deg;
@@ -3047,6 +3082,11 @@ section#section-7 {
       top: -101px;
       width: 123px;
       margin-bottom: 15px; } }
+  @media screen and (max-device-width: 320px) and (orientation: portrait) {
+    .molecule {
+      width: 78px;
+      left: 10px;
+      top: -63.5px; } }
 
 .molecule-text {
   position: absolute;
@@ -3064,14 +3104,14 @@ section#section-7 {
     .molecule-text-1.molecule-text {
       top: -88px;
       left: 60px; } }
-  @media screen and (max-device-width: 736px) and (orientation: landscape) {
-    .molecule-text-1.molecule-text {
-      top: -50px;
-      left: 50px; } }
   @media screen and (max-width: 768px) and (max-height: 700px) {
     .molecule-text-1.molecule-text {
       top: -70px;
       left: 45px; } }
+  @media screen and (max-device-width: 736px) and (orientation: landscape) {
+    .molecule-text-1.molecule-text {
+      top: -50px;
+      left: 50px; } }
   @media screen and (max-device-width: 1080px) and (orientation: portrait) {
     .molecule-text-1.molecule-text {
       top: -91px;
@@ -3080,6 +3120,10 @@ section#section-7 {
     .molecule-text-1.molecule-text {
       top: -91px;
       left: 60px; } }
+  @media screen and (max-device-width: 320px) and (orientation: portrait) {
+    .molecule-text-1.molecule-text {
+      top: -65px;
+      left: 50px; } }
 
 .molecule-text-2.molecule-text {
   top: -57px;
@@ -3108,6 +3152,10 @@ section#section-7 {
     .molecule-text-2.molecule-text {
       top: -53px;
       left: 144px; } }
+  @media screen and (max-device-width: 320px) and (orientation: portrait) {
+    .molecule-text-2.molecule-text {
+      top: -36px;
+      left: 105px; } }
 
 .molecule-text-3.molecule-text {
   top: 89px;
@@ -3136,6 +3184,10 @@ section#section-7 {
     .molecule-text-3.molecule-text {
       top: 96px;
       left: 144px; } }
+  @media screen and (max-device-width: 320px) and (orientation: portrait) {
+    .molecule-text-3.molecule-text {
+      top: 56px;
+      left: 105px; } }
 
 .molecule-text-4.molecule-text {
   top: 133px;
@@ -3164,6 +3216,10 @@ section#section-7 {
     .molecule-text-4.molecule-text {
       top: 135px;
       left: 60px; } }
+  @media screen and (max-device-width: 320px) and (orientation: portrait) {
+    .molecule-text-4.molecule-text {
+      top: 83px;
+      left: 50px; } }
 
 .fadein {
   opacity: 0;

@@ -73,6 +73,11 @@ section#section-1{
 					margin-left:auto;
 					margin-top: 25px;
 		    	}
+		    	@include media($h-iphone-5){
+					width: 200px;
+					margin-left:auto;
+					margin-top: 25px;
+		    	}
 		    	@include media($v-iphone-6-plus){
 					width:60vw;
 					max-width:60vw;
@@ -119,6 +124,13 @@ section#section-1{
 		@include media($sm-mobile){
 			width:200px;
 		}
+		@include media($h-iphone){
+			width:200px;
+		}
+		@include media($h-iphone-5){
+			width:150px;
+			margin-top: -15px!important;
+		}
 		@include media($v-ipad-max-screen){
 			width:350px;
 			margin: 0 auto;
@@ -149,7 +161,7 @@ section#section-2{
 		padding-top: 15.25vh!important;
 	}
 	@include media($h-iphone){
-		padding-top: 22.25vh!important;
+		padding-top: 18.25vh!important;
 	}
 	@include media($h-iphone-5){
 		padding-top: 14.25vh!important;
@@ -206,7 +218,7 @@ section#section-3{
 		padding-top: 15.25vh!important;
 	}
 	@include media($h-iphone){
-		padding-top: 22.25vh!important;
+		padding-top: 18.25vh!important;
 	}
 	@include media($h-iphone-5){
 		padding-top: 14.25vh!important;
@@ -282,6 +294,9 @@ section#section-4{
 			margin-bottom: 2.75vh;
 			@include media($mobile){
 				width:80vw;
+			}
+			@include media($h-iphone){
+				width:70%;
 			}
 			@include media($v-ipad-max-screen){
 				width:60vw;
@@ -368,7 +383,7 @@ section#section-5{
 		padding-top: 15.25vh!important;
 	}
 	@include media($h-iphone){
-		padding-top: 22.25vh!important;
+		padding-top: 18.25vh!important;
 	}
 	@include media($h-iphone-5){
 		padding-top: 14.25vh!important;
@@ -392,6 +407,9 @@ section#section-5{
 
 			@include media($mobile){
 				width:90vw;
+			}
+			@include media($h-iphone){
+				width:70%;
 			}
 			@include media($v-ipad-max-screen){
 				width:60vw;
@@ -476,6 +494,12 @@ section#section-5{
 					}
 					@include media($h-iphone){
 						width: 45px;
+					}
+					@include media($h-iphone-5){
+						width: 25px;
+					}
+					@include media($v-iphone-5){
+						width: 40px;
 					}
 				}
 				p{
@@ -619,6 +643,17 @@ section#section-7{
 			
 			@include media ($xs-mobile){
 				width:100%;
+			}
+
+			p{
+				@include media($h-iphone){
+					font: $lg-paragraph;
+				}
+			}
+			a{
+				@include media($h-iphone){
+					font: $lg-paragraphB;
+				}
 			}
 
 			p:first-of-type{
@@ -776,6 +811,10 @@ section#section-7{
 				margin-top: 0;
         		width: 90%;
 			}
+			@include media ($h-iphone-5){
+				margin-top: 0;
+        		width: 80%;
+			}
 
 		}
 
@@ -879,6 +918,11 @@ section#section-7{
 	    width: 123px;
 		margin-bottom:15px;
 	}
+	@include media($v-iphone-5){
+		width: 78px;
+		left: 10px;
+		top: -63.5px;
+	}
 	
 }
 
@@ -900,13 +944,13 @@ section#section-7{
 		top: -88px;
     	left: 60px;
 	}
-	@include media($h-iphone){
-		top: -50px;
-		left: 50px;
-	}
 	@include media($narrow-desktop){
 		top: -70px;
 		left: 45px;
+	}
+	@include media($h-iphone){
+		top: -50px;
+		left: 50px;
 	}
 	@include media($v-ipad-max-screen){
 		top: -91px;
@@ -915,6 +959,10 @@ section#section-7{
 	@include media($v-iphone-6-plus){
 		top: -91px;
     	left: 60px;
+	}
+	@include media($v-iphone-5){
+		top: -65px;
+		left: 50px;
 	}
     
 }
@@ -947,6 +995,10 @@ section#section-7{
 		top: -53px;
     	left: 144px;
 	}
+	@include media($v-iphone-5){
+		top: -36px;
+		left: 105px;
+	}
     
 }
 
@@ -978,6 +1030,10 @@ section#section-7{
 		top: 96px;
     	left: 144px;
 	}
+	@include media($v-iphone-5){
+		top: 56px;
+		left: 105px;
+	}
     
 }
 
@@ -1008,6 +1064,10 @@ section#section-7{
 	@include media($v-iphone-6-plus){
 		top: 135px;
     	left: 60px;
+	}
+	@include media($v-iphone-5){
+		top: 83px;
+		left: 50px;
 	}
     
 }

@@ -161,9 +161,11 @@ a{
 span{
 	color:$orange;
 }
-sup.reg{
+.reg{
 	font: $lg-sup!important;
-
+	@include media($mobile){
+		font: $sm-sup!important;
+	}
 }
 sup{
 	font: $md-sup;

@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
 
-
     // Get IE or Edge browser version
     var version = detectIE();
 
@@ -1008,25 +1007,32 @@ jQuery(document).ready(function($) {
         // $( window ).orientationchange();
 
          $('.icon-trigger:not(.is-disabled)').bind("touchend", function(e) {
-    
-            // if(this===previousTarget) {
-            // 
+            
+            var trigger = $(this);
+                TweenMax.set(trigger, { zIndex:-1000});
+            setTimeout(function(){
+                TweenMax.to('.scaleInactive .molecule-text', speed, { alpha: 0, ease: ease1});
+                TweenMax.set(trigger, { zIndex:100});
+            }, 1000);
                              
             if (window.orientation !== 0){
                 var icon = $(this).parent('.platform-icon');
                 var platformIcon = $('.platform-icon').not($(this).parent('.platform-icon'));
                 var moleculeText = platformIcon.find('.molecule-text');
                 var moleculeText2 = $(this).parent('.platform-icon').find('.molecule-text');
+                var allIcons =  $('.icon-trigger:not(.is-disabled)').parent('.platform-icon');
                 
                 
                 if(icon.hasClass('scaleActive')){
                     TweenMax.staggerTo(moleculeText2, speed, { alpha: 0, ease: ease1 }, -.15);
                     TweenMax.to(icon, speed, { alpha: .15, ease: ease1});
                     icon.removeClass('scaleActive').addClass('scaleInactive');
-                    TweenMax.to('#case-icon-container', speed, { y:'65%'});
+                    TweenMax.to('#case-icon-container', 1, { y:'68%'});
                     setTimeout(function(){
                         if(!$('.platform-icon').hasClass('scaleActive')){
                             TweenMax.to('#case-icon-container', speed, { y:'0%'});
+                            TweenMax.to(allIcons, speed, { alpha: 1, ease: ease1});
+                            TweenMax.to('#section-5 .cta', speed, { alpha:1});
                         }
                     },850);
 
@@ -1050,9 +1056,12 @@ jQuery(document).ready(function($) {
                     },850);
 
                     if($('.platform-icon').hasClass('scaleActive')){
-                        TweenMax.to('#case-icon-container', speed, { y:'65%'});
+                        TweenMax.to('#case-icon-container', speed, { y:'63%'});
+                        TweenMax.to('#section-5 .cta', speed, { alpha:0});
+
                     } else if(!$('.platform-icon').hasClass('scaleActive')){
                         TweenMax.to('#case-icon-container', speed, { y:'0%'});
+                        TweenMax.to('#section-5 .cta', speed, { alpha:1});
                     }
                     
                     // TweenMax.to('#case-icon-container', speed, { y:'20%'});
@@ -1064,6 +1073,7 @@ jQuery(document).ready(function($) {
                 var platformIcon = $('.platform-icon').not($(this).parent('.platform-icon'));
                 var moleculeText = platformIcon.find('.molecule-text');
                 var moleculeText2 = $(this).parent('.platform-icon').find('.molecule-text');
+                var allIcons =  $('.icon-trigger:not(.is-disabled)').parent('.platform-icon');
                 
                 
                 if(icon.hasClass('scaleActive')){
@@ -1111,12 +1121,14 @@ jQuery(document).ready(function($) {
                     // TweenMax.to('#case-icon-container', speed, { y:'20%'});
                 }
 
-            } else if(document.body.clientWidth <= '768'){
+            } else if(/iPhone|iPod/.test(navigator.userAgent) && !window.MSStream && document.body.clientWidth <= '768'){
 
                 if(iconclicked == 0){
                     var firstIcon = $('#case-icon-container').first('.platform-icon');
                     var icon = $(this).parent('.platform-icon');
                     var moleculeText = $(this).parent('.platform-icon').find('.molecule-text');
+                    var ctaIOS = $('#case-down').parent('.cta');
+
                     icon.addClass('scaleActive').removeClass('scaleInactive');
                     TweenMax.staggerTo(moleculeText, speed, { alpha: 1, ease: ease1, delay:.65 }, .15);
                     TweenMax.to('.platform-icon:not(.scaleActive)', speed, { alpha: .1, ease: ease1});
@@ -1125,20 +1137,81 @@ jQuery(document).ready(function($) {
                     if($(this).is($("div.icon-trigger:first")) ){
                         console.log('its first');
                         TweenMax.to('#case-icon-container', speed, { y:'35%'});
+                    } else if($(this).is($("div.icon-trigger:eq(1)")) ){
+                        console.log('its second');
+                        TweenMax.to('#case-icon-container', speed, { y:'5%'});
+
+                    }  else if($(this).is($("div.icon-trigger:eq(2)")) ){
+                        console.log('its third');
+                        TweenMax.to('#case-icon-container', speed, { y:'-10%'});
+                        TweenMax.to('#at-container', speed, { y:'-15%'});
+                        TweenMax.to(ctaIOS, speed, {bottom:'13vh'});
                     }
 
                     iconclicked = 1;
                 } else if(iconclicked == 1){
                     var icon = $(this).parent('.platform-icon');
                     var moleculeText = $(this).parent('.platform-icon').find('.molecule-text');
+                    var ctaIOS = $('#case-down').parent('.cta');
+
                     TweenMax.staggerTo(moleculeText, speed, { alpha: 0, ease: ease1 }, -.15);
                     icon.removeClass('scaleActive').addClass('scaleInactive');
                     TweenMax.to('.platform-icon:not(.scaleActive)', speed, { alpha: 1, ease: ease1});
                     TweenMax.to('.platform-icon:not(.scaleActive) ,icon-trigger', speed, { zIndex:100});
                     
-                     if($(this).is($("div.icon-trigger:first")) ){
+                     if($(this).is($("div.icon-trigger:first")) || $(this).is($("div.icon-trigger:eq(2)")) || $(this).is($("div.icon-trigger:eq(1)")) ){
                         TweenMax.to('#case-icon-container', speed, { y:'0%'});
+                        TweenMax.to('#at-container', speed, { y:'0%'});
+                        TweenMax.to(ctaIOS, speed, {bottom:'14vh'});
                     }
+
+                   
+                    iconclicked = 0;
+                };
+            } else if(document.body.clientWidth <= '768'){
+
+                if(iconclicked == 0){
+                    var firstIcon = $('#case-icon-container').first('.platform-icon');
+                    var icon = $(this).parent('.platform-icon');
+                    var moleculeText = $(this).parent('.platform-icon').find('.molecule-text');
+                    var cta = $('#case-down').parent('.cta');
+
+                    icon.addClass('scaleActive').removeClass('scaleInactive');
+                    TweenMax.staggerTo(moleculeText, speed, { alpha: 1, ease: ease1, delay:.65 }, .15);
+                    TweenMax.to('.platform-icon:not(.scaleActive)', speed, { alpha: .1, ease: ease1});
+                    TweenMax.to('.platform-icon:not(.scaleActive) ,icon-trigger', speed, { zIndex:-1000});
+
+                    if($(this).is($("div.icon-trigger:first")) ){
+                        console.log('its first');
+                        TweenMax.to('#case-icon-container', speed, { y:'35%'});
+                    } else if($(this).is($("div.icon-trigger:eq(1)")) ){
+                        console.log('its second');
+                        TweenMax.to('#case-icon-container', speed, { y:'5%'});
+
+                    } else if($(this).is($("div.icon-trigger:eq(2)")) ){
+                        console.log('its third');
+                        TweenMax.to('#case-icon-container', speed, { y:'-10%'});
+                        TweenMax.to('#at-container', speed, { y:'-15%'});
+                        TweenMax.to(cta, speed, { top: '100%' });
+                    }
+
+                    iconclicked = 1;
+                } else if(iconclicked == 1){
+                    var icon = $(this).parent('.platform-icon');
+                    var moleculeText = $(this).parent('.platform-icon').find('.molecule-text');
+                    var ctaIOS = $('#case-down').parent('.cta');
+
+                    TweenMax.staggerTo(moleculeText, speed, { alpha: 0, ease: ease1 }, -.15);
+                    icon.removeClass('scaleActive').addClass('scaleInactive');
+                    TweenMax.to('.platform-icon:not(.scaleActive)', speed, { alpha: 1, ease: ease1});
+                    TweenMax.to('.platform-icon:not(.scaleActive) ,icon-trigger', speed, { zIndex:100});
+                    
+                     if($(this).is($("div.icon-trigger:first")) || $(this).is($("div.icon-trigger:eq(2)")) || $(this).is($("div.icon-trigger:eq(1)")) ){
+                        TweenMax.to('#case-icon-container', speed, { y:'0%'});
+                        TweenMax.to('#at-container', speed, { y:'0%'});
+                        TweenMax.to(cta, speed, {  top: '0%' });
+                    }
+
                    
                     iconclicked = 0;
                 };
@@ -1651,10 +1724,13 @@ jQuery(document).ready(function($) {
 
         // $(window).resize(function() {
             $('.icon-trigger:not(.is-disabled)').on('click', function(e) {
-    
-                    // if(this===previousTarget) {
-                    // 
-                                     
+                var trigger = $(this);
+                TweenMax.set(trigger, { zIndex:-1000});
+                setTimeout(function(){
+                    TweenMax.to('.scaleInactive .molecule-text', speed, { alpha: 0, ease: ease1});
+                    TweenMax.set(trigger, { zIndex:100});
+                }, 1000);
+               
                     if(document.body.clientWidth > '768'){
                             var icon = $(this).parent('.platform-icon');
                             var platformIcon = $('.platform-icon').not($(this).parent('.platform-icon'));
@@ -1799,18 +1875,11 @@ jQuery(document).ready(function($) {
                                 } else if(!$('.platform-icon').hasClass('scaleActive')){
                                     TweenMax.to('#case-icon-container', speed, { y:'0%'});
                                 }
-                                
-                                // TweenMax.to('#case-icon-container', speed, { y:'20%'});
+
                             }
                     }
 
-                    
-                    
-                    // }
-                    // previousTarget=this;
-                    // return false;
-                }); 
-        // }).resize();
+                });
 
     } 
 
