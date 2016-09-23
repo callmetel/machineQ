@@ -3013,9 +3013,10 @@ section#section-7 {
   section#section-7 .bold {
     margin-bottom: 15px; }
 
-#bc-container .molecule img {
+#bc-container .molecule {
   opacity: 0 !important;
-  visibilty: hidden !important; }
+  visibility: hidden !important;
+  z-index: -1000 !important; }
 
 .platform-icon.scaleActive .molecule {
   -webkit-animation: scaleActive 0.85s ease-in-out;

@@ -6,12 +6,14 @@ jQuery(document).ready(function($) {
     if (version === false) {
       $('html').removeClass('ie10');
     } else if (version >= 12) {
+      // $('body').attr('onmousewheel', 'move()');
       $('html').addClass('ie10');
       $('#map').replaceWith( "<img id='map' src='app/images/dotted-map.svg'>" );
     } else {
       // alert('You are using IE 10');
       $('html').addClass('ie10');
       $('#map').replaceWith( "<img id='map' src='app/images/dotted-map.svg'>" );
+      // $('body').attr('onmousewheel', 'move()');
     };
 
     // add details to debug result
@@ -358,7 +360,54 @@ jQuery(document).ready(function($) {
 
         function move(){
 
-            if(/Firefox/i.test(navigator.userAgent)){
+            if ($('html').hasClass('ie10')) {
+            
+
+                    $('body').bind('mousewheel keydown', function(e) {
+
+                        if (status === 0 && $('#menu').hasClass('nav-is-inactive') && $('#contact').hasClass('contact-is-inactive') && !$('#news-events').hasClass('event-is-active')) {
+                            
+                            if(e.deltaY < 0 || e.keyCode === 40  || e.keyCode === 39) {
+                                console.log(e.deltaY);
+                                status=1;
+                                checkSlideDown();
+                                setTimeout(function(){
+
+                                    status=0;
+                                },2000);
+
+
+                            } else if(e.deltaY > 0 || e.keyCode === 38  || e.keyCode === 37){
+
+                                status = 1;
+                                checkSlideUp();
+
+                                setTimeout(function(){
+
+                                    status=0;
+                                },2000);
+
+                            } else {
+                                status = 1;
+                                checkSlideUp();
+
+                                setTimeout(function(){
+
+                                    status=0;
+                                },2000);
+                            }
+                            return false;
+
+                        } else if (status > 0){
+                            //do nothing
+                            // console.log('waiting');
+                        }
+
+
+                });
+
+            } 
+            else if(/Firefox/i.test(navigator.userAgent)){
 
                     $('body').bind('DOMMouseScroll keydown', function(e) {
 
@@ -1007,6 +1056,7 @@ jQuery(document).ready(function($) {
         // $( window ).orientationchange();
 
          $('.icon-trigger:not(.is-disabled)').bind("touchend", function(e) {
+            console.log('just clicked');
             
             var trigger = $(this);
                 TweenMax.set(trigger, { zIndex:-1000});
