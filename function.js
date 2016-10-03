@@ -552,12 +552,14 @@ jQuery(document).ready(function($) {
         function iOSversion() {
 
         if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation !== 0) {
+             $('html').removeClass('tabs-open');
            $('.cta, #copyright-links').addClass('ios-fix');
            $('#em-container .molecule img').attr('src', 'app/images/molecules-01.svg');
             $('#metering-container .molecule img').attr('src', 'app/images/molecules-02.svg');
             $('#at-container .molecule img').attr('src', 'app/images/molecules-03.svg');
         }
         else if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation == 0) {
+            $('html').removeClass('tabs-open');
             $('.cta, #copyright-links').addClass('ios-fix');
             $('#em-container .molecule img').attr('src', 'app/images/molecules-01-long.svg');
             $('#metering-container .molecule img').attr('src', 'app/images/molecules-02-long.svg');
@@ -565,6 +567,7 @@ jQuery(document).ready(function($) {
            
         }
         else if (/iPad|iPod/.test(navigator.userAgent) && !window.MSStream) {
+            $('html').removeClass('tabs-open');
             $('.cta, #copyright-links').addClass('ios-fix');
             $('#em-container .molecule img').attr('src', 'app/images/molecules-01-long.svg');
             $('#metering-container .molecule img').attr('src', 'app/images/molecules-02-long.svg');
@@ -579,6 +582,19 @@ jQuery(document).ready(function($) {
         $(window).on("orientationchange", function(){
             iOSversion();
         });
+        console.log($(window).innerHeight());
+
+        // define a function...
+        function checkTabs() {
+            if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation !== 0 && $(window).innerHeight() - 100  <= 314) {
+                $('html').addClass('tabs-open');
+            } else{
+                $('html').removeClass('tabs-open');
+            }
+        }
+
+        // ...repeat it once every second
+        window.setInterval(checkTabs, 1000);
 
 
         $('.select-option').bind("touchend", function(e) {

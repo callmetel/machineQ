@@ -104,7 +104,20 @@
 						min-height:203px;
 						background-size: cover;
 						positon: relative;
-						opacity: 0.65;
+						opacity: 1;
+						background: white; /* For browsers that do not support gradients */
+					    background: -webkit-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.01)); /* For Safari 5.1 to 6.0 */
+					    background: -o-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.01)); /* For Opera 11.1 to 12.0 */
+					    background: -moz-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.01)); /* For Firefox 3.6 to 15 */
+					    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.01)); /* Standard syntax (must be last) */
+					}
+					img#coming-soon{
+						position: absolute;
+						z-index: 100;
+						top: 30%;
+						left: 0;
+						right:0;
+						margin: 0 auto;
 
 					}
 					div.article-date{
@@ -347,25 +360,10 @@
 			div.article-image{
 				// background-image: url('../images/article1-normalstate.png');
 			}
-			&.active-article{
-				div.article-image{
-					background-image: url('../images/article1-hoverstate.png');
-				}
-			}
 			&.inactive-article{
 				div.article-image{
 					background-image: url('../images/article1-normalstate.png');
 				}
-			}
-		}
-		#article2{
-			div.article-image{
-				background-image: url('../images/article2.png');
-			}
-		}
-		#article3{
-			div.article-image{
-				background-image: url('../images/article3.png');
 			}
 		}
     }
