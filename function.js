@@ -144,6 +144,14 @@ jQuery(document).ready(function($) {
 
         } else if( $("#section-5").hasClass("is-current-section") ){
 
+            TweenMax.set('#case-icon-container', { y:'0%'});
+            TweenMax.set('.platform-icon', { alpha: 1, y:'0%'});
+            TweenMax.set('#section-5 .cta', { alpha:1});
+            TweenMax.set('.molecule-text', { alpha: 0});
+            TweenMax.set('.icon-trigger:not(.is-disabled)', { zIndex:100});
+            $('.platform-icon').removeClass('scaleActive').addClass('scaleInactive');
+            iconclicked = 0;
+
             TweenMax.to("#section-5", speed, { y: "100%", alpha: 0, ease: ease1 });
             TweenMax.to("#section-4", speed, { y: "0%", alpha: 1, ease: ease2, delay: .1 }); 
 
@@ -167,6 +175,15 @@ jQuery(document).ready(function($) {
 
         // } 
         else if( $("#section-7").hasClass("is-current-section") ){
+
+            TweenMax.set('#case-icon-container', { y:'0%'});
+            TweenMax.set('.platform-icon', { alpha: 1, y:'0%'});
+            TweenMax.set('#section-5 .cta', { alpha:1});
+            TweenMax.set('.molecule-text', { alpha: 0});
+            TweenMax.set('.icon-trigger:not(.is-disabled)', { zIndex:100});
+            $('.platform-icon').removeClass('scaleActive').addClass('scaleInactive');
+            iconclicked = 0;
+
 
             TweenMax.to("#section-7", speed, { y: "100%", alpha: 0, ease: ease1 });
             TweenMax.to("#section-5", speed, { y: "0%", alpha: 1, ease: ease2, delay: .1 });
@@ -226,6 +243,14 @@ jQuery(document).ready(function($) {
 
         } else if( $("#section-4").hasClass("is-current-section") ){
 
+            TweenMax.set('#case-icon-container', { y:'0%'});
+            TweenMax.set('.platform-icon', { alpha: 1, y:'0%'});
+            TweenMax.set('#section-5 .cta', { alpha:1});
+            TweenMax.set('.molecule-text', { alpha: 0});
+            TweenMax.set('.icon-trigger:not(.is-disabled)', { zIndex:100});
+            $('.platform-icon').removeClass('scaleActive').addClass('scaleInactive');
+            iconclicked = 0;
+
             TweenMax.to("#section-4", speed, { y: "-100%", alpha: 0, ease: ease1 });
             TweenMax.to("#section-5", speed, { y: "0%", alpha: 1, ease: ease2, delay: .1 });
 
@@ -236,6 +261,14 @@ jQuery(document).ready(function($) {
             }, 860);
 
         } else if( $("#section-5").hasClass("is-current-section") ){
+
+            TweenMax.set('#case-icon-container', { y:'0%'});
+            TweenMax.set('.platform-icon', { alpha: 1, y:'0%'});
+            TweenMax.set('#section-5 .cta', { alpha:1});
+            TweenMax.set('.molecule-text', { alpha: 0});
+            TweenMax.set('.icon-trigger:not(.is-disabled)', { zIndex:100});
+            $('.platform-icon').removeClass('scaleActive').addClass('scaleInactive');
+            iconclicked = 0;
 
             TweenMax.to("#section-5", speed, { y: "-100%", alpha: 0, ease: ease1 }); 
             TweenMax.to("#section-7", speed, { y: "0%", alpha: 1, ease: ease2, delay: .1 }); 
@@ -424,6 +457,8 @@ jQuery(document).ready(function($) {
     if( isMobile.detectMobile() ) {
 
         $("#section-4 h1.title").html("FIT FOR YOUR<br />WORKFLOW");
+
+         $("p.email-link").html("Email us at <a href='mailto:machineQ@comcast.com'>machineQ@comcast.com</a> or call us at <BR /><a href='tel:215-286-7054'>215-286-7054</a>");
         
         var ts;
         $('body').bind('touchstart', function (event){

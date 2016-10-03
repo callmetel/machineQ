@@ -1,5 +1,5 @@
 .cta{
-	@include position(absolute, null 0 6.25vh 0);
+	@include position(absolute, null 0 5vh 0);
 	margin: 0 auto;
 	text-align: center;
 	color: $orange;
@@ -168,55 +168,43 @@
 }
 
 #comcast-copyright{
-	font:$lg-paragraph;
+	font:$xs-paragraph;
 	letter-spacing: 0;
 	vertical-align: middle;
-	@include position(absolute, null 20px 20px null);
+	color:rgba(255,255,255,0.5)!important;
+	@include position(absolute, null 10px 10px null);
 	
 	@include media($xl-desktop){
-		font:$mp-paragraph;
+		font:$md-paragraph;
 	}
 	@include media($macbook-pro-13){
-		font:$lg-paragraph;
+		font:$xs-paragraph;
 	}
 	@include media($mobile){
-		font:$md-paragraph;
+		font:$sm-paragraph;
 		bottom:10px;
 		right: 10px;
-		&.ios-fix{
-			bottom:8%!important;
-		}
+
 	}
 	@include media($h-ipad-max-screen){
 		@include position(fixed, null 3% 4% null);
-		font:$lg-paragraph;
-		&.ios-fix{
-			bottom:10%!important;
-		}
+		font:$xs-paragraph;
+
 	}
 	@include media($h-iphone){
-		&.ios-fix{
-			right:3%!important;
-			bottom:10px!important;
-		}
+
 	}
 	@include media($v-ipad-screen){
 		@include position(fixed, null 3% 4% null);
-		&.ios-fix{
-			bottom:10%!important;
-		}
+
 	}
 	@include media($v-iphone-6-plus){
-		font:$md-paragraph;
-		@include position(fixed, null 3% 40px null);
-		&.ios-fix{
-			bottom:90px!important;
-		}
+		font:$xs-paragraph;
+		@include position(fixed, null 3% 10px null);
+
 	}
 	@include media($v-iphone-5){
 		font:$xs-paragraph;
-		&.ios-fix{
-			bottom:8%!important;
-		}
+
 	}
 }
