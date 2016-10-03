@@ -454,7 +454,18 @@ jQuery(document).ready(function($) {
 
     var touchReg = false;
 
-    if( isMobile.detectMobile() ) {
+    // define a function...
+    function checkIOSVersion() {
+        if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation !== 0 && $(window).innerWidth() >= 414 && $(window).innerWidth() <= 736) {
+            console.log('you are using an iPhone Plus');
+            $('html').addClass('iPhone-Plus');
+        } else{
+            console.log('you are using an iPhone');
+            $('html').removeClass('iPhone-Plus');
+        }
+    }
+
+    if( isMobile.detectMobile() && !$('html').hasClass('iPhone-Plus')) {
 
         $("#section-4 h1.title").html("FIT FOR YOUR<br />WORKFLOW");
 
@@ -552,6 +563,7 @@ jQuery(document).ready(function($) {
         function iOSversion() {
 
         if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation !== 0) {
+            console.log('iphone 7');
              $('html').removeClass('tabs-open');
            $('.cta, #copyright-links').addClass('ios-fix');
            $('#em-container .molecule img').attr('src', 'app/images/molecules-01.svg');
@@ -578,23 +590,13 @@ jQuery(document).ready(function($) {
         }
 
         iOSversion();
+        checkIOSVersion();
 
         $(window).on("orientationchange", function(){
             iOSversion();
+            checkIOSVersion();
         });
-        console.log($(window).innerHeight());
-
-        // define a function...
-        function checkTabs() {
-            if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation !== 0 && $(window).innerHeight() - 100  <= 314) {
-                $('html').addClass('tabs-open');
-            } else{
-                $('html').removeClass('tabs-open');
-            }
-        }
-
-        // ...repeat it once every second
-        window.setInterval(checkTabs, 1000);
+        console.log($(window).innerWidth());
 
 
         $('.select-option').bind("touchend", function(e) {
@@ -1226,7 +1228,7 @@ jQuery(document).ready(function($) {
                 bodyRatio = bodyWidth / bodyHeight,
                 dblBodyHeight = bodyHeight*2;
 
-            if (bodyWidth+48 >= dblBodyHeight) {
+            if (bodyWidth+28 >= dblBodyHeight) {
                 $('html').addClass('small-desktop-ratio');
                 $("#section-4 h1.title").html("FIT FOR YOUR<br />WORKFLOW");
                 // $('#em-container .molecule img').attr('src', 'app/images/molecules-01.svg');
