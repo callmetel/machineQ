@@ -55,6 +55,15 @@ body {
     src: url("../fonts/gotham-black-webfont.woff2") format("woff2"), url("../fonts/gotham-black-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal; } }
+.ie10 #section-7 h1.title sup {
+  font: normal normal normal 28.5px/0rem "gotham_boldregular" !important;
+  letter-spacing: 0; }
+  @media screen and (min-width: 2001px) {
+    .ie10 #section-7 h1.title sup {
+      font: normal normal normal 47.25px/0px "gotham_boldregular" !important; } }
+  @media screen and (max-width: 1200px) {
+    .ie10 #section-7 h1.title sup {
+      font: normal normal normal 17.25px/0rem "gotham_boldregular" !important; } }
 .ie10 .ie10 h1,
 .ie10 .ie10 h2,
 .ie10 .ie10 h3,
@@ -243,6 +252,16 @@ body {
   src: url("../fonts/gotham-black-webfont.woff2") format("woff2"), url("../fonts/gotham-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+#section-7 h1.title sup {
+  font: normal normal normal 28.5px/0rem "gotham_boldregular" !important;
+  letter-spacing: 0; }
+  @media screen and (min-width: 2001px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 47.25px/0px "gotham_boldregular" !important; } }
+  @media screen and (max-width: 1200px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 17.25px/0rem "gotham_boldregular" !important; } }
+
 @font-face {
   font-family: 'gotham_boldregular';
   src: url("../fonts/gotham-bold-webfont.woff2") format("woff2"), url("../fonts/gotham-bold-webfont.woff") format("woff");
@@ -263,6 +282,16 @@ body {
   src: url("../fonts/gotham-black-webfont.woff2") format("woff2"), url("../fonts/gotham-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+#section-7 h1.title sup {
+  font: normal normal normal 28.5px/0rem "gotham_boldregular" !important;
+  letter-spacing: 0; }
+  @media screen and (min-width: 2001px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 47.25px/0px "gotham_boldregular" !important; } }
+  @media screen and (max-width: 1200px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 17.25px/0rem "gotham_boldregular" !important; } }
+
 .ie10 h1,
 .ie10 h2,
 .ie10 h3,
@@ -451,6 +480,16 @@ body {
   src: url("../fonts/gotham-black-webfont.woff2") format("woff2"), url("../fonts/gotham-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+#section-7 h1.title sup {
+  font: normal normal normal 28.5px/0rem "gotham_boldregular" !important;
+  letter-spacing: 0; }
+  @media screen and (min-width: 2001px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 47.25px/0px "gotham_boldregular" !important; } }
+  @media screen and (max-width: 1200px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 17.25px/0rem "gotham_boldregular" !important; } }
+
 @font-face {
   font-family: 'gotham_boldregular';
   src: url("../fonts/gotham-bold-webfont.woff2") format("woff2"), url("../fonts/gotham-bold-webfont.woff") format("woff");
@@ -471,6 +510,16 @@ body {
   src: url("../fonts/gotham-black-webfont.woff2") format("woff2"), url("../fonts/gotham-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+#section-7 h1.title sup {
+  font: normal normal normal 28.5px/0rem "gotham_boldregular" !important;
+  letter-spacing: 0; }
+  @media screen and (min-width: 2001px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 47.25px/0px "gotham_boldregular" !important; } }
+  @media screen and (max-width: 1200px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 17.25px/0rem "gotham_boldregular" !important; } }
+
 .ie10 h1,
 .ie10 h2,
 .ie10 h3,
@@ -666,6 +715,19 @@ body {
   src: url("../fonts/gotham-black-webfont.woff2") format("woff2"), url("../fonts/gotham-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+#section-7 h1.title sup {
+  font: normal normal normal 28.5px/0rem "gotham_boldregular" !important;
+  letter-spacing: 0; }
+  @media screen and (min-width: 2001px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 47.25px/0px "gotham_boldregular" !important; } }
+  @media screen and (max-width: 1200px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 17.25px/0rem "gotham_boldregular" !important; } }
+
+#section-7 .info p span.orange {
+  font-family: "gotham_mediumregular" !important; }
+
 h1,
 h2,
 h3,
@@ -1958,7 +2020,7 @@ header .global {
     -moz-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
   header .global#comcast-logo {
-    background-image: url("../images/a-comcast-company.svg");
+    background-image: url("../images/a-comcast-service.svg");
     background-size: contain;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -4182,8 +4244,8 @@ li.option-5.selected svg text {
     display: block;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 40px;
-    margin-top: -13px;
+    margin-left: 34px;
+    margin-top: -14px;
     text-decoration: none;
     background-image: url("../images/global-mQ.svg");
     width: 82px;

@@ -111,5 +111,21 @@ $md-comcast: normal normal normal 9.5px/9.5px $gothamM; //for horizontal ipads /
 $sm-comcast: normal normal normal 5px/0rem $gothamM; //for horizontal ipads //multiply by .725
 $xs-comcast: normal normal normal 3px/0rem $gothamM; //for horizontal ipads //multiply by .725
 
+$header-lg-sup: normal normal normal 47.25px/0px $gothamBo; // for macbook 15" //multiply by 1.1
+$header-sup: normal normal normal 28.5px/0rem $gothamBo; // for macbook 15" //multiply by 1.1
+$header-md-sup: normal normal normal 17.25px/0rem $gothamBo; //for horizontal ipads //multiply by .725
+$header-sm-sup: normal normal normal 5px/0rem $gothamBo; //for horizontal ipads //multiply by .725
+$header-xs-sup: normal normal normal 3px/0rem $gothamBo; //for horizontal ipads //multiply by .725
 
+
+#section-7 h1.title sup{
+    font: $header-sup!important;
+    letter-spacing: 0;
+    @include media($xl-desktop){
+        font: $header-lg-sup!important;
+    }
+    @include media($filter-desktop-bp){
+        font: $header-md-sup!important;
+    }
+}
 

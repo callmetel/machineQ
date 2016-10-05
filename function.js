@@ -469,7 +469,7 @@ jQuery(document).ready(function($) {
 
         $("#section-4 h1.title").html("FIT FOR YOUR<br />WORKFLOW");
 
-         $("p.email-link").html("Email us at <a href='mailto:machineQ@comcast.com'>machineQ@comcast.com</a> or call us at <BR /><a href='tel:215-286-7054'>215-286-7054</a>");
+         $("p.email-link").html("Email us at <a href='mailto:machineQ@comcast.com'>machineQ@comcast.com</a> or call us at <BR /><a href='tel:215-286-4298'>215-286-4298</a>.");
         
         var ts;
         $('body').bind('touchstart', function (event){
@@ -562,7 +562,14 @@ jQuery(document).ready(function($) {
         // CTA Arrow fix for ios devices
         function iOSversion() {
 
-        if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation !== 0) {
+        if(navigator.userAgent.match('CriOS')){
+             $('html').removeClass('tabs-open');
+           $('.cta, #copyright-links').addClass('ios-google-fix').removeClass('ios-fix');
+           $('#em-container .molecule img').attr('src', 'app/images/molecules-01-long.svg');
+            $('#metering-container .molecule img').attr('src', 'app/images/molecules-02-long.svg');
+            $('#at-container .molecule img').attr('src', 'app/images/molecules-03-long.svg');
+        }
+        else if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation !== 0) {
             console.log('iphone 7');
              $('html').removeClass('tabs-open');
            $('.cta, #copyright-links').addClass('ios-fix');
@@ -572,7 +579,7 @@ jQuery(document).ready(function($) {
         }
         else if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation == 0) {
             $('html').removeClass('tabs-open');
-            $('.cta, #copyright-links').addClass('ios-fix');
+            $('.cta, #copyright-links, #comcast-copyright').addClass('ios-fix');
             $('#em-container .molecule img').attr('src', 'app/images/molecules-01-long.svg');
             $('#metering-container .molecule img').attr('src', 'app/images/molecules-02-long.svg');
             $('#at-container .molecule img').attr('src', 'app/images/molecules-03-long.svg');
