@@ -1,5 +1,10 @@
 jQuery(document).ready(function($) {
 
+// $('.news-article').hover(function() {
+//     $(this).toggleClass('active-article');
+// }, function() {
+//     $(this).toggleClass('active-article');
+// }); 
     // Get IE or Edge browser version
     var version = detectIE();
 
@@ -161,20 +166,7 @@ jQuery(document).ready(function($) {
                 $("#section-5").removeClass("is-current-section is-next-section is-previous-section").addClass("is-next-section");
             }, 860);
 
-        } 
-        // else if( $("#section-6").hasClass("is-current-section") ){ 
-
-        //     TweenMax.to("#section-6", speed, { y: "100%", alpha: 0, ease: ease1 }); 
-        //     TweenMax.to("#section-5", speed, { y: "0%", alpha: 1, ease: ease2, delay: .1 }); 
-
-        //     setTimeout(function() {
-        //         $("#section-4").removeClass("is-current-section is-next-section is-previous-section").addClass("is-previous-section"); 
-        //         $("#section-5").removeClass("is-current-section is-next-section is-previous-section").addClass("is-current-section"); 
-        //         $("#section-6").removeClass("is-current-section is-next-section is-previous-section").addClass("is-next-section");
-        //     }, 860);
-
-        // } 
-        else if( $("#section-7").hasClass("is-current-section") ){
+        } else if( $("#section-7").hasClass("is-current-section") ){
 
             TweenMax.set('#case-icon-container', { y:'0%'});
             TweenMax.set('.platform-icon', { alpha: 1, y:'0%'});
@@ -459,6 +451,7 @@ jQuery(document).ready(function($) {
         if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation !== 0 && $(window).innerWidth() >= 414 && $(window).innerWidth() <= 736) {
             console.log('you are using an iPhone Plus');
             $('html').addClass('iPhone-Plus');
+
         } else{
             console.log('you are using an iPhone');
             $('html').removeClass('iPhone-Plus');
@@ -469,7 +462,9 @@ jQuery(document).ready(function($) {
 
         $("#section-4 h1.title").html("FIT FOR YOUR<br />WORKFLOW");
 
-         $("p.email-link").html("Email us at <a href='mailto:machineQ@comcast.com'>machineQ@comcast.com</a> or call us at <BR /><a href='tel:215-286-7054'>215-286-7054</a>");
+        // $("#article1-image").css("src", "app/images/mobile-article-1.png");
+
+         $("p.email-link").html("Email us at <a href='mailto:machineQ@comcast.com'>machineQ@comcast.com</a> or call us at <BR /><a href='tel:215-286-4298'>215-286-4298</a>.");
         
         var ts;
         $('body').bind('touchstart', function (event){
@@ -534,6 +529,9 @@ jQuery(document).ready(function($) {
             
             $('#burger').addClass('back-button-active');
             $('#news-events').append(eventsPage);
+            if( isMobile.detectMobile() || document.body.clientWidth <= '992' ) {
+                $("#article1-image").attr("src", "app/images/mobile-article-1.png");
+            };
             TweenMax.to(".section", speed, { x: "-100%", ease: ease1 });
             TweenMax.to(".bg", .5, { alpha: .25, delay: .1});
             TweenMax.to("#events", speed, { x: "0%", alpha: 1, ease: ease2, delay: .1 });
@@ -543,6 +541,38 @@ jQuery(document).ready(function($) {
                 $('#main .container').detach();
                 $('#news-events').removeClass('event-is-inactive').addClass('event-is-active'); 
             }, 1200);
+
+            $('#chicago-article-link').bind("click", function(e) {
+                $('#chicago-event').addClass('lightbox-is-active');
+            });
+
+            $('#chicago-event .mobile-close-icon').bind("click", function(e) {
+                $('#chicago-event').removeClass('lightbox-is-active');
+            });
+
+            $('#sanfran-article-link').bind("click", function(e) {
+                $('#sanfran-event').addClass('lightbox-is-active');
+            });
+
+            $('#sanfran-event .mobile-close-icon').bind("click", function(e) {
+                $('#sanfran-event').removeClass('lightbox-is-active');
+            });
+
+            $('#philly-article-link').bind("click", function(e) {
+                $('#philly-event').addClass('lightbox-is-active');
+            });
+
+            $('#philly-event .mobile-close-icon').bind("click", function(e) {
+                $('#philly-event').removeClass('lightbox-is-active');
+            });
+
+            $('#innovation-article-link').bind("click", function(e) {
+                $('#innovation-event').addClass('lightbox-is-active');
+            });
+
+            $('#innovation-event .mobile-close-icon').bind("click", function(e) {
+                $('#innovation-event').removeClass('lightbox-is-active');
+            });
             
             
             // e.preventDefault();
@@ -562,7 +592,14 @@ jQuery(document).ready(function($) {
         // CTA Arrow fix for ios devices
         function iOSversion() {
 
-        if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation !== 0) {
+        if(navigator.userAgent.match('CriOS')){
+             $('html').removeClass('tabs-open');
+           $('.cta, #copyright-links').addClass('ios-google-fix').removeClass('ios-fix');
+           $('#em-container .molecule img').attr('src', 'app/images/molecules-01-long.svg');
+            $('#metering-container .molecule img').attr('src', 'app/images/molecules-02-long.svg');
+            $('#at-container .molecule img').attr('src', 'app/images/molecules-03-long.svg');
+        }
+        else if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation !== 0) {
             console.log('iphone 7');
              $('html').removeClass('tabs-open');
            $('.cta, #copyright-links').addClass('ios-fix');
@@ -572,7 +609,7 @@ jQuery(document).ready(function($) {
         }
         else if (/iPhone/.test(navigator.userAgent) && !window.MSStream && window.orientation == 0) {
             $('html').removeClass('tabs-open');
-            $('.cta, #copyright-links').addClass('ios-fix');
+            $('.cta, #copyright-links, #comcast-copyright').addClass('ios-fix');
             $('#em-container .molecule img').attr('src', 'app/images/molecules-01-long.svg');
             $('#metering-container .molecule img').attr('src', 'app/images/molecules-02-long.svg');
             $('#at-container .molecule img').attr('src', 'app/images/molecules-03-long.svg');
@@ -1240,7 +1277,13 @@ jQuery(document).ready(function($) {
                 // $('#em-container .molecule img').attr('src', 'app/images/molecules-01-long.svg');
                 // $('#metering-container .molecule img').attr('src', 'app/images/molecules-02-long.svg');
                 // $('#at-container .molecule img').attr('src', 'app/images/molecules-03-long.svg');
-            }
+            };
+
+            if( isMobile.detectMobile() || document.body.clientWidth <= '992' ) {
+                $("#article1-image").attr("src", "app/images/mobile-article-1.png");
+            } else{
+                $("#article1-image").attr("src", "app/images/article-1.png");
+            };
 
         }).resize();
 
@@ -1313,6 +1356,8 @@ jQuery(document).ready(function($) {
 
         // }).resize();
 
+        
+
         $('.select-option').on('click', function() {
             $('ul.select-dropdown').toggleClass('dropdown-active'); 
 
@@ -1332,6 +1377,9 @@ jQuery(document).ready(function($) {
 
             $('#burger').addClass('back-button-active');
             $('#news-events').append(eventsPage);
+            if( isMobile.detectMobile() || document.body.clientWidth <= '992' ) {
+                $("#article1-image").attr("src", "app/images/mobile-article-1.png");
+            };
             TweenMax.to(".section", speed, { x: "-100%", ease: ease1 });
             TweenMax.to(".bg", .5, { alpha: .25, delay: .1});
             TweenMax.to("#events", speed, { x: "0%", alpha: 1, ease: ease2, delay: .1 });
@@ -1342,7 +1390,38 @@ jQuery(document).ready(function($) {
                 $('#main .container').detach();
                 $('#news-events').removeClass('event-is-inactive').addClass('event-is-active'); 
             }, 1200);
+
+            $('#chicago-article-link').on("click", function(e) {
+                $('#chicago-event').addClass('lightbox-is-active');
+            });
+
+            $('#chicago-event .close-icon, #chicago-event .mobile-close-icon').on("click", function(e) {
+                $('#chicago-event').removeClass('lightbox-is-active');
+            });
             
+            $('#sanfran-article-link').on("click", function(e) {
+                $('#sanfran-event').addClass('lightbox-is-active');
+            });
+
+            $('#sanfran-event .close-icon, #sanfran-event .mobile-close-icon').on("click", function(e) {
+                $('#sanfran-event').removeClass('lightbox-is-active');
+            });
+
+            $('#philly-article-link').on("click", function(e) {
+                $('#philly-event').addClass('lightbox-is-active');
+            });
+
+            $('#philly-event .close-icon, #philly-event .mobile-close-icon').on("click", function(e) {
+                $('#philly-event').removeClass('lightbox-is-active');
+            });
+
+            $('#innovation-article-link').on("click", function(e) {
+                $('#innovation-event').addClass('lightbox-is-active');
+            });
+
+            $('#innovation-event .close-icon, #innovation-event .mobile-close-icon').on("click", function(e) {
+                $('#innovation-event').removeClass('lightbox-is-active');
+            });
    
         });
 
@@ -1935,11 +2014,6 @@ jQuery(document).ready(function($) {
 
 // Hover Events
 
-$('.news-article').hover(function() {
-    $(this).toggleClass('active-article');
-}, function() {
-    $(this).toggleClass('active-article');
-}); 
 
 
 // /************************************

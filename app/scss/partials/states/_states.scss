@@ -104,3 +104,8 @@ a.no-decoration, a:hover.no-decoration{
 .position-is-static{
 	position: static!important;
 }
+
+.lightbox-is-active{
+	z-index:100001!important;
+	opacity:1!important;
+}

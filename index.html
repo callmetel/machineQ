@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content="Comcast, M2M, mQ, machine, connectivity, network, application, technology, power, iq, workflow">
-    <meta name="description" content="A website introducing mQ, a machine to machine brand powered by comcast">
+    <meta name="description" content="Introducing machineQ™ (machine quotient): A new Comcast service that leverages the latest in sensor, network, and software technologies to gather, transmit, and create actionable intelligence from the physical world.">
     <meta name="author" content="mQ">
     <title>Comcast machineQ</title>
     <style>
@@ -40,15 +41,26 @@
         animation: fadeIn 2s ease-in-out;
      }
     </style>
-    <link rel="stylesheet" href="app/css/app.css">
+    <link rel="shortcut icon" href="app/images/favicon.ico" />
+    <link rel="stylesheet" href="app/css/app.min.css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-85258308-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </head>
 <body id="main-wrap" class="fade-in">
    <div class="main">
         <div class="page-content">
             <header>
-                <div id="global-logo-container" class="global-logo"> 
+                <!-- <div id="global-logo-container" class="global-logo"> 
                     <a href="http://corporate.comcast.com" target="_blank" id="comcast-logo" class="global"></a>
-                </div>
+                </div> -->
                 <nav id="global-nav">
                     <a href="#" class="toggle-menu">
                         <span id="menu-toggle"></span>
@@ -58,7 +70,7 @@
                     </a>
                     <ul id="menu" class="nav-menu nav-is-inactive"> 
                         <li>HOME</li>
-                        <li>WHAT IS MACHINEQ<sup>SM</sup></li>
+                        <li>WHAT IS MACHINEQ<sup>TM</sup></li>
                         <li>OUR NETWORK</li>
                         <li>YOUR WORKFLOW</li>
                         <li>USE CASES</li>
@@ -85,7 +97,7 @@
                             <!-- <div id="main-comcast-logo"><img src="app/images/main-comcast-logo-03.svg" alt="comcast home logo"></div> -->
                             <div id="home-logo-container"> 
                             <img src="app/images/home-logo.svg" alt="home logo" id="machineQ-logo">
-                            <img src="app/images/a-comcast-company.svg" id="home-down" />
+                            <img src="app/images/a-comcast-service.svg" id="home-down" />
                             <!-- <img src="app/images/home-logo-comcast.svg" alt="home logo" id="comcast-home-logo"> --></div>
                             <div id="scroll-down-cta" class="cta">
                                 <a href="#section-2" id="down">
@@ -93,7 +105,7 @@
                                 <img src="app/images/arrow.svg" alt="down arrow">
                                 </a>
                             </div>
-                            <p id="comcast-copyright" class="small">Comcast &copy; 2016. All rights reserved.</p>
+                            <p id="comcast-copyright" class="small">&copy; 2016 Comcast. All rights reserved.</p>
                         </section>
 
                     <!-- =========================================================
@@ -105,7 +117,7 @@
                             <section class="section" id="section-2">
                                 <div class="info">
                                     <h1 class="title">iQ FOR<br/>MACHINES</h1>
-                                    <p class="description">Introducing machineQ<sup>SM</sup> (machine quotient): A new Comcast business that leverages the latest in sensor, network, and software technologies to gather, transmit, and create actionable intelligence from the physical&nbsp;world.</p>
+                                    <p class="description">Introducing machineQ<sup>TM</sup> (machine quotient): A new Comcast service that leverages the latest in sensor, network, and software technologies to gather, transmit, and create actionable intelligence from the physical&nbsp;world.</p>
                                     <div class="cta">
                                         <a href="#section-3"><img src="app/images/arrow.svg" alt="down arrow"></a>
                                     </div>
@@ -122,7 +134,7 @@
                                     <h1 class="title">LOWER POWER,<br/>BIGGER REACH</h1>
 
                                     <p class="description">Our carrier grade low power network, built on LoRa<sup class="reg">&reg;</sup> technology, provides a low cost way to connect power-challenged sensors and&nbsp;devices.</p>
-                                    <p class="description">Leveraging a variety of wireless and wireline technologies, machineQ<sup>SM</sup> accommodates deep indoor and outdoor use cases, enabling cost-effective solutions suitable for a wide range of enterprise applications.</p>
+                                    <p class="description">Leveraging a variety of wireless and wireline technologies, machineQ<sup>TM</sup> accommodates deep indoor and outdoor use cases, enabling cost-effective solutions suitable for a wide range of enterprise applications.</p>
                                     <div class="cta">
                                         <a href="#section-4"><img src="app/images/arrow.svg" alt="down arrow"></a>
                                     </div>
@@ -230,8 +242,9 @@
                             <section class="section" id="section-7">
                                 <div class="info 2-col">
                                     <div class="inline left">
-                                        <h1 class="title">RAISE YOUR<br/>machineQ</h1>
+                                        <h1 class="title">RAISE YOUR<br/>machineQ<sup>TM</sup></h1>
                                         <p>Ready to get your device or business connected?</p>
+                                        <p> We are initially piloting in <span class="orange">Philadelphia</span>, <span class="orange">San Francisco</span> and <span class="orange">Chicago</span>.</p>
                                          <p class="email-link">Email us at <a href="mailto:machineQ@comcast.com">machineQ@comcast.com</a> or call us at <a href="tel:215-286-4298">215-286-4298</a>.</p>
                                         <h2 class="subtitle">News / Events</h2>
                                         <p>Check out our <a href="#news-events" id="events-link">calendar</a> for the latest news &amp; upcoming events.</p>
@@ -428,12 +441,82 @@
                                         <h2>LATEST NEWS</h2>    
                                     </div>
                                     <div id="articles-container">
+                                        <div id="article6" class="news-article inactive-article">
+                                            <div class="article-container">
+                                                <a href="#innovation-event" id="innovation-article-link">
+                                                <img src="app/images/article-6.png" alt="article6imageandtext" id="article6-image"
+                                                class="article-image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="article5" class="news-article inactive-article">
+                                            <div class="article-container">
+                                                <a href="#philly-event" id="philly-article-link">
+                                                <img src="app/images/article-5.png" alt="article5imageandtext" id="article5-image"
+                                                class="article-image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="article4" class="news-article inactive-article">
+                                            <div class="article-container">
+                                                <a href="http://philly.com/philly/blogs/inq-phillydeals/Penn-Comcast.html" target="_blank">
+                                                <img src="app/images/article-4.png" alt="article4imageandtext" id="article4-image" class="article-image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div id="article3" class="news-article inactive-article">
+                                            <div class="article-container">
+                                                <a href="#sanfran-event" id="sanfran-article-link">
+                                                <!-- <div class="article-image"></div> -->
+                                                <img src="app/images/article-3.png" alt="article3imageandtext" id="article3-image"
+                                                class="article-image">
+                                                </a>
+                                               <!--  <div class="article-date">
+                                                    <h3 class="month">OCT</h3>
+                                                    <h4 class="day">5</h4>
+                                                </div>
+                                                <div class="article-text">
+                                                    <div class="left">
+                                                        <a href="http://corporate.comcast.com/news-information/news-feed/comcast-launches-enterprise-internet-of-things-trial-venture" target="_blank">
+                                                        <p class="article-title"><span>COMCAST LAUNCHES ENTERPRISE INTERNET OF THINGS TRIAL VENTURE</span></p>
+                                                        <p class="article-hint">Comcast is collaborating with Semtech to provide...</p>   
+                                                        </a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <a href="http://corporate.comcast.com/news-information/news-feed/comcast-launches-enterprise-internet-of-things-trial-venture" target="_blank" class="arrow-container"><img src="app/images/arrow.svg" alt="down arrow" class="arrow"></a>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div id="article2" class="news-article inactive-article">
+                                            <div class="article-container">
+                                                <a href="#chicago-event" id="chicago-article-link">
+                                                <!-- <div class="article-image"></div> -->
+                                                <img src="app/images/article-2.png" alt="article2imageandtext" id="article2-image"
+                                                class="article-image">
+                                                </a>
+                                               <!--  <div class="article-date">
+                                                    <h3 class="month">OCT</h3>
+                                                    <h4 class="day">5</h4>
+                                                </div>
+                                                <div class="article-text">
+                                                    <div class="left">
+                                                        <a href="http://corporate.comcast.com/news-information/news-feed/comcast-launches-enterprise-internet-of-things-trial-venture" target="_blank">
+                                                        <p class="article-title"><span>COMCAST LAUNCHES ENTERPRISE INTERNET OF THINGS TRIAL VENTURE</span></p>
+                                                        <p class="article-hint">Comcast is collaborating with Semtech to provide...</p>   
+                                                        </a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <a href="http://corporate.comcast.com/news-information/news-feed/comcast-launches-enterprise-internet-of-things-trial-venture" target="_blank" class="arrow-container"><img src="app/images/arrow.svg" alt="down arrow" class="arrow"></a>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
                                         
                                         <div id="article1" class="news-article inactive-article">
                                             <div class="article-container">
-                                                <a href="http://machineQ.com" target="_blank">
-                                                <img src="app/images/comingsoon-icon.svg" alt="coming soon icon" id="coming-soon">
-                                                <div class="article-image"></div>
+                                                <a href="http://corporate.comcast.com/news-information/news-feed/comcast-launches-enterprise-internet-of-things-trial-venture" target="_blank">
+                                                <img src="app/images/mobile-article-1.png" alt="article1imageandtext" id="article1-image" class="article-image">
                                                 </a>
                                             </div>
                                         </div>
@@ -443,23 +526,139 @@
                                     <h2>UPCOMING EVENTS</h2>
                                     <div id="events-container">
                                         <div id="events1" class="event">
-                                            <a href="http://machineq.com" target="_blank">
-                                                <div class="events-container">
-                                                    <!-- <div class="events-date">
-                                                        <h3 class="month">AUG</h3>
-                                                        <h4 class="day">18</h4>
-                                                    </div> -->
-                                                    <div class="events-text">
-                                                        <p class="events-title"><span>Coming Soon</span></p>
-                                                        <p class="events-description">&nbsp;</p>
-                                                    </div>
+                                            <div class="events-container">
+                                                <!-- <div class="events-date">
+                                                    <h3 class="month">NOV</h3>
+                                                    <h4 class="day">16</h4>
+                                                </div> -->
+                                                <div class="events-text">
+                                                    <p class="events-description">No upcoming events.</p>
+                                                    <!-- <p class="events-title">SAN FRANSISCO, CA<br><strong>CARRIER CONNECTED DEVICE SUMMIT</strong></p>
+                                                    <p class="events-description"><br>On November 16th machineQ and Orange Silicon Valley will co-host our first Carrier Connected Device Summit in San Francisco. Attendees will have the opportunity to learn how hardware, software, and a new generation of wireless networks can be combined to create compelling IoT products and services. <br><br><a href="http://connecteddevicesummit.com/" target="_blank">For more information about the event, click&nbsp;here</a>.</p> -->
                                                 </div>
-                                            </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </section>
+                        <div id="chicago-event">
+                            <img src="app/images/orange-close.png" alt="orange close icon" class="mobile-close-icon">
+                            <div class="individual-event">
+                                <div class="title">
+                                    <h3>LATEST NEWS</h3>
+                                </div>
+                                <div class="left">
+                                    <div class="date">
+                                        <h3 class="month">NOV</h3>
+                                        <h4 class="day">10</h4>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img src="app/images/orange-close.png" alt="orange close icon" class="close-icon">
+                                    <div class="article-content">
+                                        <h4>Our B2B IoT Trial Expands to Chicago</h4>
+                                        <p>Alex Khorram, General Manager, machineQ</p>
+                                        <p>In early October, we announced “machineQ™”, a new business trial venture focused on building business-to-business solutions and a platform for the Internet of Things (IoT).  We began our trials in our hometown of Philadelphia and the tech hub of San Francisco, recruiting commercial partners interested in working with us to leverage our network assets to gather, transmit and analyze data from connected devices within their organizations. Comcast is using Semtech Corporation’s (NASDAQ: SMTC) globally-proven LoRa® Wireless Radio Frequency Technology to deploy network trials.</p>
+ 
+                                        <p>Since launching the trial venture, we’ve been contacted by organizations ranging from start-ups to Fortune 500 companies with a wide variety of use cases, such as infrastructure monitoring and providing predictive maintenance for in-home appliances.  While we are still in the early stages of our efforts, we’re excited about the initial interest, and are looking forward to developing proof of concepts and field trials of the machineQ service.</p>
+                                         
+                                        <p>With that in mind, we’re also excited to announce that today we’re expanding our trials to another market where we have a significant network presence and dynamic commercial customer base – Chicago. We think we have the network and the expertise to make a meaningful contribution to businesses looking to take advantage of this exciting IoT wave.  Starting today, businesses in Chicago interested in deploying IoT solutions within their organizations should visit machineQ.com and contact us. </p>
+                                    </div> 
+                                </div>   
+                            </div>
+                        </div>
+                        <div id="sanfran-event">
+                            <img src="app/images/orange-close.png" alt="orange close icon" class="mobile-close-icon">
+                            <div class="individual-event">
+                                <div class="title">
+                                    <h3>LATEST NEWS</h3>
+                                </div>
+                                <div class="left">
+                                    <div class="date">
+                                        <h3 class="month">NOV</h3>
+                                        <h4 class="day">16</h4>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img src="app/images/orange-close.png" alt="orange close icon" class="close-icon">
+                                    <div class="article-content">
+                                        <h4>Carrier Connected Device Summit</h4>
+                                        <p>On November 16th machineQ and Orange Silicon Valley co-hosted our first Carrier Connected Device Summit in San Francisco. Attendees had the opportunity to learn how hardware, software, and a new generation of wireless networks can be combined to create compelling IoT products and services. <br><br><a href="http://connecteddevicesummit.com/" target="_blank">For more information about the event, click&nbsp;here</a>.</p>
+                                    </div> 
+                                </div>   
+                            </div>
+                        </div>
+                        <div id="philly-event">
+                            <img src="app/images/orange-close.png" alt="orange close icon" class="mobile-close-icon">
+                            <div class="individual-event">
+                                <div class="title">
+                                    <h3>LATEST NEWS</h3>
+                                </div>
+                                <div class="left">
+                                    <div class="date">
+                                        <h3 class="month">JAN</h3>
+                                        <h4 class="day">16</h4>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img src="app/images/orange-close.png" alt="orange close icon" class="close-icon">
+                                    <div class="article-content">
+                                        <h4>machineQ Has<br>Philly Covered</h4>
+                                        <p>Alex Khorram, General Manager, machineQ</p>
+                                        <p>Our enterprise Internet of Things venture, machineQ, is making great progress in Philadelphia, and we now have deployed a LoRaWAN network that provides extensive coverage throughout the greater metropolitan area. That means today, in the City of Philadelphia and throughout the broader metropolitan area, we have comprehensive IoT coverage that enables devices to transmit data that informs decisions that could make big impacts on the success of a business or community.</p>
+                                        <p>With this network in place, we’re working on number of exciting projects. We’re developing innovative solutions ranging from monitoring public infrastructure, to enabling predictive maintenance on consumer appliances, just to name a few. And, interest has come from organizations spanning a wide range of industries, like Healthcare, Public Utilities, Automotive, and Consumer Electronics.</p>
+                                        <p>We've also made some friends along the way. We've partnered with the University of Pennsylvania to stand up a competition within their tech incubator, the Pennovation Center, designed to stimulate development of IoT tech. Along those same lines, we are collaborating with France’s largest mobile operator Orange on joint developer efforts in the US, like our recent Connected Device Summit held in San Francisco.</p>
+                                        <p>There is a lot of buzz about IoT in Philly, and the machineQ team is hiring and working with more device and application partners to meet the demand. We’ve learned a lot about the mechanics of deploying an IoT network across a major metropolitan area, and continue to partner with smart men and women who see the potential that IoT can have on their businesses. And, we’re also having a little fun collaborating with smart people at the Pennovation Center and Orange. <br><br><a href="http://connecteddevicesummit.com/" target="_blank">If you’re interested in learning more, we’d love to hear from you. Visit www.machineQ.com and drop us a line</a>.</p>
+                                    </div> 
+                                </div>   
+                            </div>
+                        </div>
+                        <div id="innovation-event">
+                            <img src="app/images/orange-close.png" alt="orange close icon" class="mobile-close-icon">
+                            <div class="individual-event">
+                                <div class="title">
+                                    <h3>LATEST NEWS</h3>
+                                </div>
+                                <div class="left">
+                                    <div class="date">
+                                        <h3 class="month">JAN</h3>
+                                        <h4 class="day">30</h4>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img src="app/images/orange-close.png" alt="orange close icon" class="close-icon">
+                                    <div class="article-content">
+                                        <h4>Comcast NBCU Pennovation Challenge</h4>
+                                        <p>Alex Khorram, General Manager, machineQ</p>
+                                        <p>The Comcast Innovation Challenge launched last November in partnership with Penn at the Pennovation Center. Read more about the Comcast and Penn partnership here: <a href="http://www.philly.com/philly/blogs/inq-phillydeals/Penn-Comcast.html" target="_blank">http://www.philly.com/philly/blogs/inq-phillydeals/Penn-Comcast.html</a></p>
+                                        <p>Comcast is seeking 5 to 7 teams <strong>of up to 5 people</strong> to invent and create innovative solutions for the Internet of Things (IOT) on the machineQ™ platform. <strong>The challenge is open to all local entrepreneurs, students and faculty from all local universities.</strong></p>
+                                        <p>On October 5th, 2016 Comcast announced machineQTM, a new business trial venture focused on business-to-business solutions and a platform for the Internet of Things. (<a href="http://corporate.comcast.com/news-information/news-feed/comcast-launches-enterprise-internet-of-things-trial-venture" target="_blank">http://corporate.comcast.com/news-information/news-feed/comcast-launches-enterprise-internet-of-things-trial-venture</a>). Initial trial markets will cover the large metropolitan areas in Philadelphia and San Francisco. The attached presentation contains more information about the machineQ platform.</p>
+                                        <p>Comcast is invested in finding solutions that enable partners to gather, transmit and analyze data from and to control connected devices with the goal of creating innovative solutions and applications.  Key opportunity areas include:</p>
+                                        <ul>
+                                           <li>Hospitals</li>
+                                           <li>Airports</li>
+                                           <li>Venue/Facility Management</li>
+                                           <li>Malls</li>
+                                           <li>Universities</li>
+                                           <li>Supermarkets/Restaurants</li>
+                                           <li>Smart Cities/Infrastructure</li>
+                                           <li>Smart Agriculture</li>
+                                           <li>Connected Laboratories</li>
+                                           <li>Amusement Parks</li>
+                                        </ul>
+                                        <p><strong>Benefits for teams:</strong></p>
+                                        <p>Comcast will provide development kits and gateways to accepted teams of up to 5 people along with coaching and technical assistance/office hours during the development process.  All teams will get the opportunity to pitch to key Executives and Investors at a Demo Day.</p>
+                                        <p><strong>Two winning teams will receive:</strong></p>
+                                        <ul>
+                                            <li><strong>1st Prize:</strong> $3k plus 6 month memberships to the Pennovation Center to further develop ideas into start ups</li>
+                                            <li><strong>2nd Prize:</strong> $1.5k plus 6 month memberships to the Pennovation Center to further develop ideas into start ups</li>
+                                            <li><strong>BOTH teams win:</strong> Automatic acceptance into Penn’s I-Corps program which provides training on customer discovery and business plan creation</li>
+                                        </ul>
+                                        <p>To apply please go to the following link and submit your application by February 6th: <br><br><a href="https://docs.google.com/forms/d/e/1FAIpQLSeTiyiv41z04sipze4p02b4dHX3zuCucLXyoBBJqsjg8GvYmQ/viewform?c=0&w=1" target="_blank">https://docs.google.com/forms/d/e/1FAIpQLSeTiyiv41z04</a></p>
+                                    </div> 
+                                </div>   
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -468,9 +667,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-<script src="function.js"></script>
-<script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.14.0.js'><\/script>".replace("HOST", location.hostname));
-//]]></script>
+<script src="function.min.js"></script>
 </body>
 </html>

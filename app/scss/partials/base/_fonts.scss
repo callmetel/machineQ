@@ -35,9 +35,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('../fonts/gotham_book_regular-webfont.woff2') format('woff2'),
+         url('../fonts/gotham_book_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 // Declare Gotham font families
 
 $gothamL: 'gotham_lightregular';
+$gothamB: 'gotham_bookregular';
 $gothamM: 'gotham_mediumregular';
 $gothamBo: 'gotham_boldregular';
 $gothamBl: 'gotham_blackregular';
@@ -71,6 +81,11 @@ $label: normal normal normal 1rem/1.125rem $gothamBo; // for macbook 11"-13"
 $xl-label: normal normal normal 1.8rem/2.025rem $gothamBo; // for xl destops //multiply by 1.8
 $mp-label: normal normal normal 1.1rem/1.2375rem $gothamBo; // for macbook 15" //multiply by 1.1
 $lg-label: normal normal normal 0.725rem/0.815625rem $gothamBo; //for horizontal ipads //multiply by .725
+
+$h4: normal normal normal 72px/74px $gothamBo; // for macbook 11"-13"
+$xl-h4: normal normal normal 93px/95px $gothamBo; // for xl destops //multiply by 1.8
+$mp-h4: normal normal normal 52px/54px $gothamBo; // for macbook 15" //multiply by 1.1
+$lg-h4: normal normal normal 33px/35px $gothamBo; //for horizontal ipads //multiply by .725
 
 $formlabel: normal normal normal 1rem/1.125rem $gothamL; // for macbook 11"-13"
 $xl-formlabel: normal normal normal 1.8rem/2.025rem $gothamL; // for xl destops //multiply by 1.8
@@ -111,5 +126,21 @@ $md-comcast: normal normal normal 9.5px/9.5px $gothamM; //for horizontal ipads /
 $sm-comcast: normal normal normal 5px/0rem $gothamM; //for horizontal ipads //multiply by .725
 $xs-comcast: normal normal normal 3px/0rem $gothamM; //for horizontal ipads //multiply by .725
 
+$header-lg-sup: normal normal normal 47.25px/0px $gothamBo; // for macbook 15" //multiply by 1.1
+$header-sup: normal normal normal 28.5px/0rem $gothamBo; // for macbook 15" //multiply by 1.1
+$header-md-sup: normal normal normal 17.25px/0rem $gothamBo; //for horizontal ipads //multiply by .725
+$header-sm-sup: normal normal normal 5px/0rem $gothamBo; //for horizontal ipads //multiply by .725
+$header-xs-sup: normal normal normal 3px/0rem $gothamBo; //for horizontal ipads //multiply by .725
 
+
+#section-7 h1.title sup{
+    font: $header-sup!important;
+    letter-spacing: 0;
+    @include media($xl-desktop){
+        font: $header-lg-sup!important;
+    }
+    @include media($filter-desktop-bp){
+        font: $header-md-sup!important;
+    }
+}
 

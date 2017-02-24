@@ -55,6 +55,21 @@ body {
     src: url("../fonts/gotham-black-webfont.woff2") format("woff2"), url("../fonts/gotham-black-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal; } }
+@font-face {
+  .ie10 {
+    font-family: 'gotham_bookregular';
+    src: url("../fonts/gotham_book_regular-webfont.woff2") format("woff2"), url("../fonts/gotham_book_regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal; } }
+.ie10 #section-7 h1.title sup {
+  font: normal normal normal 28.5px/0rem "gotham_boldregular" !important;
+  letter-spacing: 0; }
+  @media screen and (min-width: 2001px) {
+    .ie10 #section-7 h1.title sup {
+      font: normal normal normal 47.25px/0px "gotham_boldregular" !important; } }
+  @media screen and (max-width: 1200px) {
+    .ie10 #section-7 h1.title sup {
+      font: normal normal normal 17.25px/0rem "gotham_boldregular" !important; } }
 .ie10 .ie10 h1,
 .ie10 .ie10 h2,
 .ie10 .ie10 h3,
@@ -244,6 +259,21 @@ body {
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'gotham_bookregular';
+  src: url("../fonts/gotham_book_regular-webfont.woff2") format("woff2"), url("../fonts/gotham_book_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+#section-7 h1.title sup {
+  font: normal normal normal 28.5px/0rem "gotham_boldregular" !important;
+  letter-spacing: 0; }
+  @media screen and (min-width: 2001px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 47.25px/0px "gotham_boldregular" !important; } }
+  @media screen and (max-width: 1200px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 17.25px/0rem "gotham_boldregular" !important; } }
+
+@font-face {
   font-family: 'gotham_boldregular';
   src: url("../fonts/gotham-bold-webfont.woff2") format("woff2"), url("../fonts/gotham-bold-webfont.woff") format("woff");
   font-weight: normal;
@@ -263,6 +293,21 @@ body {
   src: url("../fonts/gotham-black-webfont.woff2") format("woff2"), url("../fonts/gotham-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'gotham_bookregular';
+  src: url("../fonts/gotham_book_regular-webfont.woff2") format("woff2"), url("../fonts/gotham_book_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+#section-7 h1.title sup {
+  font: normal normal normal 28.5px/0rem "gotham_boldregular" !important;
+  letter-spacing: 0; }
+  @media screen and (min-width: 2001px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 47.25px/0px "gotham_boldregular" !important; } }
+  @media screen and (max-width: 1200px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 17.25px/0rem "gotham_boldregular" !important; } }
+
 .ie10 h1,
 .ie10 h2,
 .ie10 h3,
@@ -452,6 +497,21 @@ body {
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'gotham_bookregular';
+  src: url("../fonts/gotham_book_regular-webfont.woff2") format("woff2"), url("../fonts/gotham_book_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+#section-7 h1.title sup {
+  font: normal normal normal 28.5px/0rem "gotham_boldregular" !important;
+  letter-spacing: 0; }
+  @media screen and (min-width: 2001px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 47.25px/0px "gotham_boldregular" !important; } }
+  @media screen and (max-width: 1200px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 17.25px/0rem "gotham_boldregular" !important; } }
+
+@font-face {
   font-family: 'gotham_boldregular';
   src: url("../fonts/gotham-bold-webfont.woff2") format("woff2"), url("../fonts/gotham-bold-webfont.woff") format("woff");
   font-weight: normal;
@@ -471,6 +531,21 @@ body {
   src: url("../fonts/gotham-black-webfont.woff2") format("woff2"), url("../fonts/gotham-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'gotham_bookregular';
+  src: url("../fonts/gotham_book_regular-webfont.woff2") format("woff2"), url("../fonts/gotham_book_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+#section-7 h1.title sup {
+  font: normal normal normal 28.5px/0rem "gotham_boldregular" !important;
+  letter-spacing: 0; }
+  @media screen and (min-width: 2001px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 47.25px/0px "gotham_boldregular" !important; } }
+  @media screen and (max-width: 1200px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 17.25px/0rem "gotham_boldregular" !important; } }
+
 .ie10 h1,
 .ie10 h2,
 .ie10 h3,
@@ -666,6 +741,24 @@ body {
   src: url("../fonts/gotham-black-webfont.woff2") format("woff2"), url("../fonts/gotham-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'gotham_bookregular';
+  src: url("../fonts/gotham_book_regular-webfont.woff2") format("woff2"), url("../fonts/gotham_book_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+#section-7 h1.title sup {
+  font: normal normal normal 28.5px/0rem "gotham_boldregular" !important;
+  letter-spacing: 0; }
+  @media screen and (min-width: 2001px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 47.25px/0px "gotham_boldregular" !important; } }
+  @media screen and (max-width: 1200px) {
+    #section-7 h1.title sup {
+      font: normal normal normal 17.25px/0rem "gotham_boldregular" !important; } }
+
+#section-7 .info p span.orange {
+  font-family: "gotham_mediumregular" !important; }
+
 h1,
 h2,
 h3,
@@ -1450,10 +1543,10 @@ section#contact {
   overflow-y: auto; }
   @media screen and (max-device-width: 736px) and (orientation: portrait) {
     #events {
-      height: 72vh; } }
+      height: 78.25vh; } }
   #events div.left {
     display: inline-block;
-    width: 28%;
+    width: 30%;
     margin-right: 6.75%;
     vertical-align: top; }
     @media screen and (max-width: 992px) {
@@ -1473,7 +1566,7 @@ section#contact {
       @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
         #events div.left h2 {
           font: normal normal normal 1rem/1.125rem "gotham_boldregular"; } }
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 768px) {
         #events div.left h2 {
           font: normal normal normal 0.725rem/0.81563rem "gotham_boldregular"; } }
       @media screen and (max-device-width: 1080px) and (orientation: portrait) {
@@ -1485,328 +1578,11 @@ section#contact {
       position: relative;
       text-align: center;
       cursor: pointer; }
-      #events div.left div#articles-container div.news-article .left {
-        display: inline-block !important;
-        width: 80%;
-        margin-right: 1%; }
-        @media screen and (max-device-width: 1024px) and (orientation: landscape) {
-          #events div.left div#articles-container div.news-article .left {
-            width: 90%; } }
-        @media screen and (max-width: 992px) {
-          #events div.left div#articles-container div.news-article .left {
-            margin: 0 6% 0 0 !important; } }
-      #events div.left div#articles-container div.news-article .right {
-        display: inline-block !important;
-        width: 8%; }
-        @media screen and (max-device-width: 1024px) and (orientation: landscape) {
-          #events div.left div#articles-container div.news-article .right {
-            width: 3%; } }
-        @media screen and (max-width: 992px) {
-          #events div.left div#articles-container div.news-article .right {
-            margin: 0 !important; } }
-      #events div.left div#articles-container div.news-article div.article-container {
-        margin-bottom: 4.375vh;
-        height: 24.5vh;
-        overflow: hidden; }
-        #events div.left div#articles-container div.news-article div.article-container div.article-image {
-          width: 100%;
-          height: 25.33vh;
-          min-height: 203px;
-          background-size: cover;
-          positon: relative;
-          opacity: 1;
-          background: white;
-          /* For browsers that do not support gradients */
-          background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.01));
-          /* For Safari 5.1 to 6.0 */
-          background: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.01));
-          /* For Opera 11.1 to 12.0 */
-          background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.01));
-          /* For Firefox 3.6 to 15 */
-          background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.01));
-          /* Standard syntax (must be last) */ }
-        #events div.left div#articles-container div.news-article div.article-container img#coming-soon {
-          position: absolute;
-          z-index: 100;
-          top: 30%;
-          left: 0;
-          right: 0;
-          margin: 0 auto; }
-        #events div.left div#articles-container div.news-article div.article-container div.article-date {
-          position: absolute;
-          top: 12px;
-          left: 12px;
-          text-align: center; }
-          #events div.left div#articles-container div.news-article div.article-container div.article-date h3.month {
-            font: normal normal normal 1.1rem/1.2375rem "gotham_mediumregular";
-            letter-spacing: 0; }
-            @media screen and (min-width: 2001px) {
-              #events div.left div#articles-container div.news-article div.article-container div.article-date h3.month {
-                font: normal normal normal 1.8rem/2.025rem "gotham_mediumregular"; } }
-            @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
-              #events div.left div#articles-container div.news-article div.article-container div.article-date h3.month {
-                font: normal normal normal 1rem/1.125rem "gotham_mediumregular"; } }
-            @media screen and (max-width: 992px) {
-              #events div.left div#articles-container div.news-article div.article-container div.article-date h3.month {
-                font: normal normal normal 0.725rem/0.81563rem "gotham_mediumregular"; } }
-          #events div.left div#articles-container div.news-article div.article-container div.article-date h4.day {
-            font: normal normal normal 2.6125rem/3.135rem "gotham_lightregular";
-            letter-spacing: 0; }
-            @media screen and (min-width: 2001px) {
-              #events div.left div#articles-container div.news-article div.article-container div.article-date h4.day {
-                font: normal normal normal 4.275rem/5.13rem "gotham_lightregular"; } }
-            @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
-              #events div.left div#articles-container div.news-article div.article-container div.article-date h4.day {
-                font: normal normal normal 2.375rem/2.85rem "gotham_lightregular"; } }
-            @media screen and (max-width: 992px) {
-              #events div.left div#articles-container div.news-article div.article-container div.article-date h4.day {
-                font: normal normal normal 2.375rem/2.85rem "gotham_lightregular"; } }
-        #events div.left div#articles-container div.news-article div.article-container .article-text {
-          position: absolute;
-          bottom: -15px;
-          left: 12px; }
-          #events div.left div#articles-container div.news-article div.article-container .article-text p {
-            text-align: left; }
-            #events div.left div#articles-container div.news-article div.article-container .article-text p span {
-              color: white !important; }
-          #events div.left div#articles-container div.news-article div.article-container .article-text .article-title {
-            margin-bottom: 10px; }
-            #events div.left div#articles-container div.news-article div.article-container .article-text .article-title span {
-              font: normal normal normal 1.1rem/1.2375rem "gotham_lightregular";
-              letter-spacing: 0;
-              font-family: "gotham_mediumregular" !important; }
-              @media screen and (min-width: 2001px) {
-                #events div.left div#articles-container div.news-article div.article-container .article-text .article-title span {
-                  font: normal normal normal 1.8rem/2.025rem "gotham_lightregular"; } }
-              @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
-                #events div.left div#articles-container div.news-article div.article-container .article-text .article-title span {
-                  font: normal normal normal 1rem/1.125rem "gotham_lightregular"; } }
-              @media screen and (max-width: 992px) {
-                #events div.left div#articles-container div.news-article div.article-container .article-text .article-title span {
-                  font: normal normal normal 0.725rem/0.81563rem "gotham_lightregular"; } }
-          #events div.left div#articles-container div.news-article div.article-container .article-text .article-hint {
-            width: 80%;
-            font: normal normal normal 0.725rem/0.81563rem "gotham_lightregular";
-            margin-bottom: 10px;
-            opacity: 0;
-            color: white !important; }
-            @media screen and (min-width: 2001px) {
-              #events div.left div#articles-container div.news-article div.article-container .article-text .article-hint {
-                font: normal normal normal 1rem/1.125rem "gotham_lightregular"; } }
-            @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
-              #events div.left div#articles-container div.news-article div.article-container .article-text .article-hint {
-                font: normal normal normal 0.725rem/0.81563rem "gotham_lightregular"; } }
-            @media screen and (max-width: 992px) {
-              #events div.left div#articles-container div.news-article div.article-container .article-text .article-hint {
-                font: normal normal normal 0.425rem/0.59625rem "gotham_lightregular"; } }
-          #events div.left div#articles-container div.news-article div.article-container .article-text a.arrow-container {
-            opacity: 0;
-            cursor: pointer; }
-            #events div.left div#articles-container div.news-article div.article-container .article-text a.arrow-container img.arrow {
-              width: auto;
-              height: 10px;
-              margin-top: 0px;
-              -webkit-transform: rotate(-90deg);
-              -moz-transform: rotate(-90deg);
-              -ms-transform: rotate(-90deg);
-              -o-transform: rotate(-90deg);
-              transform: rotate(-90deg); }
-      #events div.left div#articles-container div.news-article.active-article div.article-container div.article-image {
-        -webkit-animation: img-fade-in 1s linear;
-        -moz-animation: img-fade-in 1s linear;
-        animation: img-fade-in 1s linear;
-        -webkit-animation-fill-mode: forwards;
-        -moz-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-timing-function: ease;
-        -moz-animation-timing-function: ease;
-        animation-timing-function: ease; }
-@-webkit-keyframes img-fade-in {
-  0% {
-    opacity: .5;
-    background-image: url("../images/article1-normalstate.png"); }
-  50% {
-    opacity: .55; }
-  100% {
-    opacity: .65; } }
-@-moz-keyframes img-fade-in {
-  0% {
-    opacity: .5;
-    background-image: url("../images/article1-normalstate.png"); }
-  50% {
-    opacity: .55; }
-  100% {
-    opacity: .65; } }
-@keyframes img-fade-in {
-  0% {
-    opacity: .5;
-    background-image: url("../images/article1-normalstate.png"); }
-  50% {
-    opacity: .55; }
-  100% {
-    opacity: .65; } }
-      #events div.left div#articles-container div.news-article.active-article div.article-container .article-text {
-        -webkit-animation: img-fade-in2 1s linear;
-        -moz-animation: img-fade-in2 1s linear;
-        animation: img-fade-in2 1s linear;
-        -webkit-animation-fill-mode: forwards;
-        -moz-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-timing-function: ease;
-        -moz-animation-timing-function: ease;
-        animation-timing-function: ease; }
-        #events div.left div#articles-container div.news-article.active-article div.article-container .article-text .article-hint, #events div.left div#articles-container div.news-article.active-article div.article-container .article-text .arrow-container {
-          opacity: 1;
-          -webkit-animation: img-fade-in3 1s linear;
-          -moz-animation: img-fade-in3 1s linear;
-          animation: img-fade-in3 1s linear;
-          -webkit-animation-fill-mode: forwards;
-          -moz-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-          -webkit-animation-timing-function: ease;
-          -moz-animation-timing-function: ease;
-          animation-timing-function: ease; }
-@-webkit-keyframes img-fade-in3 {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-moz-keyframes img-fade-in3 {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@keyframes img-fade-in3 {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-webkit-keyframes img-fade-in2 {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(-30px); } }
-@-moz-keyframes img-fade-in2 {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 1;
-    -moz-transform: translateY(-30px); } }
-@keyframes img-fade-in2 {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -o-transform: translateY(-30px);
-    transform: translateY(-30px); } }
-      #events div.left div#articles-container div.news-article.inactive-article div.article-container div.article-image {
-        -webkit-animation: img-fade-out 1s linear;
-        -moz-animation: img-fade-out 1s linear;
-        animation: img-fade-out 1s linear;
-        -webkit-animation-fill-mode: forwards;
-        -moz-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-timing-function: ease;
-        -moz-animation-timing-function: ease;
-        animation-timing-function: ease; }
-@-webkit-keyframes img-fade-out {
-  0% {
-    opacity: .5;
-    background-image: url("../images/article1-hoverstate.png"); }
-  50% {
-    opacity: .55; }
-  100% {
-    opacity: .6; } }
-@-moz-keyframes img-fade-out {
-  0% {
-    opacity: .5;
-    background-image: url("../images/article1-hoverstate.png"); }
-  50% {
-    opacity: .55; }
-  100% {
-    opacity: .6; } }
-@keyframes img-fade-out {
-  0% {
-    opacity: .5;
-    background-image: url("../images/article1-hoverstate.png"); }
-  50% {
-    opacity: .55; }
-  100% {
-    opacity: .6; } }
-      #events div.left div#articles-container div.news-article.inactive-article div.article-container .article-text {
-        -webkit-animation: img-fade-out2 2s linear;
-        -moz-animation: img-fade-out2 2s linear;
-        animation: img-fade-out2 2s linear;
-        -webkit-animation-fill-mode: forwards;
-        -moz-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-timing-function: ease;
-        -moz-animation-timing-function: ease;
-        animation-timing-function: ease; }
-        #events div.left div#articles-container div.news-article.inactive-article div.article-container .article-text .article-hint, #events div.left div#articles-container div.news-article.inactive-article div.article-container .article-text .arrow-container {
-          opacity: 0;
-          -webkit-animation: img-fade-out3 1s linear;
-          -moz-animation: img-fade-out3 1s linear;
-          animation: img-fade-out3 1s linear;
-          -webkit-animation-fill-mode: forwards;
-          -moz-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-          -webkit-animation-timing-function: ease;
-          -moz-animation-timing-function: ease;
-          animation-timing-function: ease; }
-@-webkit-keyframes img-fade-out3 {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@-moz-keyframes img-fade-out3 {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@keyframes img-fade-out3 {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@-webkit-keyframes img-fade-out2 {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px); } }
-@-moz-keyframes img-fade-out2 {
-  0% {
-    opacity: 1;
-    -moz-transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    -moz-transform: translateY(0px); } }
-@keyframes img-fade-out2 {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -o-transform: translateY(-30px);
-    transform: translateY(-30px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px); } }
-    #events div.left #article1.inactive-article div.article-image {
-      background-image: url("../images/article1-normalstate.png"); }
+      #events div.left div#articles-container div.news-article .article-image {
+        width: 100%; }
   #events div.right {
     display: inline-block;
-    width: 57%;
+    width: 55%;
     vertical-align: top; }
     @media screen and (max-width: 992px) {
       #events div.right {
@@ -1826,17 +1602,17 @@ section#contact {
         #events div.right h2 {
           font: normal normal normal 1rem/1.125rem "gotham_boldregular";
           width: 170px; } }
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 768px) {
         #events div.right h2 {
           font: normal normal normal 0.725rem/0.81563rem "gotham_boldregular";
-          width: 100%; } }
+          width: 100%;
+          margin-top: 40px; } }
       @media screen and (max-device-width: 1080px) and (orientation: portrait) {
         #events div.right h2 {
           font: normal normal normal 1rem/1.125rem "gotham_boldregular"; } }
     #events div.right div#events-container div.event {
       position: relative;
       text-align: left;
-      cursor: pointer;
       margin-top: 30px;
       padding-bottom: 30px;
       border-bottom: 0.5px solid #ff4b00; }
@@ -1857,9 +1633,9 @@ section#contact {
             @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
               #events div.right div#events-container div.event div.events-container div.events-date h3.month {
                 font: normal normal normal 1rem/1.125rem "gotham_mediumregular"; } }
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 768px) {
               #events div.right div#events-container div.event div.events-container div.events-date h3.month {
-                font: normal normal normal 0.725rem/0.81563rem "gotham_mediumregular"; } }
+                font: normal normal normal 1rem/1.125rem "gotham_mediumregular"; } }
           #events div.right div#events-container div.event div.events-container div.events-date h4.day {
             font: normal normal normal 2.6125rem/3.135rem "gotham_lightregular";
             letter-spacing: 0; }
@@ -1869,9 +1645,12 @@ section#contact {
             @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
               #events div.right div#events-container div.event div.events-container div.events-date h4.day {
                 font: normal normal normal 2.375rem/2.85rem "gotham_lightregular"; } }
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 768px) {
               #events div.right div#events-container div.event div.events-container div.events-date h4.day {
                 font: normal normal normal 2.375rem/2.85rem "gotham_lightregular"; } }
+          @media screen and (max-width: 768px) {
+            #events div.right div#events-container div.event div.events-container div.events-date {
+              margin-left: 20px; } }
         #events div.right div#events-container div.event div.events-container .events-text {
           display: inline-block;
           width: 80%;
@@ -1880,6 +1659,9 @@ section#contact {
           @media screen and (max-device-width: 1024px) and (orientation: landscape) {
             #events div.right div#events-container div.event div.events-container .events-text {
               width: 100%; } }
+          @media screen and (max-width: 768px) {
+            #events div.right div#events-container div.event div.events-container .events-text {
+              width: 73%; } }
           #events div.right div#events-container div.event div.events-container .events-text p {
             text-align: left; }
             #events div.right div#events-container div.event div.events-container .events-text p span {
@@ -1896,7 +1678,7 @@ section#contact {
               @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
                 #events div.right div#events-container div.event div.events-container .events-text .article-title span {
                   font: normal normal normal 1rem/1.125rem "gotham_lightregular"; } }
-              @media screen and (max-width: 992px) {
+              @media screen and (max-width: 768px) {
                 #events div.right div#events-container div.event div.events-container .events-text .article-title span {
                   font: normal normal normal 0.725rem/0.81563rem "gotham_lightregular"; } }
           #events div.right div#events-container div.event div.events-container .events-text .article-hint {
@@ -1920,6 +1702,9 @@ section#contact {
             #events div.right div#events-container div.event div.events-container .events-text a.arrow-container img.arrow {
               width: 24px;
               min-height: 8px; }
+        #events div.right div#events-container div.event div.events-container .events-title strong {
+          font-family: "gotham_mediumregular" !important;
+          font-weight: normal !important; }
       #events div.right div#events-container div.event.active-article div.article-container div.article-image:before {
         background: none;
         -webkit-transition: all 0.35s ease-in-out;
@@ -1937,6 +1722,202 @@ section#contact {
         -webkit-transition: all 0.35s ease-in-out;
         -moz-transition: all 0.35s ease-in-out;
         transition: all 0.35s ease-in-out; }
+
+#innovation-event, #philly-event, #sanfran-event, #chicago-event {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -100000;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -moz-transition: opacity 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: opacity 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+  #innovation-event .individual-event, #philly-event .individual-event, #sanfran-event .individual-event, #chicago-event .individual-event {
+    width: 78vw;
+    height: 75vh;
+    background: white;
+    background-size: cover;
+    color: #ff4b00;
+    margin: 12vh auto;
+    position: relative;
+    padding: 105px 75px;
+    overflow-y: auto; }
+    @media screen and (max-width: 768px) {
+      #innovation-event .individual-event, #philly-event .individual-event, #sanfran-event .individual-event, #chicago-event .individual-event {
+        padding: 52.5px 37.5px; } }
+    @media screen and (max-width: 480px) {
+      #innovation-event .individual-event, #philly-event .individual-event, #sanfran-event .individual-event, #chicago-event .individual-event {
+        padding: 52.5px 18.75px 26.1px 18.75px; } }
+    @media screen and (max-device-width: 736px) and (orientation: portrait) {
+      #innovation-event .individual-event, #philly-event .individual-event, #sanfran-event .individual-event, #chicago-event .individual-event {
+        padding: 52.5px 18.75px 26.1px 18.75px; } }
+    #innovation-event .individual-event div.title h3, #philly-event .individual-event div.title h3, #sanfran-event .individual-event div.title h3, #chicago-event .individual-event div.title h3 {
+      color: #ff4b00;
+      border-bottom: 6px solid #ff4b00;
+      padding-bottom: 13px;
+      margin-bottom: 50px;
+      font: normal normal normal 1.1rem/1.2375rem "gotham_boldregular";
+      letter-spacing: 0;
+      font-family: "gotham_mediumregular" !important; }
+      @media screen and (min-width: 2001px) {
+        #innovation-event .individual-event div.title h3, #philly-event .individual-event div.title h3, #sanfran-event .individual-event div.title h3, #chicago-event .individual-event div.title h3 {
+          font: normal normal normal 1.8rem/2.025rem "gotham_boldregular"; } }
+      @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
+        #innovation-event .individual-event div.title h3, #philly-event .individual-event div.title h3, #sanfran-event .individual-event div.title h3, #chicago-event .individual-event div.title h3 {
+          font: normal normal normal 1rem/1.125rem "gotham_boldregular"; } }
+      @media screen and (max-width: 768px) {
+        #innovation-event .individual-event div.title h3, #philly-event .individual-event div.title h3, #sanfran-event .individual-event div.title h3, #chicago-event .individual-event div.title h3 {
+          font: normal normal normal 1rem/1.125rem "gotham_boldregular"; } }
+      @media screen and (max-device-width: 1080px) and (orientation: portrait) {
+        #innovation-event .individual-event div.title h3, #philly-event .individual-event div.title h3, #sanfran-event .individual-event div.title h3, #chicago-event .individual-event div.title h3 {
+          font: normal normal normal 1rem/1.125rem "gotham_boldregular"; } }
+    #innovation-event .individual-event div.left, #philly-event .individual-event div.left, #sanfran-event .individual-event div.left, #chicago-event .individual-event div.left {
+      display: inline-block;
+      width: auto;
+      margin-right: 6.75%;
+      vertical-align: top; }
+      #innovation-event .individual-event div.left div.date, #philly-event .individual-event div.left div.date, #sanfran-event .individual-event div.left div.date, #chicago-event .individual-event div.left div.date {
+        text-align: center; }
+        #innovation-event .individual-event div.left div.date h3.month, #philly-event .individual-event div.left div.date h3.month, #sanfran-event .individual-event div.left div.date h3.month, #chicago-event .individual-event div.left div.date h3.month {
+          color: #ff4b00;
+          font: normal normal normal 1.1rem/1.2375rem "gotham_mediumregular";
+          letter-spacing: 0; }
+          @media screen and (min-width: 2001px) {
+            #innovation-event .individual-event div.left div.date h3.month, #philly-event .individual-event div.left div.date h3.month, #sanfran-event .individual-event div.left div.date h3.month, #chicago-event .individual-event div.left div.date h3.month {
+              font: normal normal normal 1.8rem/2.025rem "gotham_mediumregular"; } }
+          @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
+            #innovation-event .individual-event div.left div.date h3.month, #philly-event .individual-event div.left div.date h3.month, #sanfran-event .individual-event div.left div.date h3.month, #chicago-event .individual-event div.left div.date h3.month {
+              font: normal normal normal 1rem/1.125rem "gotham_mediumregular"; } }
+          @media screen and (max-width: 992px) {
+            #innovation-event .individual-event div.left div.date h3.month, #philly-event .individual-event div.left div.date h3.month, #sanfran-event .individual-event div.left div.date h3.month, #chicago-event .individual-event div.left div.date h3.month {
+              font: normal normal normal 0.725rem/0.81563rem "gotham_mediumregular"; } }
+        #innovation-event .individual-event div.left div.date h4.day, #philly-event .individual-event div.left div.date h4.day, #sanfran-event .individual-event div.left div.date h4.day, #chicago-event .individual-event div.left div.date h4.day {
+          color: #ff4b00;
+          font: normal normal normal 2.6125rem/3.135rem "gotham_lightregular";
+          letter-spacing: 0; }
+          @media screen and (min-width: 2001px) {
+            #innovation-event .individual-event div.left div.date h4.day, #philly-event .individual-event div.left div.date h4.day, #sanfran-event .individual-event div.left div.date h4.day, #chicago-event .individual-event div.left div.date h4.day {
+              font: normal normal normal 4.275rem/5.13rem "gotham_lightregular"; } }
+          @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
+            #innovation-event .individual-event div.left div.date h4.day, #philly-event .individual-event div.left div.date h4.day, #sanfran-event .individual-event div.left div.date h4.day, #chicago-event .individual-event div.left div.date h4.day {
+              font: normal normal normal 2.375rem/2.85rem "gotham_lightregular"; } }
+          @media screen and (max-width: 992px) {
+            #innovation-event .individual-event div.left div.date h4.day, #philly-event .individual-event div.left div.date h4.day, #sanfran-event .individual-event div.left div.date h4.day, #chicago-event .individual-event div.left div.date h4.day {
+              font: normal normal normal 2.375rem/2.85rem "gotham_lightregular"; } }
+    #innovation-event .individual-event div.right, #philly-event .individual-event div.right, #sanfran-event .individual-event div.right, #chicago-event .individual-event div.right {
+      display: inline-block;
+      width: 80%;
+      vertical-align: top; }
+      @media screen and (max-width: 480px) {
+        #innovation-event .individual-event div.right, #philly-event .individual-event div.right, #sanfran-event .individual-event div.right, #chicago-event .individual-event div.right {
+          width: 75%; } }
+      #innovation-event .individual-event div.right div.article-content h4, #philly-event .individual-event div.right div.article-content h4, #sanfran-event .individual-event div.right div.article-content h4, #chicago-event .individual-event div.right div.article-content h4 {
+        color: #ff4b00;
+        padding-bottom: 13px;
+        font: normal normal normal 72px/74px "gotham_boldregular";
+        letter-spacing: 0;
+        margin-top: -5px; }
+        @media screen and (min-width: 2001px) {
+          #innovation-event .individual-event div.right div.article-content h4, #philly-event .individual-event div.right div.article-content h4, #sanfran-event .individual-event div.right div.article-content h4, #chicago-event .individual-event div.right div.article-content h4 {
+            font: normal normal normal 93px/95px "gotham_boldregular"; } }
+        @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
+          #innovation-event .individual-event div.right div.article-content h4, #philly-event .individual-event div.right div.article-content h4, #sanfran-event .individual-event div.right div.article-content h4, #chicago-event .individual-event div.right div.article-content h4 {
+            font: normal normal normal 52px/54px "gotham_boldregular"; } }
+        @media screen and (max-width: 768px) {
+          #innovation-event .individual-event div.right div.article-content h4, #philly-event .individual-event div.right div.article-content h4, #sanfran-event .individual-event div.right div.article-content h4, #chicago-event .individual-event div.right div.article-content h4 {
+            font: normal normal normal 33px/35px "gotham_boldregular"; } }
+        @media screen and (max-device-width: 1080px) and (orientation: portrait) {
+          #innovation-event .individual-event div.right div.article-content h4, #philly-event .individual-event div.right div.article-content h4, #sanfran-event .individual-event div.right div.article-content h4, #chicago-event .individual-event div.right div.article-content h4 {
+            font: normal normal normal 52px/54px "gotham_boldregular"; } }
+        @media screen and (max-device-width: 736px) and (orientation: portrait) {
+          #innovation-event .individual-event div.right div.article-content h4, #philly-event .individual-event div.right div.article-content h4, #sanfran-event .individual-event div.right div.article-content h4, #chicago-event .individual-event div.right div.article-content h4 {
+            font: normal normal normal 33px/35px "gotham_boldregular"; } }
+      #innovation-event .individual-event div.right div.article-content p, #philly-event .individual-event div.right div.article-content p, #sanfran-event .individual-event div.right div.article-content p, #chicago-event .individual-event div.right div.article-content p {
+        color: #666666;
+        font: normal normal normal 1.5125rem/1.815rem "gotham_mediumregular";
+        letter-spacing: 0;
+        font-family: "gotham_bookregular" !important;
+        margin-top: 5.625%; }
+        @media screen and (min-width: 2001px) {
+          #innovation-event .individual-event div.right div.article-content p, #philly-event .individual-event div.right div.article-content p, #sanfran-event .individual-event div.right div.article-content p, #chicago-event .individual-event div.right div.article-content p {
+            font: normal normal normal 2.475rem/2.97rem "gotham_mediumregular"; } }
+        @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
+          #innovation-event .individual-event div.right div.article-content p, #philly-event .individual-event div.right div.article-content p, #sanfran-event .individual-event div.right div.article-content p, #chicago-event .individual-event div.right div.article-content p {
+            font: normal normal normal 1.375rem/1.65rem "gotham_mediumregular"; } }
+        @media screen and (max-width: 768px) {
+          #innovation-event .individual-event div.right div.article-content p, #philly-event .individual-event div.right div.article-content p, #sanfran-event .individual-event div.right div.article-content p, #chicago-event .individual-event div.right div.article-content p {
+            font: normal normal normal 0.99688rem/1.19625rem "gotham_mediumregular"; } }
+        @media screen and (max-device-width: 1080px) and (orientation: portrait) {
+          #innovation-event .individual-event div.right div.article-content p, #philly-event .individual-event div.right div.article-content p, #sanfran-event .individual-event div.right div.article-content p, #chicago-event .individual-event div.right div.article-content p {
+            font: normal normal normal 1.375rem/1.65rem "gotham_mediumregular"; } }
+        @media screen and (max-device-width: 736px) and (orientation: portrait) {
+          #innovation-event .individual-event div.right div.article-content p, #philly-event .individual-event div.right div.article-content p, #sanfran-event .individual-event div.right div.article-content p, #chicago-event .individual-event div.right div.article-content p {
+            font: normal normal normal 0.99688rem/1.19625rem "gotham_mediumregular"; } }
+      #innovation-event .individual-event div.right div.article-content ul, #philly-event .individual-event div.right div.article-content ul, #sanfran-event .individual-event div.right div.article-content ul, #chicago-event .individual-event div.right div.article-content ul {
+        margin-left: 20px; }
+        #innovation-event .individual-event div.right div.article-content ul li, #philly-event .individual-event div.right div.article-content ul li, #sanfran-event .individual-event div.right div.article-content ul li, #chicago-event .individual-event div.right div.article-content ul li {
+          color: #666666;
+          font: normal normal normal 1.5125rem/1.815rem "gotham_mediumregular";
+          letter-spacing: 0;
+          font-family: "gotham_bookregular" !important; }
+          @media screen and (min-width: 2001px) {
+            #innovation-event .individual-event div.right div.article-content ul li, #philly-event .individual-event div.right div.article-content ul li, #sanfran-event .individual-event div.right div.article-content ul li, #chicago-event .individual-event div.right div.article-content ul li {
+              font: normal normal normal 2.475rem/2.97rem "gotham_mediumregular"; } }
+          @media screen and (min-device-width: 1280px) and (max-width: 1366px) {
+            #innovation-event .individual-event div.right div.article-content ul li, #philly-event .individual-event div.right div.article-content ul li, #sanfran-event .individual-event div.right div.article-content ul li, #chicago-event .individual-event div.right div.article-content ul li {
+              font: normal normal normal 1.375rem/1.65rem "gotham_mediumregular"; } }
+          @media screen and (max-width: 768px) {
+            #innovation-event .individual-event div.right div.article-content ul li, #philly-event .individual-event div.right div.article-content ul li, #sanfran-event .individual-event div.right div.article-content ul li, #chicago-event .individual-event div.right div.article-content ul li {
+              font: normal normal normal 0.99688rem/1.19625rem "gotham_mediumregular"; } }
+          @media screen and (max-device-width: 1080px) and (orientation: portrait) {
+            #innovation-event .individual-event div.right div.article-content ul li, #philly-event .individual-event div.right div.article-content ul li, #sanfran-event .individual-event div.right div.article-content ul li, #chicago-event .individual-event div.right div.article-content ul li {
+              font: normal normal normal 1.375rem/1.65rem "gotham_mediumregular"; } }
+          @media screen and (max-device-width: 736px) and (orientation: portrait) {
+            #innovation-event .individual-event div.right div.article-content ul li, #philly-event .individual-event div.right div.article-content ul li, #sanfran-event .individual-event div.right div.article-content ul li, #chicago-event .individual-event div.right div.article-content ul li {
+              font: normal normal normal 0.99688rem/1.19625rem "gotham_mediumregular"; } }
+          #innovation-event .individual-event div.right div.article-content ul li:first-child, #philly-event .individual-event div.right div.article-content ul li:first-child, #sanfran-event .individual-event div.right div.article-content ul li:first-child, #chicago-event .individual-event div.right div.article-content ul li:first-child {
+            margin-top: 5.625%; }
+    #innovation-event .individual-event .close-icon, #philly-event .individual-event .close-icon, #sanfran-event .individual-event .close-icon, #chicago-event .individual-event .close-icon {
+      cursor: pointer;
+      width: 1.8vw;
+      min-width: 22px;
+      position: absolute;
+      top: 30px;
+      right: 35px; }
+      @media screen and (max-width: 480px) {
+        #innovation-event .individual-event .close-icon, #philly-event .individual-event .close-icon, #sanfran-event .individual-event .close-icon, #chicago-event .individual-event .close-icon {
+          display: none; } }
+      @media screen and (max-device-width: 736px) and (orientation: portrait) {
+        #innovation-event .individual-event .close-icon, #philly-event .individual-event .close-icon, #sanfran-event .individual-event .close-icon, #chicago-event .individual-event .close-icon {
+          display: none; } }
+  #innovation-event .mobile-close-icon, #philly-event .mobile-close-icon, #sanfran-event .mobile-close-icon, #chicago-event .mobile-close-icon {
+    display: none; }
+    @media screen and (max-width: 480px) {
+      #innovation-event .mobile-close-icon, #philly-event .mobile-close-icon, #sanfran-event .mobile-close-icon, #chicago-event .mobile-close-icon {
+        display: inherit;
+        cursor: pointer;
+        width: 1.8vw;
+        min-width: 22px;
+        position: absolute;
+        top: 25px;
+        right: 18.75px; } }
+    @media screen and (max-device-width: 736px) and (orientation: portrait) {
+      #innovation-event .mobile-close-icon, #philly-event .mobile-close-icon, #sanfran-event .mobile-close-icon, #chicago-event .mobile-close-icon {
+        display: inherit;
+        cursor: pointer;
+        width: 1.8vw;
+        min-width: 22px;
+        position: absolute;
+        top: 25px;
+        right: 18.75px; } }
+
+#chicago-event .individual-event {
+  background-image: url("../images/chi-bg.jpg") !important; }
 
 header .global {
   position: fixed;
@@ -1958,7 +1939,7 @@ header .global {
     -moz-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
   header .global#comcast-logo {
-    background-image: url("../images/a-comcast-company.svg");
+    background-image: url("../images/a-comcast-service.svg");
     background-size: contain;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -4182,8 +4163,8 @@ li.option-5.selected svg text {
     display: block;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 40px;
-    margin-top: -13px;
+    margin-left: 34px;
+    margin-top: -14px;
     text-decoration: none;
     background-image: url("../images/global-mQ.svg");
     width: 82px;
@@ -4502,5 +4483,9 @@ a.no-decoration, a:hover.no-decoration {
 
 .position-is-static {
   position: static !important; }
+
+.lightbox-is-active {
+  z-index: 100001 !important;
+  opacity: 1 !important; }
 
 /*# sourceMappingURL=app.css.map */

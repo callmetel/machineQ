@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="270.62" height="270.62" viewBox="0 0 270.62 270.62">
-  <title>temperature</title>
-  <g>
-    <rect width="270.62" height="270.62"/>
-    <text transform="translate(72.8 182.23)" font-size="16" fill="#595959" font-family="Gotham" font-weight="700">T<tspan x="10.26" y="0">E</tspan><tspan x="21.18" y="0">M</tspan><tspan x="35.22" y="0">P</tspan><tspan x="45.94" y="0">E</tspan><tspan x="56.86" y="0">R</tspan><tspan x="68.78" y="0" letter-spacing="-1">A</tspan><tspan x="80.08" y="0">T</tspan><tspan x="90.42" y="0">U</tspan><tspan x="102.7" y="0">R</tspan><tspan x="114.38" y="0">E</tspan></text>
-    <path d="M127.27,122.35V88.28c0-6.12,3.31-9,7.39-9s7.39,2.91,7.39,9v34.39" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
-    <path d="M146.86,81a4,4,0,1,1,4,4A4,4,0,0,1,146.86,81ZM134.52,93.5v31.89m-6.14,6.68a6.29,6.29,0,1,1,6.29,6.33A6.31,6.31,0,0,1,128.38,132.07Zm-0.94-9.56a11.37,11.37,0,0,0-4.61,9.51,11.93,11.93,0,1,0,23.85,0,12.15,12.15,0,0,0-4.77-9.45" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
-  </g>
-</svg>

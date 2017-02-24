@@ -34,6 +34,7 @@ $xs-mobile: new-breakpoint(max-width 480px);
 $sm-mobile: new-breakpoint(max-width 768px);
 $lg-mobile: new-breakpoint(max-width 1024px);
 $mobile: new-breakpoint(max-width 992px);
+$reg-desktop: new-breakpoint(min-width 993px max-width 2000px);
 $md-mobile: new-breakpoint(max-width 1200px);
 
 //height breakpoint
