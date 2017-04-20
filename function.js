@@ -573,6 +573,14 @@ jQuery(document).ready(function($) {
             $('#innovation-event .mobile-close-icon').bind("click", function(e) {
                 $('#innovation-event').removeClass('lightbox-is-active');
             });
+
+            $('#lora-article-link').bind("click", function(e) {
+                $('#lora-event').addClass('lightbox-is-active');
+            });
+
+            $('#lora-event .mobile-close-icon').bind("click", function(e) {
+                $('#lora-event').removeClass('lightbox-is-active');
+            });
             
             
             // e.preventDefault();
@@ -1421,6 +1429,14 @@ jQuery(document).ready(function($) {
 
             $('#innovation-event .close-icon, #innovation-event .mobile-close-icon').on("click", function(e) {
                 $('#innovation-event').removeClass('lightbox-is-active');
+            });
+
+            $('#lora-article-link').on("click", function(e) {
+                $('#lora-event').addClass('lightbox-is-active');
+            });
+
+            $('#lora-event .close-icon, #lora-event .mobile-close-icon').on("click", function(e) {
+                $('#lora-event').removeClass('lightbox-is-active');
             });
    
         });

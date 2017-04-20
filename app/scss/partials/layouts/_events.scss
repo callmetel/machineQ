@@ -267,7 +267,7 @@
     }
 
 }
-#innovation-event, #philly-event, #sanfran-event, #chicago-event{
+#lora-event, #innovation-event, #philly-event, #sanfran-event, #chicago-event{
 	width: 100vw;
 	height: 100vh;
 	background: rgba(0,0,0,0.8);
@@ -406,6 +406,28 @@
 					font-family:$gothamB!important;
 
 					margin-top:5.625%;
+					
+					@include media($xl-desktop){
+						font:$xl-subtitle;
+					}
+					@include media($macbook-pro-13){
+						font:$subtitle;
+					}
+					@include media($sm-mobile){
+						font:$lg-subtitle;
+					}
+					@include media($v-ipad-max-screen){
+						font:$subtitle;
+					}
+					@include media($v-iphone-6-plus){
+						font:$lg-subtitle;
+					}
+		    	}
+		    	a{
+		    		color: $orange;
+		    		font:$mp-subtitle;
+					letter-spacing: 0;
+					font-family:$gothamM!important;
 					
 					@include media($xl-desktop){
 						font:$xl-subtitle;
