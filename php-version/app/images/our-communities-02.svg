@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81" height="81" viewBox="0 0 81 81">
+  <defs>
+    <clipPath id="a">
+      <rect x="0.84" y="0.84" width="79.32" height="79.32" fill="none"/>
+    </clipPath>
+  </defs>
+  <title>our-communities</title>
+  <g clip-path="url(#a)">
+    <circle cx="40.5" cy="40.5" r="39.16" fill="none" stroke="#ff4200"/>
+    <circle cx="55.13" cy="28.63" r="4.3" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <path d="M40,35.17H58.3A4.84,4.84,0,0,1,63.13,40v9.33a4.84,4.84,0,0,1-4.83,4.82H51" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <circle cx="25.87" cy="28.63" r="4.3" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <path d="M30,54.14H22.7a4.84,4.84,0,0,1-4.83-4.82V40a4.84,4.84,0,0,1,4.83-4.82H40" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <circle cx="40.41" cy="26.58" r="5.6" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    <path d="M46,60H34.77A4.82,4.82,0,0,1,30,55.18V40a4.82,4.82,0,0,1,4.81-4.8H46A4.82,4.82,0,0,1,50.85,40V55.18A4.82,4.82,0,0,1,46,60Z" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+  </g>
+</svg>

@@ -1,0 +1,255 @@
+#burger{
+    width: 20px;
+    height: 1px;
+    background: $white;
+
+    &:before{
+        content:'';
+        display: block;
+        width: 20px;
+        height: 1px;
+        background: $white;
+        margin-top: -5px;
+    }
+    &:after{
+        content:'';
+        display: block;
+        width: 20px;
+        height: 1px;
+        background: $white;
+        margin-top: 5px;
+    }
+    i{
+        &:after{
+            content:'';
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 40px;
+            margin-top: -13px;
+            text-decoration: none;
+            background-image: url('../images/global-mQ.svg');
+            width:82px;
+            height:21px;
+            @include transition(translateX 1s ease-in-out);
+        }
+    }
+    &.back-button-active{
+        @include transition(transform .5s ease-in-out);
+        &:before{
+            @include transform(translateY(1px) translateX(-6px) rotate(-45deg) scaleX(0.6));
+        }
+        &:after{
+            @include transform(translateY(-1px) translateX(-6px) rotate(45deg) scaleX(0.6));
+        }
+        i{
+            &:after{
+                background-image: url('../images/global-BACK.svg');
+                width:150px;
+                height:22px; 
+            }
+        }
+        
+    }
+
+}
+
+#nav-trigger, #burger, #burger:before, #burger:after {
+    position: fixed;
+    top: 8.125vh;
+    left: 2.769vw;
+    background: $white;
+    transition: .2s ease;
+    cursor: pointer;
+    z-index: 9999;
+
+}
+#nav-trigger {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background: none;
+    top: 6.5vh;
+    left: 2.75vw;
+
+    @include media($xl-desktop){
+        width: 100px;
+        height:100px;
+    }
+    @include media($lg-desktop){
+        width: 100px;
+        height:100px;
+    }
+}
+
+
+
+
+ul#menu {
+    position: fixed;
+    z-index: 9990;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.9);
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 36.75vh 0 0 0;
+    list-style: none;
+    @include transition(all 1s ease-in-out);
+    
+    
+    @include media($v-ipad-max-screen) {
+        background-size: 1000%;
+        padding: 25vh 0 0 0;
+    }
+    @include media($v-iphone-6-plus) {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        padding: 20vh 0 0 0!important;
+    }
+    @include media($v-iphone-5){
+        padding: 18vh 0 0 0;
+    }
+    @include media($h-ipad-max-screen){
+        padding: 30vh 0 0 0;
+    }
+    @include media($h-iphone){
+        padding: 20vh 0 0 0;
+    }
+    @include media($h-iphone-5){
+        padding: 10vh 0 0 0;
+    }
+
+    li{
+        width:25vw;
+        margin: 0 auto;
+        padding: 12px 0;
+        text-align: center;
+        color: $gray;
+        font: $mp-link;
+        border-bottom: 1px solid $gray;
+        
+        &:hover{
+            color: $orange;
+            @include transition(color .35s ease-in-out);
+        }
+        @include media($xl-desktop){
+            font: $xl-link;
+        }
+        @include media($lg-desktop){
+            font: $xl-link;
+        }
+        @include media($macbook-pro-13){
+            font:$link;
+        }
+        @include media($h-ipad-max-screen){
+            font:$lg-link;
+        }
+        @include media($mobile){
+           width: 80%;
+        }
+        @include media($v-ipad-max-screen){
+            font: $xl-link;
+            width:60vw;
+        }
+        @include media($v-iphone-6-plus){
+            font:$link;
+            width:70%;
+        }
+        @include media($v-iphone-5){
+
+        }
+        @include media($h-iphone){
+            font:$md-link;
+            letter-spacing: -.5px;
+            padding: 9px 0;
+
+        }
+
+        &:last-child{
+            border-bottom: 0!important;
+        }
+        sup{
+            font-family: $gothamM!important;
+            
+        }
+    }
+
+
+    div#other-links{
+        @include position(fixed, null 0 50px 0);
+        margin: 0 auto;
+
+        @include media($v-iphone-6-plus){
+            @include position(static, null 0 0 0);
+        }
+        @include media($h-iphone){
+            @include position(static, null 0 0 0);
+        }
+    }
+}
+
+.nav-is-inactive{
+    z-index: -1000!important;
+    opacity:0!important;
+    @include transition(opacity 1s ease-in-out);
+}
+#menu{
+    @include transition(opacity 1s ease-in-out);
+}
+
+
+.close{
+     @include position(absolute, 50px 4.167vw null null);
+     display: block;
+      width: 20px;
+      height: 20px;
+    @include media($v-ipad-max-screen){
+        top:6.5vh;
+    }
+    @include media($v-iphone-6-plus){
+        top:50px;
+    }
+     @include media($v-iphone-5){
+        top:30px;
+    }
+    i{
+     position:relative;
+      z-index: 10001;
+      display: block;
+      width: 20px;
+      height: 20px;
+      overflow: hidden;
+
+      &::before, &::after {
+        content: '';
+        @include position(absolute, 50% 0 null null);
+        height: .5px;
+        width: 100%;
+        margin-top: -1px;
+        background: #fff;
+    
+        @include media($xl-desktop){
+            height: 1px;
+        }
+        @include media($lg-desktop){
+            height: 1px;
+        }
+        @include media($mobile){
+            height: 1px;
+        }
+      }
+  &::before {
+    @include transform(rotate(45deg));
+  }
+  &::after {
+    @include transform(rotate(-45deg));
+  }  
+    }
+
+}
+.case-close{
+    top: 50px!important;
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270.62" height="270.62" viewBox="0 0 270.62 270.62">
+  <title>spatial</title>
+  <g>
+    <rect width="270.62" height="270.62"/>
+    <text transform="translate(101.66 182.23)" font-size="16" fill="#595959" font-family="Gotham" font-weight="700">S<tspan x="10.34" y="0">P</tspan><tspan x="20.16" y="0" letter-spacing="-1">A</tspan><tspan x="31.46" y="0">T</tspan><tspan x="41.65" y="0">I</tspan><tspan x="46.91" y="0">A</tspan><tspan x="59.52" y="0">L </tspan></text>
+    <text transform="translate(175.84 182.23)" font-size="16" fill="#595959" font-family="Gotham" font-weight="700"> </text>
+    <text transform="translate(80.19 204.23)" font-size="16" fill="#595959" font-family="Gotham" font-weight="700">P<tspan x="10.8" y="0">O</tspan><tspan x="24.27" y="0">S</tspan><tspan x="34.54" y="0">I</tspan><tspan x="39.73" y="0">T</tspan><tspan x="49.92" y="0">I</tspan><tspan x="55.3" y="0">O</tspan><tspan x="68.94" y="0">N</tspan><tspan x="81.66" y="0">I</tspan><tspan x="87.09" y="0">N</tspan><tspan x="99.79" y="0">G</tspan></text>
+    <circle cx="136.08" cy="109.09" r="27.05" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <line x1="110.05" y1="101.19" x2="162.11" y2="101.19" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <line x1="110.05" y1="116.99" x2="162.11" y2="116.99" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <line x1="126.64" y1="101.18" x2="126.64" y2="116.49" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <line x1="145.52" y1="101.18" x2="145.52" y2="116.49" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+    <ellipse cx="136.08" cy="103.74" rx="4.99" ry="2.56" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+  </g>
+</svg>
